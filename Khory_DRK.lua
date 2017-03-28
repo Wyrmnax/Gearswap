@@ -156,7 +156,15 @@
             sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc, {neck="Breeze Gorget",legs="Mikinaak Cuisses",waist="Soil Belt"})
             sets.precast.WS['Resolution'].Mod = set_combine(sets.precast.WS['Resolution'], {Breeze="Shadow Gorget",legs="Mikinaak Cuisses",waist="Soil Belt"})
 			
-			sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, {neck="Breeze Gorget",legs="Mikinaak Cuisses",feet="Sulevia's Leggings",waist="Soil Belt"})
+			sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, 
+			{
+			ammo="Ginsen",
+			neck="Breeze Gorget",
+			head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','Accuracy+8',}},
+			hands="Sulevia's Gauntlets",
+			feet="Sulevia's Leggings",
+			waist="Ioskeha Belt"
+			})
             sets.precast.WS['Torcleaver'].Acc = set_combine(sets.precast.WS.Acc, {neck="Breeze Gorget",legs="Mikinaak Cuisses",waist="Soil Belt"})
             sets.precast.WS['Torcleaver'].Mod = set_combine(sets.precast.WS['Resolution'], {Breeze="Shadow Gorget",legs="Mikinaak Cuisses",waist="Soil Belt"})
      
