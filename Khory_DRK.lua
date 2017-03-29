@@ -160,7 +160,8 @@
 			{
 			ammo="Ginsen",
 			neck="Breeze Gorget",
-			head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','Accuracy+8',}},
+			head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','Accuracy+8',}},			
+			legs={ name="Valor. Hose", augments={'VIT+15','Accuracy+2','Attack+13',}},
 			hands="Sulevia's Gauntlets",
 			feet="Sulevia's Leggings",
 			waist="Ioskeha Belt"
@@ -173,9 +174,7 @@
             -- Sets to return to when not performing an action.
            
             -- Resting sets
-            sets.resting = {head="Twilight Helm",neck="Bale Choker",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-                    body="Twilight Mail",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="Paguroidea Ring",
-                    back="Atheling Mantle",waist="Cetl Belt",legs="Crimson Cuisses",feet="Whirlpool Greaves"}
+            sets.resting = {}
            
      
             -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)

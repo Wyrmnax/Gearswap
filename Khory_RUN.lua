@@ -86,11 +86,11 @@ function init_gear_sets()
 
 	-- Weaponskill sets
     sets.precast.WS['Resolution'] = {       
-				ammo="Falcon Eye",
+				ammo="Ginsen",
 				head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
 				body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
-				hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
-				legs="Samnuha Tights",
+				hands="Meg. Gloves +1",
+				legs="Lustratio Subligar",
 				feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
 				neck="Subtlety Spec.",
 				waist="Grunfeld Rope",
