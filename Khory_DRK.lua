@@ -174,7 +174,7 @@
             -- Sets to return to when not performing an action.
            
             -- Resting sets
-            sets.resting = {}
+            sets.resting = {ammo="Amar Cluster",}
            
      
             -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
