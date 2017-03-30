@@ -86,36 +86,36 @@ function init_gear_sets()
 
 	-- Weaponskill sets
     sets.precast.WS['Resolution'] = {       
-				ammo="Ginsen",
-				head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
-				body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
+				ammo="Amar Cluster",
+				head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
+				body= "Meg. Cuirie +1",
 				hands="Meg. Gloves +1",
-				legs="Lustratio Subligar",
-				feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
+				legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
+				feet="Meg. Jam. +1",
 				neck="Subtlety Spec.",
 				waist="Grunfeld Rope",
 				left_ear="Brutal Earring",
 				right_ear="Mache Earring",
 				left_ring="Epona's Ring",
 				right_ring="Ifrit Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}}
+				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
 				}
     sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS['Resolution'].Normal, 
         {ammo="Honed Tathlum", body="Dread Jupon", hands="Umuthi Gloves", back="Evasionist's Cape", legs="Manibozho Legs"})
     sets.precast.WS['Dimidiation'] = {       
 				ammo="Falcon Eye",
-				head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
-				body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
-				hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
-				legs="Lustratio Subligar",
-				feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
+				head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
+				body="Meg. Cuirie +1",
+				hands="Meg. Gloves +1",
+				legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
+				feet="Meg. Jam. +1",
 				neck="Subtlety Spec.",
 				waist="Grunfeld Rope",
 				left_ear="Brutal Earring",
 				right_ear="Mache Earring",
 				left_ring="Epona's Ring",
 				right_ring="Ramuh Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}}
+				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
 				}
     sets.precast.WS['Dimidiation'].Acc = set_combine(sets.precast.WS['Dimidiation'].Normal, 
         {ammo="Honed Tathlum", head="Whirlpool Mask", hands="Buremte Gloves", back="Evasionist's Cape", waist="Thunder Belt"})
