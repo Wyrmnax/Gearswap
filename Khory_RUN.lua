@@ -148,8 +148,8 @@ function init_gear_sets()
 				waist="Flume Belt +1",
 				left_ear="Brutal Earring",
 				right_ear="Mache Earring",
-				left_ring="Vocane Ring",
-				right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+				left_ring="Defending Ring",
+				right_ring="Vocane Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}}
 				}
     sets.idle.Refresh = set_combine(sets.idle, {body="Runeist Coat +1", waist="Fucho-no-obi"})
@@ -176,8 +176,8 @@ function init_gear_sets()
 				waist="Flume Belt +1",
 				left_ear="Brutal Earring",
 				right_ear="Mache Earring",
-				left_ring="Vocane Ring",
-				right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+				left_ring="Defending Ring",
+				right_ring="Vocane Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
 				}
     sets.engaged.DD = {
@@ -208,8 +208,8 @@ function init_gear_sets()
 				waist="Flume Belt +1",
 				left_ear="Brutal Earring",
 				right_ear="Mache Earring",
-				left_ring="Vocane Ring",
-				right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+				left_ring="Defending Ring",
+				right_ring="Vocane Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},}
     sets.engaged.MDT = {            
 				ammo="Amar Cluster",
@@ -222,8 +222,8 @@ function init_gear_sets()
 				waist="Flume Belt +1",
 				left_ear="Brutal Earring",
 				right_ear="Mache Earring",
-				left_ring="Vocane Ring",
-				right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+				left_ring="Defending Ring",
+				right_ring="Vocane Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},}
     sets.engaged.repulse = {back="Repulse Mantle"}
 

@@ -195,8 +195,8 @@
 			waist="Flume Belt +1",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
-			left_ring="Vocane Ring",
-			right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+			left_ring="Defending Ring",
+			right_ring="Vocane Ring",
 			back="Atheling Mantle",
 			}
            
@@ -211,8 +211,8 @@
 			waist="Flume Belt +1",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
-			left_ring="Vocane Ring",
-			right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+			left_ring="Defending Ring",
+			right_ring="Vocane Ring",
 			back="Atheling Mantle",
 			}
      

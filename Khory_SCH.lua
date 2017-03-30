@@ -117,8 +117,8 @@ function init_gear_sets()
     waist="Salire Belt",
     left_ear="Hermetic Earring",
     right_ear="Friomisi Earring",
-    left_ring="Vocane Ring",
-    right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+    left_ring="Defending Ring",
+    right_ring="Vocane Ring",
     back="Cheviot Cape",
 }
 
@@ -279,8 +279,8 @@ function init_gear_sets()
     waist = "Fucho-no-obi",
     left_ear="Hermetic Earring",
     right_ear="Friomisi Earring",
-    left_ring="Vocane Ring",
-    right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+    left_ring="Defending Ring",
+    right_ring="Vocane Ring",
     back="Cheviot Cape",
 }
 
@@ -297,8 +297,8 @@ function init_gear_sets()
     waist = "Flume belt +1",
     left_ear="Hermetic Earring",
     right_ear="Friomisi Earring",
-    left_ring="Vocane Ring",
-    right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+    left_ring="Defending Ring",
+    right_ring="Vocane Ring",
     back="Cheviot Cape",
 }
 

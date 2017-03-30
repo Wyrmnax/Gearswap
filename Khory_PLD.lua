@@ -196,8 +196,8 @@ function init_gear_sets()
     waist="Flume Belt +1",
     left_ear="Brutal Earring",
     right_ear="Friomisi Earring",
-    left_ring="Vocane Ring",
-    right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+    left_ring="Defending Ring",
+    right_ring="Vocane Ring",
     back={ name="Weard Mantle", augments={'VIT+2','Enmity+6',}},
 }
 
@@ -275,8 +275,8 @@ function init_gear_sets()
     waist="Flume Belt +1",
     left_ear="Brutal Earring",
     right_ear="Friomisi Earring",
-    left_ring="Vocane Ring",
-    right_ring={ name="Dark Ring", augments={'Magic dmg. taken -4%','Phys. dmg. taken -3%',}},
+    left_ring="Defending Ring",
+    right_ring="Vocane Ring",
     back={ name="Weard Mantle", augments={'VIT+2','Enmity+6',}},
 }
 
