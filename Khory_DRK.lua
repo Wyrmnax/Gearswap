@@ -130,44 +130,50 @@
 			head={ name="Argosy Celata", augments={'DEX+10','Accuracy+15','"Dbl.Atk."+2',}},
 			body={ name="Found. Breastplate", augments={'Accuracy+11','Mag. Acc.+10','Attack+10','"Mag.Atk.Bns."+9',}},
 			hands={ name="Argosy Mufflers", augments={'STR+10','DEX+10','Attack+15',}},
-			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+			legs={ name="Argosy Breeches", augments={'STR+10','DEX+10','Attack+15',}},
 			feet={ name="Argosy Sollerets", augments={'STR+10','DEX+10','Attack+15',}},
 			neck="Subtlety Spec.",
 			waist="Grunfeld Rope",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
 			left_ring="Ifrit Ring",
-			right_ring="Petrov Ring",
+			right_ring="Begrudging Ring",
 			back="Atheling Mantle",
 			}
 			
-            sets.precast.WS.Acc = set_combine(sets.precast.WS, {ear1="Bladeborn Earring",ear2="Steelflash Earring"})
+            sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
      
             -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-            sets.precast.WS['Catastrophe'] = set_combine(sets.precast.WS, {neck="Shadow Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring"})
-            sets.precast.WS['Catastrophe'].Acc = set_combine(sets.precast.WS.Acc, {neck="Shadow Gorget",ear1="Bladeborn Earring",ear2="Steelflash Earring"})
-            sets.precast.WS['Catastrophe'].Mod = set_combine(sets.precast.WS['Catastrophe'], {waist="Shadow Belt",ear1="Bladeborn Earring",ear2="Steelflash Earring"})
+            sets.precast.WS['Catastrophe'] = set_combine(sets.precast.WS, {})
+            sets.precast.WS['Catastrophe'].Acc = set_combine(sets.precast.WS.Acc, {})
+            sets.precast.WS['Catastrophe'].Mod = set_combine(sets.precast.WS['Catastrophe'], {})
      
-            sets.precast.WS['Entropy'] = set_combine(sets.precast.WS, {neck="Shadow Gorget",waist="Soil Belt",ring2="Diamond Ring"})
-            sets.precast.WS['Entropy'].Acc = set_combine(sets.precast.WS.Acc, {neck="Soil Gorget",waist="Soil Belt",ear1="Bladeborn Earring",ear2="Steelflash Earring"})
-            sets.precast.WS['Entropy'].Mod = set_combine(sets.precast.WS['Entropy'], {waist="Soil Belt",legs="Cizin Breeches"})
+            sets.precast.WS['Entropy'] = set_combine(sets.precast.WS, {})
+            sets.precast.WS['Entropy'].Acc = set_combine(sets.precast.WS.Acc, {})
+            sets.precast.WS['Entropy'].Mod = set_combine(sets.precast.WS['Entropy'], {})
      
-            sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {neck="Breeze Gorget",legs="Mikinaak Cuisses",waist="Soil Belt"})
-            sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc, {neck="Breeze Gorget",legs="Mikinaak Cuisses",waist="Soil Belt"})
-            sets.precast.WS['Resolution'].Mod = set_combine(sets.precast.WS['Resolution'], {Breeze="Shadow Gorget",legs="Mikinaak Cuisses",waist="Soil Belt"})
+            sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {})
+            sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc, {})
+            sets.precast.WS['Resolution'].Mod = set_combine(sets.precast.WS['Resolution'], {})
 			
 			sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, 
 			{
-			ammo="Ginsen",
-			neck="Breeze Gorget",
-			head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','Accuracy+8',}},			
-			legs={ name="Valor. Hose", augments={'VIT+15','Accuracy+2','Attack+13',}},
-			hands="Sulevia's Gauntlets",
-			feet="Sulevia's Leggings",
-			waist="Ioskeha Belt"
+			    ammo="Ginsen",
+				head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','Accuracy+8',}},
+				body="Sulevia's Plate.",
+				hands="Sulevia's Gauntlets",
+				legs={ name="Valor. Hose", augments={'VIT+15','Accuracy+2','Attack+13',}},
+				feet="Sulevia's Leggings",
+				neck="Subtlety Spec.",
+				waist="Ioskeha Belt",
+				left_ear="Brutal Earring",
+				right_ear="Ishvara Earring",
+				left_ring="Apate Ring",
+				right_ring="Petrov Ring",
+				back="Atheling Mantle",
 			})
-            sets.precast.WS['Torcleaver'].Acc = set_combine(sets.precast.WS.Acc, {neck="Breeze Gorget",legs="Mikinaak Cuisses",waist="Soil Belt"})
-            sets.precast.WS['Torcleaver'].Mod = set_combine(sets.precast.WS['Resolution'], {Breeze="Shadow Gorget",legs="Mikinaak Cuisses",waist="Soil Belt"})
+            sets.precast.WS['Torcleaver'].Acc = set_combine(sets.precast.WS.Acc, {})
+            sets.precast.WS['Torcleaver'].Mod = set_combine(sets.precast.WS['Resolution'], {})
      
      
            
@@ -247,8 +253,8 @@
 			waist="Ioskeha Belt",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
-			left_ring="Fortified Ring",
-			right_ring="Begrudging Ring",
+			left_ring="Apate Ring",
+			right_ring="Petrov Ring",
 			back="Atheling Mantle",
 			}
 
