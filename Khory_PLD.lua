@@ -186,7 +186,7 @@ function init_gear_sets()
     sets.idle ={
     main={ name="Nixxer", augments={'DMG:+15','Accuracy+15','Attack+15',}},
     sub={ name="Nibiru Shield", augments={'HP+80','Enmity+7','Phys. dmg. taken -5',}},
-    ammo="Amar Cluster",
+    ammo="Staunch Tathlum",
     head="Loess Barbuta",
     body="Found. Breastplate",
     hands="Macabre Gaunt.",
@@ -265,7 +265,7 @@ function init_gear_sets()
     sets.engaged ={
     main={ name="Nixxer", augments={'DMG:+15','Accuracy+15','Attack+15',}},
     sub={ name="Nibiru Shield", augments={'HP+80','Enmity+7','Phys. dmg. taken -5',}},
-    ammo="Amar Cluster",
+    ammo="Staunch Tathlum",
     head="Loess Barbuta",
     body={ name="Found. Breastplate", augments={'Accuracy+1','"Mag.Atk.Bns."+10',}},
     hands="Macabre Gaunt.",

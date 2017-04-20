@@ -11,6 +11,12 @@ TargetDistance = 0
 -- Windower Hooks              --
 ------------------------------------------
 
+function get_sets()
+		mote_include_version = 2
+        -- Load and initialize the include file.
+        include('Mote-Include.lua')
+end
+
 function buff_change(n, gain, buff_table)
 	local name
 	name = string.lower(n)
@@ -664,7 +670,7 @@ function get_sets()
 		back = Rosmerta.Crit,
 		waist = "Fotia Belt",
 		legs = "Samnuha Tights",
-		feet = "Thereoid Greaves"
+		feet = HerculeanFeet.TA
 	}
 
 	sets.CDC.Accuracy = {
@@ -681,7 +687,7 @@ function get_sets()
 		--back = Rosmerta.Crit,
 		waist = "Fotia Belt",
 		legs = "Samnuha Tights",
-		feet = HerculeanFeet.CritDmg
+		feet = HerculeanFeet.TA
 	}
 
 	sets.CDC.AccuracyHigh = {
@@ -697,7 +703,7 @@ function get_sets()
 		back = Rosmerta.Crit,
 		waist = "Fotia Belt",
 		legs = "Samnuha Tights",
-		feet = HerculeanFeet.CritDmg
+		feet = HerculeanFeet.TA
 	}
 
 	sets.Expiacion = {}

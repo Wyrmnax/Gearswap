@@ -55,7 +55,7 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Precast sets to enhance JAs
-    sets.precast.JA['Vallation'] = {body="Runeist coat +1", legs="Futhark trousers +1"}
+    sets.precast.JA['Vallation'] = {body="Runeist coat", legs="Futhark trousers +1"}
     sets.precast.JA['Valiance'] = sets.precast.JA['Vallation']
     sets.precast.JA['Pflug'] = {feet="Runeist bottes +1"}
     sets.precast.JA['Battuta'] = {head="Futhark Bandeau +1"}
@@ -64,8 +64,8 @@ function init_gear_sets()
             body="Vanir Cotehardie", ring1="Acumen Ring", ring2="Omega Ring",
             back="Evasionist's Cape", waist="Yamabuki-no-obi", legs="Iuitl Tights +1", feet="Qaaxo Leggings"}
     sets.precast.JA['Swipe'] = sets.precast.JA['Lunge']
-    sets.precast.JA['Gambit'] = {hands="Runeist Mitons +1"}
-    sets.precast.JA['Rayke'] = {feet="Futhark Bottes +1"}
+    sets.precast.JA['Gambit'] = {hands="Runeist Mitons"}
+    sets.precast.JA['Rayke'] = {feet="Futhark Bottes"}
     sets.precast.JA['Elemental Sforzo'] = {body="Futhark Coat 1"}
     sets.precast.JA['Swordplay'] = {hands="Futhark Mitons +1"}
     sets.precast.JA['Embolden'] = {}
@@ -76,9 +76,9 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
     sets.precast.FC = {
-            head="Runeist bandeau +1", ear1="Loquacious Earring",
-            body="Dread Jupon", hands="Thaumas gloves", ring2="Prolix Ring",
-            legs="Orvail Pants +1"}
+            head="Runeist bandeau", ear1="Loquacious Earring",
+            body="Dread Jupon", hands="Leyline Gloves", ring2="Evanescence Ring",
+            legs="Ayanmo cosciales"}
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", legs="Futhark Trousers +1"})
     sets.precast.FC['Utsusemi: Ichi'] = set_combine(sets.precast.FC, {neck='Magoraga beads', back="Mujin Mantle"})
     sets.precast.FC['Utsusemi: Ni'] = set_combine(sets.precast.FC['Utsusemi: Ichi'], {})
@@ -86,7 +86,7 @@ function init_gear_sets()
 
 	-- Weaponskill sets
     sets.precast.WS['Resolution'] = {       
-				ammo="Amar Cluster",
+				ammo="Seething Bomblet",
 				head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
 				body= "Meg. Cuirie +1",
 				hands="Meg. Gloves +1",
@@ -138,7 +138,7 @@ function init_gear_sets()
 	-- Idle/resting/defense/etc sets
 	--------------------------------------
 
-    sets.idle = {ammo="Amar Cluster",
+    sets.idle = {ammo="Staunch Tathlum",
 				head="Futhark Bandeau +1",
 				body="Erilaz Surcoat",
 				hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
@@ -152,7 +152,7 @@ function init_gear_sets()
 				right_ring="Vocane Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}}
 				}
-    sets.idle.Refresh = set_combine(sets.idle, {body="Runeist Coat +1", waist="Fucho-no-obi"})
+    sets.idle.Refresh = set_combine(sets.idle, {body="Runeist Coat", waist="Fucho-no-obi"})
            
 	sets.defense.PDT = {}
 
@@ -166,7 +166,7 @@ function init_gear_sets()
 	--------------------------------------
 
     sets.engaged = {             
-				ammo="Amar Cluster",
+				ammo="Staunch Tathlum",
 				head="Futhark Bandeau +1",
 				body="Erilaz Surcoat",
 				hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
@@ -181,7 +181,7 @@ function init_gear_sets()
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
 				}
     sets.engaged.DD = {
-				ammo="Falcon Eye",
+				ammo="Seething Bomblet",
 				head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
 				body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
 				hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
@@ -198,7 +198,7 @@ function init_gear_sets()
     sets.engaged.Acc = set_combine(sets.engaged.DD, {sub="Tzacab Grip", ammo="Honed Tathlum", head="Whirlpool Mask",
             neck="Iqabi Necklace", hands="Buremte Gloves", waist="Anguinus Belt", legs="Manibozho Brais"})
     sets.engaged.PDT = {            
-				ammo="Amar Cluster",
+				ammo="Staunch Tathlum",
 				head="Futhark Bandeau +1",
 				body="Erilaz Surcoat",
 				hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
@@ -212,7 +212,7 @@ function init_gear_sets()
 				right_ring="Vocane Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},}
     sets.engaged.MDT = {            
-				ammo="Amar Cluster",
+				ammo="Staunch Tathlum",
 				head="Futhark Bandeau +1",
 				body="Erilaz Surcoat",
 				hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
@@ -277,14 +277,14 @@ end
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
 	-- Default macro set/book
-	if player.sub_job == 'WAR' then
-		set_macro_page(3, 7)
-	elseif player.sub_job == 'NIN' then
-		set_macro_page(1, 7)
+	if player.sub_job == 'NIN' then
+		set_macro_page(2, 7)
 	elseif player.sub_job == 'SAM' then
 		set_macro_page(4, 7)
 	elseif player.sub_job == 'DRK' then
-		set_macro_page(2, 7)
+		set_macro_page(3, 7)
+	elseif player.sub_job == 'BLU' then
+		set_macro_page(1, 7)
 	else
 		set_macro_page(5, 7)
 	end

@@ -27,7 +27,7 @@
     -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
     function user_setup()
             -- Options: Override default values
-            options.OffenseModes = {'Normal', 'Acc', 'Multi'}
+            options.OffenseModes = {'Normal', 'PDT'}
             options.DefenseModes = {'Normal', 'PDT', 'Reraise'}
             options.WeaponskillModes = {'Normal', 'Acc', 'Att', 'Mod'}
             options.CastingModes = {'Normal'}
@@ -126,19 +126,19 @@
             -- Weaponskill sets
             -- Default set for any weaponskill that isn't any more specifically defined
             sets.precast.WS = {
-			ammo="Amar Cluster",
+			ammo="Seething Bomblet",
 			head={ name="Argosy Celata", augments={'DEX+10','Accuracy+15','"Dbl.Atk."+2',}},
 			body={ name="Found. Breastplate", augments={'Accuracy+11','Mag. Acc.+10','Attack+10','"Mag.Atk.Bns."+9',}},
 			hands={ name="Argosy Mufflers", augments={'STR+10','DEX+10','Attack+15',}},
 			legs={ name="Argosy Breeches", augments={'STR+10','DEX+10','Attack+15',}},
-			feet={ name="Argosy Sollerets", augments={'STR+10','DEX+10','Attack+15',}},
+			feet="Sulev. Leggings +1",
 			neck="Subtlety Spec.",
 			waist="Grunfeld Rope",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
 			left_ring="Ifrit Ring",
 			right_ring="Begrudging Ring",
-			back="Atheling Mantle",
+			back="Ankou's mantle",
 			}
 			
             sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
@@ -156,21 +156,38 @@
             sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Resolution'].Mod = set_combine(sets.precast.WS['Resolution'], {})
 			
+			sets.precast.WS['Scourge'] = set_combine(sets.precast.WS, 
+			{
+				head={ name="Odyssean Helm", augments={'Weapon skill damage +4%','DEX+1',}},
+				body={ name="Odyss. Chestplate", augments={'Weapon skill damage +4%','Rng.Acc.+26','Accuracy+17 Attack+17','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+				hands={ name="Odyssean Gauntlets", augments={'Weapon skill damage +3%','Accuracy+10','Attack+15',}},
+				legs={ name="Valor. Hose", augments={'Weapon skill damage +3%',}},
+				feet="Sulev. Leggings +1",
+				neck="Subtlety Spec.",
+				waist="Ioskeha Belt",
+				left_ear="Brutal Earring",
+				right_ear="Ishvara Earring",
+				left_ring="Ifrit Ring",
+				right_ring="Petrov Ring",
+				back="Ankou's mantle",})
+            sets.precast.WS['Scourge'].Acc = set_combine(sets.precast.WS.Acc, {})
+            sets.precast.WS['Scourge'].Mod = set_combine(sets.precast.WS['Scourge'], {})
+			
 			sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, 
 			{
-			    ammo="Ginsen",
-				head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','Accuracy+8',}},
-				body="Sulevia's Plate.",
-				hands="Sulevia's Gauntlets",
-				legs={ name="Valor. Hose", augments={'VIT+15','Accuracy+2','Attack+13',}},
-				feet="Sulevia's Leggings",
+			    ammo="Seething Bomblet",
+				head={ name="Odyssean Helm", augments={'Weapon skill damage +4%','DEX+1',}},
+				body={ name="Odyss. Chestplate", augments={'Weapon skill damage +4%','Rng.Acc.+26','Accuracy+17 Attack+17','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+				hands={ name="Odyssean Gauntlets", augments={'Weapon skill damage +3%','Accuracy+10','Attack+15',}},
+				legs={ name="Valor. Hose", augments={'Weapon skill damage +3%',}},
+				feet="Sulev. Leggings +1",
 				neck="Subtlety Spec.",
 				waist="Ioskeha Belt",
 				left_ear="Brutal Earring",
 				right_ear="Ishvara Earring",
 				left_ring="Apate Ring",
 				right_ring="Petrov Ring",
-				back="Atheling Mantle",
+				back="Ankou's mantle",
 			})
             sets.precast.WS['Torcleaver'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Torcleaver'].Mod = set_combine(sets.precast.WS['Resolution'], {})
@@ -180,62 +197,62 @@
             -- Sets to return to when not performing an action.
            
             -- Resting sets
-            sets.resting = {ammo="Amar Cluster",}
+            sets.resting = {ammo="Seething Bomblet",}
            
      
             -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
             sets.idle.Town = {
-			ammo="Amar Cluster",
+			ammo="Staunch Tathlum",
 			head="Loess Barbuta",
 			body="Sulevia's Plate.",
-			hands="Sulevia's Gauntlets",
+			hands="Sulev. Gauntlets +1",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Sulevia's Leggings",
+			feet="Sulev. Leggings +1",
 			neck="Loricate Torque",
 			waist="Flume Belt +1",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back="Atheling Mantle",
+			back="Ankou's mantle",
 			}
            
             sets.idle.Field = {
-            ammo="Amar Cluster",
+            ammo="Staunch Tathlum",
 			head="Loess Barbuta",
 			body="Sulevia's Plate.",
-			hands="Sulevia's Gauntlets",
+			hands="Sulev. Gauntlets +1",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Sulevia's Leggings",
+			feet="Sulev. Leggings +1",
 			neck="Loricate Torque",
 			waist="Flume Belt +1",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back="Atheling Mantle",
+			back="Ankou's mantle",
 			}
      
             sets.idle.Weak = {
                     head="Twilight Helm",neck="Bale Choker",ear1="Bladeborn Earring",ear2="Steelflash Earring",
                     body="Twilight Mail",hands="Buremte Gloves",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-                    back="Atheling Mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Whirlpool Greaves"}
+                    back="Ankou's mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Whirlpool Greaves"}
            
             -- Defense sets
             sets.defense.PDT = {
                     head="Cizin Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
                     body="Cizin Mail",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="Dark Ring",
-                    back="Atheling Mantle",waist="Zoran's Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
+                    back="Ankou's mantle",waist="Zoran's Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
      
             sets.defense.Reraise = {
                     head="Twilight Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
                     body="Twilight Mail",hands="Cizin Mufflers",ring1="Dark Ring",ring2="Paguroidea Ring",
-                    back="Atheling Mantle",waist="Zoran's Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
+                    back="Ankou's mantle",waist="Zoran's Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
      
             sets.defense.MDT = {
                     head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
                     body="Cizin Mail",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="Dark Ring",
-                    back="Atheling Mantle",waist="Zoran's Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
+                    back="Ankou's mantle",waist="Zoran's Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
      
             sets.Kiting = {legs="Carmine Cuisses +1"}
      
@@ -243,10 +260,10 @@
      
             -- Engaged sets
             sets.engaged = {
-			ammo="Amar Cluster",
+			ammo="Seething Bomblet",
 			head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','Accuracy+8',}},
 			body={ name="Found. Breastplate", augments={'Accuracy+11','Mag. Acc.+10','Attack+10','"Mag.Atk.Bns."+9',}},
-			hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+			hands="Sulev. Gauntlets +1",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 			feet={ name="Valorous Greaves", augments={'Accuracy+24','"Store TP"+1','AGI+6','Attack+11',}},
 			neck="Subtlety Spec.",
@@ -255,29 +272,30 @@
 			right_ear="Mache Earring",
 			left_ring="Apate Ring",
 			right_ring="Petrov Ring",
-			back="Atheling Mantle",
+			back="Ankou's mantle",
 			}
 
-	        sets.engaged.Acc = set_combine(sets.engaged, {
-	        	neck="Bale Choker",
-	        	hands="Mikinaak Gauntlets",
-	        	waist="Dynamic Belt",
-                feet="Whirlpool Greaves"
-            })
+	        sets.engaged.PDT = set_combine(sets.engaged, {
+			ammo="Staunch Tathlum",
+			head="Loess Barbuta",
+			body="Sulevia's Plate.",
+			hands="Sulev. Gauntlets +1",
+			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+			feet="Sulev. Leggings +1",
+			neck="Loricate Torque",
+			waist="Flume Belt +1",
+			left_ear="Brutal Earring",
+			right_ear="Mache Earring",
+			left_ring="Defending Ring",
+			right_ring="Vocane Ring",
+			back="Ankou's mantle",
+			})
 	        sets.engaged.Multi = set_combine(sets.engaged, {
-                head="Quauhpilli Helm",
-                ear1="Brutal Earring",
-                ear2="Trux Earring",
-                waist="Windbuffet Belt",
-                legs="Cizin Breeches"
             })
 	        sets.engaged.Reraise = set_combine(sets.engaged, {
-	        	head="Twilight Helm",neck="Twilight Torque",
-	        	body="Twilight Mail"
             })
 
             sets.engaged.HighHaste = set_combine(sets.engaged.Multi, {
-                    head="Yaoyotl Helm"
             })
 
             sets.engaged.MaxHaste = sets.engaged.HighHaste
@@ -293,27 +311,27 @@
             --sets.engaged.Apocalypse = {ammo="Hagneia Stone",
             --        head="Otomi Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
             --        body="Pak Corselet",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="K'ayres Ring",
-            --        back="Atheling Mantle",waist="Goading Belt",legs="Cizin Breeches",feet="Karieyh Sollerets +1"}
+            --        back="Ankou's mantle",waist="Goading Belt",legs="Cizin Breeches",feet="Karieyh Sollerets +1"}
             --sets.engaged.Apocalypse.Acc = {ammo="Hagneia Stone",
             --        head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
             --        body="Pak Corselet",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="K'ayres Ring",
-            --        back="Atheling Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Karieyh Sollerets +1"}
+            --        back="Ankou's mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Karieyh Sollerets +1"}
             --sets.engaged.Apocalypse.AM = {ammo="Hagneia Stone",
             --        head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
             --        body="Pak Corselet",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="K'ayres Ring",
-            --        back="Atheling Mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Karieyh Sollerets +1"}
+            --        back="Ankou's mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Karieyh Sollerets +1"}
             --sets.engaged.Apocalypse.Multi = {ammo="Hagneia Stone",
             --        head="Otomi Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
             --        body="Pak Corselet",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="K'ayres Ring",
-            --        back="Atheling Mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Ejekamal Boots"}
+            --        back="Ankou's mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Ejekamal Boots"}
             --sets.engaged.Apocalypse.Multi.PDT = {ammo="Hagneia Stone",
             --        head="Yaoyotl Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
             --        body="Cizin Mail",hands="Cizin Mufflers",ring1="Dark Ring",ring2="Dark Ring",
-            --        back="Atheling Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Cizin Graves"}
+            --        back="Ankou's mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Cizin Graves"}
             --sets.engaged.Apocalypse.Multi.Reraise = {ammo="Hagneia Stone",
             --        head="Twilight Helm",neck="Asperity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
             --        body="Twilight Breastplate",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="Mars's Ring",
-            --        back="Atheling Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal Boots"}
+            --        back="Ankou's mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Ejekamal Boots"}
             --sets.engaged.Apocalypse.PDT = {ammo="Fire Bomblet",
             --        head="Cizin Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
             --        body="Cizin Mail",hands="Cizin Mufflers",ring1="Dark Ring",ring2="Dark Ring",
@@ -321,15 +339,15 @@
             --sets.engaged.Apocalypse.Acc.PDT = {ammo="Fire Bomblet",
             --        head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
             --        body="Cizin Mail",hands="Cizin Mufflers",ring1="Dark Ring",ring2="Dark Ring",
-            --        back="Atheling Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
+            --        back="Ankou's mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
             --sets.engaged.Apocalypse.Reraise = {ammo="Fire Bomblet",
             --        head="Twilight Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
             --        body="Twilight Mail",hands="Cizin Muffler",ring1="Dark Ring",ring2="Dark Ring",
-            --        back="Atheling Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
+            --        back="Ankou's mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
             --sets.engaged.Apocalypse.Acc.Reraise = {ammo="Fire Bomblet",
             --        head="Twilight Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
             --        body="Twilight Mail",hands="Cizin Muffler",ring1="Dark Ring",ring2="DarkRing",
-            --        back="Atheling Mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
+            --        back="Ankou's mantle",waist="Dynamic Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
 					
 
             -- Custom Melee Group
@@ -343,7 +361,7 @@
             --    hands="Cizin Mufflers",
             --    ring1="Rajas Ring",
             --    ring2="K'ayres Ring",
-            --    back="Atheling Mantle",
+            --    back="Ankou's mantle",
             --    waist="Cetl Belt",
             --    legs="Cizin Breeches",
             --    feet="Mikinaak Greaves"
