@@ -152,10 +152,21 @@ function init_gear_sets()
         body="Reverence Surcoat +1",hands="Reverence Gauntlets +1",
         waist="Zoran's Belt",legs="Enif Cosciales",feet="Reverence Leggings +1"}
         
-    sets.midcast.Enmity = {ammo="Iron Gobbet",
-        head="Reverence Coronet +1",neck="Invidia Torque",
-        body="Reverence Surcoat +1",hands="Reverence Gauntlets +1",ring1="Vexer Ring",
-        back="Fierabras's Mantle",waist="Goading Belt",legs="Reverence Breeches +1",feet="Caballarius Leggings"}
+    sets.midcast.Enmity = {        
+	ammo="Staunch Tathlum",
+    head={ name="Souveran Schaller", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    hands={ name="Souv. Handschuhs", augments={'HP+50','Shield skill +10','Phys. dmg. taken -3',}},
+    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+    feet={ name="Odyssean Greaves", augments={'Phys. dmg. taken -5%','STR+7','Accuracy+15',}},
+    neck="Warder's Charm +1",
+    waist="Flume Belt +1",
+    left_ear="Halasz Earring",
+    right_ear="Friomisi Earring",
+    left_ring="Defending Ring",
+    right_ring="Evanescence Ring",
+    back={ name="Weard Mantle", augments={'VIT+2','Enmity+6',}},
+	}
 
     sets.midcast.Flash = set_combine(sets.midcast.Enmity, {legs="Enif Cosciales"})
     
@@ -166,7 +177,8 @@ function init_gear_sets()
         body="Reverence Surcoat +1",hands="Buremte Gloves",ring1="Kunaji Ring",ring2="Asklepian Ring",
         back="Fierabras's Mantle",waist="Chuq'aba Belt",legs="Reverence Breeches +1",feet="Caballarius Leggings"}
 
-    sets.midcast['Enhancing Magic'] = {neck="Colossus's Torque",waist="Olympus Sash",legs="Reverence Breeches +1"}
+    sets.midcast['Enhancing Magic'] = {
+    feet="Souveran Schuhs",}
     
     sets.midcast.Protect = {ring1="Sheltered Ring"}
     sets.midcast.Shell = {ring1="Sheltered Ring"}
@@ -187,12 +199,12 @@ function init_gear_sets()
     main={ name="Nixxer", augments={'DMG:+15','Accuracy+15','Attack+15',}},
     sub={ name="Nibiru Shield", augments={'HP+80','Enmity+7','Phys. dmg. taken -5',}},
     ammo="Staunch Tathlum",
-    head="Loess Barbuta",
-    body="Found. Breastplate",
-    hands="Macabre Gaunt.",
+    head={ name="Souveran Schaller", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    hands={ name="Souv. Handschuhs", augments={'HP+50','Shield skill +10','Phys. dmg. taken -3',}},
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-    feet={ name="Odyssean Greaves", augments={'Phys. dmg. taken -5%','STR+7','Accuracy+15',}},
-    neck="Subtlety Spec.",
+    feet="Souveran Schuhs",
+    neck="Warder's Charm +1",
     waist="Flume Belt +1",
     left_ear="Brutal Earring",
     right_ear="Friomisi Earring",
@@ -266,12 +278,12 @@ function init_gear_sets()
     main={ name="Nixxer", augments={'DMG:+15','Accuracy+15','Attack+15',}},
     sub={ name="Nibiru Shield", augments={'HP+80','Enmity+7','Phys. dmg. taken -5',}},
     ammo="Staunch Tathlum",
-    head="Loess Barbuta",
-    body={ name="Found. Breastplate", augments={'Accuracy+1','"Mag.Atk.Bns."+10',}},
-    hands="Macabre Gaunt.",
+    head={ name="Souveran Schaller", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    hands={ name="Souv. Handschuhs", augments={'HP+50','Shield skill +10','Phys. dmg. taken -3',}},
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-    feet={ name="Odyssean Greaves", augments={'Phys. dmg. taken -5%','STR+7','Accuracy+15',}},
-    neck="Subtlety Spec.",
+    feet="Souveran Schuhs",
+    neck="Warder's Charm +1",
     waist="Flume Belt +1",
     left_ear="Brutal Earring",
     right_ear="Friomisi Earring",

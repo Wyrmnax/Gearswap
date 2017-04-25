@@ -302,31 +302,32 @@ function init_gear_sets()
     sets.idle = {
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     body= "Meg. Cuirie +1",
-    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    hands="Meg. Gloves +1",
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
-    neck="Subtlety Spec.",
-    waist="Windbuffet Belt +1",
+    neck="Loricate torque",
+    waist="Flume Belt +1",
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
-    left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
+    left_ring="Defending Ring",
+    right_ring="Vocane Ring",
     back="Camulus's Mantle",
 }
 
     sets.idle.Town = {
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     body= "Meg. Cuirie +1",
-    hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    hands="Meg. Gloves +1",
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
-    neck="Subtlety Spec.",
-    waist="Windbuffet Belt +1",
+    neck="Loricate torque",
+    waist="Flume Belt +1",
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
-    left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
-    back="Camulus's Mantle",}
+    left_ring="Defending Ring",
+    right_ring="Vocane Ring",
+    back="Camulus's Mantle",
+	}
     
     -- Defense sets
     sets.defense.PDT = {
@@ -370,11 +371,11 @@ function init_gear_sets()
     -- Normal melee group
     sets.engaged.Melee = {ammo=gear.RAbullet,
     head= "Adhemar Bonnet",
-    body= "Meg. Cuirie +1",
+	body = "Adhemar jacket",
     hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     feet="Meg. Jam. +1",
-    neck = "Subtlety spectacles",
+    neck = "Subtlety spec.",
     waist="Windbuffet Belt +1",
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",

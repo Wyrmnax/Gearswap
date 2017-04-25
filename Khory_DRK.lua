@@ -67,7 +67,7 @@
             -- Precast sets to enhance JAs
             sets.precast.JA['Diabolic Eye'] = {hands="Abyss Gauntlets +2"}
             sets.precast.JA['Arcane Circle'] = {feet="Ignominy Sollerets"}
-            sets.precast.JA['Nether Void'] = {legs="Bale Flanchard +2"}
+            sets.precast.JA['Nether Void'] = {legs="Heath. Flanchard"}
             sets.precast.JA['Souleater'] = {head="Ignominy burgeonet +1"}
      
                    
@@ -84,7 +84,7 @@
                      
             -- Midcast Sets
             sets.midcast.FastRecast = {
-                    head="Cizin Helm"
+                    head="Fallen's Burgeonet"
                 }
                    
             -- Specific spells
@@ -94,26 +94,28 @@
                     waist="Zoran's Belt",legs="Cizin Breeches",feet="Whirlpool Greaves"}
      
             sets.midcast.DarkMagic = {
-                    head="Ignominy burgeonet +1",
+					ammo="Snow Sachet",
+                    head="Pixie Hairpin +1",
 					neck="Sanctity Necklace",
 					ear1="Hermetic Earring",
 					ear2="Friomisi Earring",
-                    body="Demon's harness",
+                    body="Found. Breastplate",
 					hands="Leyline Gloves",
 					ring1="Diamond Ring",
 					ring2="Evanescence Ring",
                     back="Abyss Cape",
 					waist="Salire Belt",
-					legs="Bale Flanchard +2",
+					legs="Heath. Flanchard",
 					feet="Odyssean Greaves"}
            
 		    sets.midcast.EnfeeblingMagic = set_combine(sets.midcast.DarkMagic, {
-                head="Cizin Helm",hands="Mikinaak Gauntlets",ear1="Friomisi earring",ear2="Hecate's earring",
-                neck="Atzintli Necklace",body="Abyss cuirass",legs="Cizin breeches",feet="Bale sollerets +2",
-                back="Toro Cape",waist="Zoran's Belt"
             })
 		   
-            sets.midcast['Dread Spikes'] = {head="Yaoyotl Helm",body="Bale Cuirass +2",hands="Cizin Mufflers",ring2="K'ayres Ring"}
+            sets.midcast['Dread Spikes'] = set_combine(sets.midcast.DarkMagic,
+			{body="Heathen's Cuirass"})
+			
+			sets.midcast['Absorb-TP'] = set_combine(sets.midcast.DarkMagic,
+			{hands="Heathen's gauntlets"})
            
             sets.midcast.Stun = set_combine(sets.midcast.DarkMagic, {
                     head="Cizin Helm"
@@ -138,7 +140,7 @@
 			right_ear="Mache Earring",
 			left_ring="Ifrit Ring",
 			right_ring="Begrudging Ring",
-			back="Ankou's mantle",
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 			}
 			
             sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
@@ -169,7 +171,8 @@
 				right_ear="Ishvara Earring",
 				left_ring="Ifrit Ring",
 				right_ring="Petrov Ring",
-				back="Ankou's mantle",})
+				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+				})
             sets.precast.WS['Scourge'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Scourge'].Mod = set_combine(sets.precast.WS['Scourge'], {})
 			
@@ -187,7 +190,7 @@
 				right_ear="Ishvara Earring",
 				left_ring="Apate Ring",
 				right_ring="Petrov Ring",
-				back="Ankou's mantle",
+				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 			})
             sets.precast.WS['Torcleaver'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Torcleaver'].Mod = set_combine(sets.precast.WS['Resolution'], {})
@@ -203,7 +206,7 @@
             -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
             sets.idle.Town = {
 			ammo="Staunch Tathlum",
-			head="Loess Barbuta",
+			head="Carbie Cap",
 			body="Sulevia's Plate.",
 			hands="Sulev. Gauntlets +1",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
@@ -214,7 +217,7 @@
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back="Ankou's mantle",
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 			}
            
             sets.idle.Field = {
@@ -230,7 +233,7 @@
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back="Ankou's mantle",
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 			}
      
             sets.idle.Weak = {
@@ -272,7 +275,7 @@
 			right_ear="Mache Earring",
 			left_ring="Apate Ring",
 			right_ring="Petrov Ring",
-			back="Ankou's mantle",
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 			}
 
 	        sets.engaged.PDT = set_combine(sets.engaged, {
@@ -288,7 +291,7 @@
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back="Ankou's mantle",
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
 			})
 	        sets.engaged.Multi = set_combine(sets.engaged, {
             })
