@@ -8,7 +8,7 @@
      
     -- Initialization function for this job file.
     function get_sets()
-			mote_include_version = 2
+			--mote_include_version = 2
             -- Load and initialize the include file.
             include('Mote-Include.lua')
     end
@@ -37,7 +37,7 @@
             options.PhysicalDefenseModes = {'PDT', 'Reraise'}
             options.MagicalDefenseModes = {'MDT'}
      
-            state.Defense.PhysicalMode = 'PDT'
+            --state.Defense.PhysicalMode = 'PDT'
 			
 			--adjust_engaged_sets()
 	 
@@ -90,9 +90,7 @@
                    
             -- Specific spells
             sets.midcast.Utsusemi = {
-                    head="Cizin Helm",
-                    body="Pak Corselet",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="K'ayres Ring",
-                    waist="Zoran's Belt",legs="Cizin Breeches",feet="Whirlpool Greaves"}
+                    }
      
             sets.midcast.DarkMagic = {
 					ammo="Snow Sachet",
@@ -131,7 +129,7 @@
             sets.precast.WS = {
 			ammo="Seething Bomblet",
 			head={ name="Argosy Celata", augments={'DEX+10','Accuracy+15','"Dbl.Atk."+2',}},
-			body={ name="Found. Breastplate", augments={'Accuracy+11','Mag. Acc.+10','Attack+10','"Mag.Atk.Bns."+9',}},
+			body="Sulevia's Plate. +1",
 			hands={ name="Argosy Mufflers", augments={'STR+10','DEX+10','Attack+15',}},
 			legs={ name="Argosy Breeches", augments={'STR+10','DEX+10','Attack+15',}},
 			feet="Sulev. Leggings +1",
@@ -141,7 +139,7 @@
 			right_ear="Mache Earring",
 			left_ring="Ifrit Ring",
 			right_ring="Begrudging Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+3','"Dbl.Atk."+10',}}
 			}
 			
             sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
@@ -161,10 +159,10 @@
 			
 			sets.precast.WS['Scourge'] = set_combine(sets.precast.WS, 
 			{
-				head={ name="Odyssean Helm", augments={'Weapon skill damage +4%','DEX+1',}},
+				head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
 				body={ name="Odyss. Chestplate", augments={'Weapon skill damage +4%','Rng.Acc.+26','Accuracy+17 Attack+17','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
 				hands={ name="Odyssean Gauntlets", augments={'Weapon skill damage +3%','Accuracy+10','Attack+15',}},
-				legs={ name="Valor. Hose", augments={'Weapon skill damage +3%',}},
+				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 				feet="Sulev. Leggings +1",
 				neck="Subtlety Spec.",
 				waist="Ioskeha Belt",
@@ -180,10 +178,10 @@
 			sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, 
 			{
 			    ammo="Seething Bomblet",
-				head={ name="Odyssean Helm", augments={'Weapon skill damage +4%','DEX+1',}},
+				head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
 				body={ name="Odyss. Chestplate", augments={'Weapon skill damage +4%','Rng.Acc.+26','Accuracy+17 Attack+17','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
 				hands={ name="Odyssean Gauntlets", augments={'Weapon skill damage +3%','Accuracy+10','Attack+15',}},
-				legs={ name="Valor. Hose", augments={'Weapon skill damage +3%',}},
+				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 				feet="Sulev. Leggings +1",
 				neck="Subtlety Spec.",
 				waist="Ioskeha Belt",
@@ -208,8 +206,8 @@
             sets.idle.Town = {
 			ammo="Staunch Tathlum",
 			head="Carbie Cap",
-			body="Sulevia's Plate.",
-			hands="Sulev. Gauntlets +1",
+			body="Sulevia's Plate. +1",
+			hands="Sulev. Gauntlets +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 			feet="Sulev. Leggings +1",
 			neck="Loricate Torque",
@@ -218,14 +216,14 @@
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+3','"Dbl.Atk."+10',}}
 			}
            
             sets.idle.Field = {
             ammo="Staunch Tathlum",
 			head="Loess Barbuta",
-			body="Sulevia's Plate.",
-			hands="Sulev. Gauntlets +1",
+			body="Sulevia's Plate. +1",
+			hands="Sulev. Gauntlets +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 			feet="Sulev. Leggings +1",
 			neck="Loricate Torque",
@@ -234,7 +232,7 @@
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+3','"Dbl.Atk."+10',}}
 			}
      
             sets.idle.Weak = {
@@ -244,30 +242,24 @@
            
             -- Defense sets
             sets.defense.PDT = {
-                    head="Cizin Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-                    body="Cizin Mail",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="Dark Ring",
-                    back="Ankou's mantle",waist="Zoran's Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
+                    }
      
             sets.defense.Reraise = {
-                    head="Twilight Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-                    body="Twilight Mail",hands="Cizin Mufflers",ring1="Dark Ring",ring2="Paguroidea Ring",
-                    back="Ankou's mantle",waist="Zoran's Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
+                    }
      
             sets.defense.MDT = {
-                    head="Yaoyotl Helm",neck="Twilight Torque",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-                    body="Cizin Mail",hands="Cizin Mufflers",ring1="Rajas Ring",ring2="Dark Ring",
-                    back="Ankou's mantle",waist="Zoran's Belt",legs="Cizin Breeches",feet="Cizin Greaves"}
+                    }
      
             sets.Kiting = {legs="Carmine Cuisses +1"}
      
-            sets.Reraise = {head="Twilight Helm",body="Twilight Mail"}
+            sets.Reraise = {}
      
             -- Engaged sets
             sets.engaged = {
 			ammo="Seething Bomblet",
-			head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','Accuracy+8',}},
+			head="Flam. Zucchetto +1",
 			body={ name="Found. Breastplate", augments={'Accuracy+11','Mag. Acc.+10','Attack+10','"Mag.Atk.Bns."+9',}},
-			hands="Sulev. Gauntlets +1",
+			hands="Sulev. Gauntlets +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 			feet={ name="Valorous Greaves", augments={'Accuracy+24','"Store TP"+1','AGI+6','Attack+11',}},
 			neck="Subtlety Spec.",
@@ -276,14 +268,14 @@
 			right_ear="Mache Earring",
 			left_ring="Apate Ring",
 			right_ring="Petrov Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+3','"Dbl.Atk."+10',}}
 			}
 
 	        sets.engaged.PDT = set_combine(sets.engaged, {
 			ammo="Staunch Tathlum",
 			head="Loess Barbuta",
-			body="Sulevia's Plate.",
-			hands="Sulev. Gauntlets +1",
+			body="Sulevia's Plate. +1",
+			hands="Sulev. Gauntlets +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 			feet="Sulev. Leggings +1",
 			neck="Loricate Torque",
@@ -292,7 +284,7 @@
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+3','"Dbl.Atk."+10',}}
 			})
 	        sets.engaged.Multi = set_combine(sets.engaged, {
             })
@@ -449,10 +441,10 @@
     -- Run after the default midcast() is done.
     -- eventArgs is the same one used in job_midcast, in case information needs to be persisted.
     function job_post_midcast(spell, action, spellMap, eventArgs)
-            if state.DefenseMode == 'Reraise' or
-                    (state.Defense.Active and state.Defense.Type == 'Physical' and state.Defense.PhysicalMode == 'Reraise') then
-                    equip(sets.Reraise)
-            end
+            --if state.DefenseMode == 'Reraise' or
+            --        (state.Defense.Active and state.Defense.Type == 'Physical' and state.Defense.PhysicalMode == 'Reraise') then
+            --        equip(sets.Reraise)
+            --end
     end
      
     -- Set eventArgs.handled to true if we don't want any automatic gear equipping to be done.
