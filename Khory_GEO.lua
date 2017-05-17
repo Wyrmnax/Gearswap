@@ -199,8 +199,8 @@ function init_gear_sets()
         ear2="Friomisi Earring",
         body="Jhakri Robe +1",
         hands="Amalric Gages", 
-        ring1="Diamond Ring",
-        ring2="Strendu Ring",
+        ring1="Shiva Ring",
+        ring2="Mujin Band",
         back="Twilight Cape",
         waist="Salire Belt", 
         legs="Amalric Slops",
@@ -238,7 +238,7 @@ function init_gear_sets()
         hands="Amalric Gages", 
         legs="Amalric Slops",
         ring1="Sangoma Ring",
-        ring2="Strendu Ring",
+        ring2="Mujin Band",
         back="Refraction Cape",
         feet="Amalric Nails"
     })
@@ -294,7 +294,7 @@ function init_gear_sets()
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast.Macc, {
         waist="Casso Sash",
         back="Lifestream Cape",
-        ring1="Diamond Ring",
+        ring1="Shiva Ring",
         ring2="Globidonta Ring",
         feet="Bagua Sandals"
     })

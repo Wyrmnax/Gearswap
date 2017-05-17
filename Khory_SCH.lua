@@ -172,12 +172,12 @@ function init_gear_sets()
 
     sets.midcast['Dark Magic'] = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Incantor Stone",
         head="Nahtirah Hat",neck="Aesir Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
-        body="Vanir Cotehardie",hands="Yaoyotl Gloves",ring1="Strendu Ring",ring2="Sangoma Ring",
+        body="Vanir Cotehardie",hands="Yaoyotl Gloves",ring1="Shiva Ring",ring2="Sangoma Ring",
         back="Refraction Cape",waist="Goading Belt",legs="Bokwus Slops",feet="Bokwus Boots"}
 
     sets.midcast.Kaustra = {main="Lehbrailg +2",sub="Wizzan Grip",ammo="Witchstone",
         head="Hagondes Hat",neck="Eddy Necklace",ear1="Hecate's Earring",ear2="Friomisi Earring",
-        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Icesoul Ring",ring2="Strendu Ring",
+        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Icesoul Ring",ring2="Shiva Ring",
         back="Toro Cape",waist="Cognition Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 
     sets.midcast.Drain = {
@@ -193,7 +193,7 @@ function init_gear_sets()
     waist="Fucho-no-Obi",
     left_ear="Hermetic Earring",
     right_ear="Friomisi Earring",
-    left_ring="Strendu Ring",
+    left_ring="Shiva Ring",
     right_ring="Evanescence Ring",
     back="Cheviot Cape",
 }
@@ -223,8 +223,8 @@ function init_gear_sets()
     waist="Salire Belt",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    left_ring="Strendu Ring",
-    right_ring={ name="Diamond Ring", augments={'INT+2','Spell interruption rate down -1%','"Resist Silence"+1',}},
+    left_ring="Shiva Ring",
+    right_ring="Mujin Band",
     back="Cheviot Cape",}
 
     sets.midcast['Elemental Magic'].Resistant = {
@@ -240,8 +240,8 @@ function init_gear_sets()
     waist="Salire Belt",
     left_ear="Hermetic Earring",
     right_ear="Friomisi Earring",
-    left_ring="Strendu Ring",
-    right_ring={ name="Diamond Ring", augments={'INT+2','Spell interruption rate down -1%','"Resist Silence"+1',}},
+    left_ring="Shiva Ring",
+    right_ring="Mujin Band",
     back="Cheviot Cape",}
 
     -- Custom refinements for certain nuke tiers
