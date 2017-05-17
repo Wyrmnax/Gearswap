@@ -82,11 +82,16 @@
             sets.precast.Waltz['Healing Waltz'] = {}
            
             -- Fast cast sets for spells
+			sets.precast.FC = {
+			ring2 = "Lebeche Ring",
+			}
                      
             -- Midcast Sets
             sets.midcast.FastRecast = {
                     head="Fallen's Burgeonet"
                 }
+				
+				
                    
             -- Specific spells
             sets.midcast.Utsusemi = {
@@ -98,7 +103,7 @@
 					neck="Sanctity Necklace",
 					ear1="Hermetic Earring",
 					ear2="Friomisi Earring",
-                    body="Found. Breastplate",
+					body="Ignominy Cuirass +2",
 					hands="Leyline Gloves",
 					ring1="Diamond Ring",
 					ring2="Evanescence Ring",
@@ -129,17 +134,17 @@
             sets.precast.WS = {
 			ammo="Seething Bomblet",
 			head={ name="Argosy Celata", augments={'DEX+10','Accuracy+15','"Dbl.Atk."+2',}},
-			body="Sulevia's Plate. +1",
+			body={ name="Argosy Hauberk", augments={'STR+10','DEX+10','Attack+15',}},
 			hands={ name="Argosy Mufflers", augments={'STR+10','DEX+10','Attack+15',}},
 			legs={ name="Argosy Breeches", augments={'STR+10','DEX+10','Attack+15',}},
-			feet="Sulev. Leggings +1",
-			neck="Subtlety Spec.",
+			feet="Sulev. Leggings +2",
+			neck = "Fotia Gorget",
 			waist="Grunfeld Rope",
-			left_ear="Brutal Earring",
+			ear1 = "Moonshade earring",
 			right_ear="Mache Earring",
 			left_ring="Ifrit Ring",
 			right_ring="Begrudging Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+3','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}
 			
             sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
@@ -160,16 +165,16 @@
 			sets.precast.WS['Scourge'] = set_combine(sets.precast.WS, 
 			{
 				head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
-				body={ name="Odyss. Chestplate", augments={'Weapon skill damage +4%','Rng.Acc.+26','Accuracy+17 Attack+17','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+				body="Ignominy Cuirass +2",
 				hands={ name="Odyssean Gauntlets", augments={'Weapon skill damage +3%','Accuracy+10','Attack+15',}},
 				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-				feet="Sulev. Leggings +1",
-				neck="Subtlety Spec.",
+				feet="Sulev. Leggings +2",
+				neck = "Fotia Gorget",
 				waist="Ioskeha Belt",
-				left_ear="Brutal Earring",
-				right_ear="Ishvara Earring",
+				ear1 = "Moonshade earring",
+				ear2 ="Mache Earring",
 				left_ring="Ifrit Ring",
-				right_ring="Petrov Ring",
+				right_ring="Begrudging Ring",
 				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 				})
             sets.precast.WS['Scourge'].Acc = set_combine(sets.precast.WS.Acc, {})
@@ -179,16 +184,16 @@
 			{
 			    ammo="Seething Bomblet",
 				head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
-				body={ name="Odyss. Chestplate", augments={'Weapon skill damage +4%','Rng.Acc.+26','Accuracy+17 Attack+17','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+				body="Ignominy Cuirass +2",
 				hands={ name="Odyssean Gauntlets", augments={'Weapon skill damage +3%','Accuracy+10','Attack+15',}},
 				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-				feet="Sulev. Leggings +1",
-				neck="Subtlety Spec.",
+				feet="Sulev. Leggings +2",
+				neck = "Fotia Gorget",
 				waist="Ioskeha Belt",
-				left_ear="Brutal Earring",
-				right_ear="Ishvara Earring",
+				ear1 = "Moonshade earring",
+				ear2 = "Mache Earring",
 				left_ring="Apate Ring",
-				right_ring="Petrov Ring",
+				right_ring="Begrudging Ring",
 				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 			})
             sets.precast.WS['Torcleaver'].Acc = set_combine(sets.precast.WS.Acc, {})
@@ -206,17 +211,17 @@
             sets.idle.Town = {
 			ammo="Staunch Tathlum",
 			head="Carbie Cap",
-			body="Sulevia's Plate. +1",
+			body={ name="Argosy Hauberk", augments={'STR+10','DEX+10','Attack+15',}},
 			hands="Sulev. Gauntlets +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Sulev. Leggings +1",
+			feet="Sulev. Leggings +2",
 			neck="Loricate Torque",
 			waist="Flume Belt +1",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+3','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}
            
             sets.idle.Field = {
@@ -225,14 +230,14 @@
 			body="Sulevia's Plate. +1",
 			hands="Sulev. Gauntlets +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Sulev. Leggings +1",
+			feet="Sulev. Leggings +2",
 			neck="Loricate Torque",
 			waist="Flume Belt +1",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+3','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}
      
             sets.idle.Weak = {
@@ -257,8 +262,8 @@
             -- Engaged sets
             sets.engaged = {
 			ammo="Seething Bomblet",
-			head="Flam. Zucchetto +1",
-			body={ name="Found. Breastplate", augments={'Accuracy+11','Mag. Acc.+10','Attack+10','"Mag.Atk.Bns."+9',}},
+			head="Flam. Zucchetto +1",			
+			body={ name="Argosy Hauberk", augments={'STR+10','DEX+10','Attack+15',}},
 			hands="Sulev. Gauntlets +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 			feet={ name="Valorous Greaves", augments={'Accuracy+24','"Store TP"+1','AGI+6','Attack+11',}},
@@ -268,7 +273,7 @@
 			right_ear="Mache Earring",
 			left_ring="Apate Ring",
 			right_ring="Petrov Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+3','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}
 
 	        sets.engaged.PDT = set_combine(sets.engaged, {
@@ -277,14 +282,14 @@
 			body="Sulevia's Plate. +1",
 			hands="Sulev. Gauntlets +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Sulev. Leggings +1",
+			feet="Sulev. Leggings +2",
 			neck="Loricate Torque",
 			waist="Flume Belt +1",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
 			right_ring="Vocane Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+3','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			})
 	        sets.engaged.Multi = set_combine(sets.engaged, {
             })

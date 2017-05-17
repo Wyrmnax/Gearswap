@@ -18,15 +18,16 @@ function get_sets()
 end
 
 function buff_change(n, gain, buff_table)
-	local name
-	name = string.lower(n)
-	if name == "terror" or name == "petrification" or name == "sleep" or name == "stun" then
-		if gain == true then
-			ChangeGear(sets.Utility.DerpDT)
-		else
-			ChangeGear(sets.TP[sets.TP.index[TP_ind]])
-		end
-	end
+local name
+name = string.lower(n)
+if name == "terror" or name == "petrification" or name == "sleep" or name == "stun" then
+    if gain == true then
+        ChangeGear(sets.Utility.DerpDT)
+    elseif player.status == 'Engaged' then
+        ChangeGear(sets.TP[sets.TP.index[TP_ind]])
+    else
+        ChangeGear(sets.Idle[sets.Idle.index[Idle_ind]])
+    end
 end
 
 function user_setup()
@@ -481,7 +482,7 @@ function get_sets()
 		neck = "Loricate Torque",
 		ear1 = "Etiolation Earring",
 		ear2 = "Ethereal Earring",
-		body = "Amalric Doublet",
+        body = "Jhakri Robe +1",
 		hands = "Herculean Gloves",
 		ring1 = "Defending Ring",
 		ring2 = "Vocane Ring",
@@ -623,9 +624,9 @@ function get_sets()
 	sets.Requiescat.Attack = {
 		ammo = "Jukukik Feather",
 		head = "Adhemar Bonnet",
-		neck = "Subtlety spectacles",
-		ear1 = "Suppanomimi",
-		ear2 = "Brutal earring",
+		neck = "Fotia Gorget",
+		ear1 = "Moonshade Earring",
+		ear2 = "Odnowa earring +1",
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.TP,
 		ring1 = "Epona's ring",
@@ -639,9 +640,9 @@ function get_sets()
 	sets.Requiescat.Accuracy = {
 		ammo = "Falcon Eye",
 		head = "Adhemar Bonnet",
-		neck = "Subtlety spectacles",
-		ear1 = "Suppanomimi",
-		ear2 = "Brutal earring",
+		neck = "Fotia Gorget",
+		ear1 = "Moonshade Earring",
+		ear2 = "Odnowa earring +1",
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.TP,
 		ring1 = "Epona's ring",
@@ -662,7 +663,7 @@ function get_sets()
 		head = "Adhemar Bonnet",
 		neck = "Fotia Gorget",
 		ear1 = "Moonshade earring",
-		ear2 = "Brutal Earring",
+		ear2 = "Odnowa earring +1",
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.Crit,
 		ring1 = "Epona's ring",
@@ -678,7 +679,7 @@ function get_sets()
 		head = "Adhemar Bonnet",
 		neck = "Fotia Gorget",
 		ear1 = "Moonshade earring",
-		ear2 = "Mache Earring",
+		ear2 = "Odnowa earring +1",
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.HighAcc,
 		ring1 = "Epona's ring",
@@ -695,7 +696,7 @@ function get_sets()
 		head = "Adhemar Bonnet",
 		neck = "Fotia Gorget",
 		ear1 = "Moonshade earring",
-		ear2 = "Mache earring",
+		ear2 = "Odnowa earring +1",
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.HighAcc,
 		ring1 = "Begrudging Ring",
@@ -716,7 +717,7 @@ function get_sets()
 		head = "Adhemar Bonnet",
 		neck = "Fotia Gorget",
 		ear1 = "Moonshade earring",
-		ear2 = "Brutal Earring",
+		ear2 = "Odnowa earring +1",
 		body = "Abnoba Kaftan",
 		hands = HerculeanGloves.Crit,
 		ring1 = "Epona's ring",
@@ -732,7 +733,7 @@ function get_sets()
 		head = "Adhemar Bonnet",
 		neck = "Fotia Gorget",
 		ear1 = "Moonshade earring",
-		ear2 = "Brutal Earring",
+		ear2 = "Odnowa earring +1",
 		body = "Abnoba Kaftan",
 		hands = HerculeanGloves.Crit,
 		ring1 = "Epona's ring",
@@ -794,7 +795,7 @@ function get_sets()
 		head = "Adhemar Bonnet",
 		neck = "Fotia Gorget",
 		ear1 = "Moonshade earring",
-		ear2 = "Brutal Earring",
+		ear2 = "Odnowa earring +1",
 		body = "Abnoba Kaftan",
 		hands = HerculeanGloves.Crit,
 		ring1 = "Epona's ring",
@@ -830,7 +831,7 @@ function get_sets()
 		head = "Adhemar Bonnet",
 		neck = "Fotia Gorget",
 		ear1 = "Moonshade earring",
-		ear2 = "Brutal Earring",
+		ear2 = "Odnowa earring +1",
 		body = "Abnoba Kaftan",
 		hands = HerculeanGloves.Crit,
 		ring1 = "Epona's ring",
@@ -867,7 +868,7 @@ function get_sets()
 		body = "Luhlaza Jubbah +1",
 		neck = "Caro Necklace",
 		ear1 = "Zennaroi Earring",
-		ear2 = "Kuwunga Earring",
+		ear2 = "Odnowa earring +1",
 		body = "Adhemar Jacket",
 		hands = HerculeanGloves.TP,
 		ring1 = "Ifrit Ring +1",
@@ -898,7 +899,7 @@ function get_sets()
 		neck = "Sanctity Necklace",
 		ear1 = "Moldavite Earring",
 		ear2 = "Friomisi earring",
-		body = "Amalric Doublet",
+        body = "Jhakri Robe +1",
 		hands = "Amalric Gages",
 		ring1 = "Strendu Ring",
 		ring2 = "Diamond Ring",
@@ -914,7 +915,7 @@ function get_sets()
 		neck = "Sanctity Necklace",
 		ear1 = "Hermetic Earring",
 		ear2 = "Friomisi earring",
-		body = "Amalric Doublet",
+		body = "Jhakri Robe +1",
 		hands = "Amalric Gages",
 		ring1 = "Strendu Ring",
 		ring2 = "Diamond Ring",
@@ -1015,7 +1016,7 @@ function get_sets()
 		head = HerculeanHelm.Nuke,
 		neck = "Phalaina Locket",
 		ear1 = "Mendicant's Earring",
-		ear2 = "Ethereal Earring",
+		ear2 = "Odnowa earring +1",
 		body = "Vrikodara Jupon",
 		hands = "Telchine Gloves",
 		ring1 = "Kunaji Ring",
@@ -1149,7 +1150,7 @@ function get_sets()
 		neck = "Warder's Charm +1",
 		ear1 = "Flashward Earring",
 		ear2 = "Etiolation Earring",
-		body = "Amalric Doublet",
+		body = "Jhakri Robe +1",
 		hands = HerculeanGloves.DT,
 		ring1 = "Defending Ring",
 		ring2 = "Shadow Ring",
@@ -1166,7 +1167,7 @@ function get_sets()
 		neck = "Loricate Torque",
 		ear1 = "Etiolation Earring",
 		ear2 = "Odnowa Earring +1",
-		body = "Amalric Doublet",
+		body = "Jhakri Robe +1",
 		hands = HerculeanGloves.DT,
 		ring1 = "Defending Ring",
 		ring2 = "Vocane Ring",
@@ -1183,7 +1184,7 @@ function get_sets()
 		neck = "Loricate Torque",
 		ear1 = "Etiolation Earring",
 		ear2 = "Odnowa Earring +1",
-		body = "Amalric Doublet", 
+		body = "Jhakri Robe +1", 
 		hands = HerculeanGloves.DT,
 		ring1 = "Defending Ring",
 		ring2 = "Vocane Ring",
@@ -1200,7 +1201,7 @@ function get_sets()
 		neck = "Loricate Torque",
 		ear1 = "Flashward Earring",
 		ear2 = "Hearty Earring",
-		body = "Amalric Doublet",
+		body = "Jhakri Robe +1",
 		hands = "Leyline Gloves",
 		ring1 = "Shiva Ring +1",
 		ring2 = "Purity Ring",
@@ -1217,7 +1218,7 @@ function get_sets()
 		neck = "Invidia Torque",
 		ear1 = "Flashward Earring",
 		ear2 = "Hearty Earring",
-		body = "Amalric Doublet",
+		body = "Jhakri Robe +1",
 		hands = "Leyline Gloves",
 		ring1 = "Wuji Ring",
 		ring2 = "Purity Ring",
@@ -1268,7 +1269,7 @@ function get_sets()
 		body = "Taeon Tabard",
 		hands = "Leyline Gloves",
 		ring1 = "Prolix Ring",
-		ring2 = "Weatherspoon Ring",
+		ring2 = "Lebeche Ring",
 		back = "Perimede Cape",
 		waist = "Witful Belt",
 		legs = "Psycloth Lappas",

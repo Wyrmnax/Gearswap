@@ -89,7 +89,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {ammo="Incantor Stone",
-        head="Cizin Helm",ear2="Loquacious Earring",ring2="Prolix Ring",legs="Enif Cosciales"}
+        head="Cizin Helm",ear2="Loquacious Earring",ring2="Prolix Ring",ring2 = "Lebeche Ring",legs="Enif Cosciales"}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 
@@ -105,7 +105,7 @@ function init_gear_sets()
 			feet={ name="Argosy Sollerets", augments={'STR+10','DEX+10','Attack+15',}},
 			neck="Subtlety Spec.",
 			waist="Ioskeha Belt",
-			left_ear="Brutal Earring",
+			ear1 = "Moonshade earring",
 			right_ear="Mache Earring",
 			left_ring="Ifrit Ring",
 			right_ring="Petrov Ring",
@@ -120,7 +120,7 @@ function init_gear_sets()
 			feet={ name="Argosy Sollerets", augments={'STR+10','DEX+10','Attack+15',}},
 			neck="Subtlety Spec.",
 			waist="Ioskeha Belt",
-			left_ear="Brutal Earring",
+			ear1 = "Moonshade earring",
 			right_ear="Mache Earring",
 			left_ring="Ifrit Ring",
 			right_ring="Petrov Ring",
@@ -139,7 +139,8 @@ function init_gear_sets()
         back="Toro Cape",waist="Caudata Belt",legs="Reverence Breeches +1",feet="Reverence Leggings +1"}
     
     sets.precast.WS['Atonement'] = {ammo="Iron Gobbet",
-        head="Reverence Coronet +1",neck=gear.ElementalGorget,ear1="Creed Earring",ear2="Steelflash Earring",
+        head="Reverence Coronet +1",neck=gear.ElementalGorget,
+		ear1 = "Moonshade earring",ear2="Steelflash Earring",
         body="Reverence Surcoat +1",hands="Reverence Gauntlets +1",ring1="Rajas Ring",ring2="Vexer Ring",
         back="Fierabras's Mantle",waist=gear.ElementalBelt,legs="Reverence Breeches +1",feet="Caballarius Leggings"}
     
@@ -206,7 +207,7 @@ function init_gear_sets()
     feet="Souveran Schuhs",
     neck="Warder's Charm +1",
     waist="Flume Belt +1",
-    left_ear="Brutal Earring",
+    left_ear="Odnowa earring +1",
     right_ear="Friomisi Earring",
     left_ring="Defending Ring",
     right_ring="Vocane Ring",
@@ -285,7 +286,7 @@ function init_gear_sets()
     feet="Souveran Schuhs",
     neck="Warder's Charm +1",
     waist="Flume Belt +1",
-    left_ear="Brutal Earring",
+    left_ear="Odnowa earring +1",
     right_ear="Friomisi Earring",
     left_ring="Defending Ring",
     right_ring="Vocane Ring",

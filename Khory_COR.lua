@@ -119,9 +119,18 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-        head="Whirlpool Mask",neck=gear.ElementalGorget,ear1="Bladeborn Earring",ear2="Steelflash Earring",
-        body="Manibozho Jerkin",hands="Iuitl Wristbands",ring1="Rajas Ring",ring2="Epona's Ring",
-        back="Camulus's Mantle",waist=gear.ElementalBelt,legs="Manibozho Brais",feet="Iuitl Gaiters +1"}
+        head={ name="Herculean Helm", augments={'Rng.Acc.+27','Damage taken-1%','STR+4','Rng.Atk.+11',}},
+	neck = "Fotia Gorget",
+    left_ear="Moonshade earring",
+    right_ear="Ishivara Earring",
+    body= "Meg. Cuirie +1",
+    hands="Meg. Gloves +1",
+    left_ring="Epona's Ring",
+    right_ring="Ifrit Ring",	
+    waist="Windbuffet Belt +1",
+    back="Camulus's Mantle",
+    legs="Samnuha Tights",
+    feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},}
 
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -133,8 +142,8 @@ function init_gear_sets()
 	
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
     head={ name="Herculean Helm", augments={'Rng.Acc.+27','Damage taken-1%','STR+4','Rng.Atk.+11',}},
-	neck="Subtlety Spec.",	
-    left_ear="Brutal Earring",
+	neck = "Fotia Gorget",
+    left_ear="Moonshade earring",
     right_ear="Ishivara Earring",
     body= "Meg. Cuirie +1",
     hands="Meg. Gloves +1",
@@ -152,9 +161,9 @@ function init_gear_sets()
     hands="Meg. Gloves +1",
     legs={ name="Herculean Trousers", augments={'Rng.Acc.+24','AGI+15',}},
     feet="Meg. Jam. +1",
-    neck="Marked Gorget",
+	neck = "Fotia Gorget",
     waist="Kwahu Kachina Belt",
-    left_ear="Brutal Earring",
+    left_ear="Moonshade earring",
     right_ear="Ishivara Earring",
     left_ring="Epona's Ring",
     right_ring="Garuda Ring",
@@ -166,9 +175,9 @@ function init_gear_sets()
     hands="Meg. Gloves +1",
     legs={ name="Herculean Trousers", augments={'Rng.Acc.+24','AGI+15',}},
     feet="Meg. Jam. +1",
-    neck="Marked Gorget",
+	neck = "Fotia Gorget",
     waist="Kwahu Kachina Belt",
-    left_ear="Brutal Earring",
+    left_ear="Moonshade earring",
     right_ear="Ishivara Earring",
     left_ring="Hadjuk Ring",
     right_ring="Hadjuk Ring",
@@ -181,7 +190,7 @@ function init_gear_sets()
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
     legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Mag. Acc.+13',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
-    neck="Sanctity Necklace",
+	neck = "Fotia Gorget",
     waist="Salire Belt",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
@@ -195,7 +204,7 @@ function init_gear_sets()
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
     legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Mag. Acc.+13',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
-    neck="Sanctity Necklace",
+	neck = "Fotia Gorget",
     waist="Salire Belt",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
@@ -203,7 +212,7 @@ function init_gear_sets()
     right_ring="Garuda Ring",
     back="Camulus's Mantle",}
     
-    sets.precast.WS['Leaden Salute'] = sets.precast.WS['Wildfire']
+    sets.precast.WS['Leaden Salute'] = set_combine(sets.precast.WS['Wildfire'], {left_ear="Moonshade earring"})
 	
 	sets.precast.WS['Detonator'] = sets.precast.WS['Last Stand']
     
@@ -268,7 +277,7 @@ function init_gear_sets()
     body= "Meg. Cuirie +1",
     hands="Meg. Gloves +1",
     legs={ name="Herculean Trousers", augments={'Rng.Acc.+24','AGI+15',}},
-    feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
+    feet="Meg. Jam. +1",
     neck="Marked Gorget",
     waist="Kwahu Kachina Belt",
     left_ear="Brutal Earring",
@@ -282,7 +291,7 @@ function init_gear_sets()
     body= "Meg. Cuirie +1",
     hands="Meg. Gloves +1",
     legs={ name="Herculean Trousers", augments={'Rng.Acc.+24','AGI+15',}},
-    feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
+    feet="Meg. Jam. +1",
     neck="Marked Gorget",
     waist="Kwahu Kachina Belt",
     left_ear="Brutal Earring",

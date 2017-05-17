@@ -77,7 +77,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
     sets.precast.FC = {
             head="Runeist bandeau", ear1="Loquacious Earring",
-            body="Dread Jupon", hands="Leyline Gloves", ring2="Evanescence Ring",
+            body="Dread Jupon", hands="Leyline Gloves", ring2 = "Lebeche Ring",
             legs="Ayanmo cosciales"}
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", legs="Futhark Trousers +1"})
     sets.precast.FC['Utsusemi: Ichi'] = set_combine(sets.precast.FC, {neck='Magoraga beads', back="Mujin Mantle"})
@@ -92,9 +92,9 @@ function init_gear_sets()
 				hands="Meg. Gloves +1",
 				legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
 				feet="Meg. Jam. +1",
-				neck="Subtlety Spec.",
+				neck = "Fotia Gorget",
 				waist="Grunfeld Rope",
-				left_ear="Brutal Earring",
+				left_ear = "Moonshade earring",
 				right_ear="Mache Earring",
 				left_ring="Epona's Ring",
 				right_ring="Ifrit Ring",
@@ -109,9 +109,9 @@ function init_gear_sets()
 				hands="Meg. Gloves +1",
 				legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
 				feet="Meg. Jam. +1",
-				neck="Subtlety Spec.",
+				neck = "Fotia Gorget",
 				waist="Grunfeld Rope",
-				left_ear="Brutal Earring",
+				left_ear = "Moonshade earring",
 				right_ear="Mache Earring",
 				left_ring="Epona's Ring",
 				right_ring="Ramuh Ring",

@@ -77,6 +77,7 @@ function init_gear_sets()
         hands="Magavan Mitts",
         --body="Vanir Cotehardie",
         ring1="Prolix Ring",
+		ring2 = "Lebeche Ring",
         back="Lifestream Cape",
         waist="Witful Belt",
         legs="Geomancy Pants",
@@ -99,10 +100,10 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
         --head="Nahtirah Hat",
-        neck=gear.ElementalGorget,
-        ear1="Brutal Earring",
-        ear2="Steelflash Earring",
-        body="Amalric Doublet",
+        neck=gear.ElementalGorget,		
+		ear1 = "Moonshade earring",
+        ear2="Brutal Earring",
+        body="Jhakri Robe +1",
         hands="Gazu Bracelet",
         ring1="Rajas Ring",
         ring2="Petrov Ring",
@@ -113,9 +114,9 @@ function init_gear_sets()
     sets.precast.WS['Flash Nova'] = {
         --head="Nahtirah Hat",
         neck=gear.ElementalGorget,
-        ear1="Brutal Earring",
-        ear2="Steelflash Earring",
-        body="Amalric Doublet",
+		ear1 = "Moonshade earring",
+        ear2="Brutal Earring",
+        body="Jhakri Robe +1",
         hands="Gazu Bracelet",
         ring1="Rajas Ring",
         ring2="Petrov Ring",
@@ -123,9 +124,9 @@ function init_gear_sets()
         waist=gear.ElementalBelt,
     }
 
-    sets.precast.WS['Starlight'] = {ear2="Moonshade Earring"}
+    sets.precast.WS['Starlight'] = {}
 
-    sets.precast.WS['Moonlight'] = {ear2="Moonshade Earring"}
+    sets.precast.WS['Moonlight'] = {}
 
 
     --------------------------------------
@@ -196,7 +197,7 @@ function init_gear_sets()
         neck="Sanctity Necklace",
         ear1="Moldavite Earring",
         ear2="Friomisi Earring",
-        body="Amalric Doublet",
+        body="Jhakri Robe +1",
         hands="Amalric Gages", 
         ring1="Diamond Ring",
         ring2="Strendu Ring",
@@ -232,7 +233,8 @@ function init_gear_sets()
     sets.midcast.LowTierNuke.Resistant = set_combine(sets.midcast.LowTierNuke, {
         head="Merlinic Hood",
         ear1="Moldavite Earring",
-        ear2="Gwati Earring", 
+        ear2="Gwati Earring", 		
+        body="Jhakri Robe +1",
         hands="Amalric Gages", 
         legs="Amalric Slops",
         ring1="Sangoma Ring",
@@ -309,7 +311,7 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {
         neck="Loricate Torque",
-        body="Amalric Doublet",
+        body="Jhakri Robe +1",
         hands="Geomancy Mitaines",
         ring1="Defending Ring",
         ring2="Paguroidea Ring",
@@ -327,7 +329,7 @@ function init_gear_sets()
         neck="Loricate Torque",
         ear1="Moldavite Earring",
         ear2="Friomisi Earring",
-        body="Amalric Doublet",
+        body="Jhakri Robe +1",
         hands="Geomancy Mitaines",
         ring1="Defending Ring",
         ring2="Vocane Ring",
@@ -382,7 +384,6 @@ function init_gear_sets()
     --})
 
     sets.idle.Town = set_combine(sets.idle, {
-		body="Amalric Doublet",
         hands="Amalric Gages", 
 		feet="Geomancy Sandals",
     })
