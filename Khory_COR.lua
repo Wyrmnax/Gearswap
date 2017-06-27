@@ -141,7 +141,7 @@ function init_gear_sets()
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {legs="Nahtirah Trousers"})
 	
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
-    head={ name="Herculean Helm", augments={'Rng.Acc.+27','Damage taken-1%','STR+4','Rng.Atk.+11',}},
+    head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
 	neck = "Fotia Gorget",
     left_ear="Moonshade earring",
     right_ear="Ishivara Earring",
@@ -188,7 +188,7 @@ function init_gear_sets()
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
     body="Meg. Cuirie +1",
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
-    legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Mag. Acc.+13',}},
+    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+23','Crit. hit damage +2%','STR+8',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
 	neck = "Fotia Gorget",
     waist="Salire Belt",
@@ -201,8 +201,8 @@ function init_gear_sets()
     sets.precast.WS['Wildfire'].Brew = {ammo=gear.MAbullet, 
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
     body="Meg. Cuirie +1",
-    hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
-    legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Mag. Acc.+13',}},
+    hands="Meg. Gloves +1",
+    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+23','Crit. hit damage +2%','STR+8',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
 	neck = "Fotia Gorget",
     waist="Salire Belt",
@@ -219,7 +219,8 @@ function init_gear_sets()
     
     -- Midcast Sets
     sets.midcast.FastRecast = {
-        head="Whirlpool Mask",
+        head="Whirlpool Mask",		
+		neck = "Voltsurge Torque",
         body="Iuitl Vest",hands="Iuitl Wristbands",
         legs="Manibozho Brais",feet="Iuitl Gaiters +1"}
         
@@ -230,7 +231,7 @@ function init_gear_sets()
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
     body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
-    legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Mag. Acc.+13',}},
+    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+23','Crit. hit damage +2%','STR+8',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
     neck="Sanctity Necklace",
     waist="Salire Belt",
@@ -244,7 +245,7 @@ function init_gear_sets()
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
     body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
-    legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Mag. Acc.+13',}},
+    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+23','Crit. hit damage +2%','STR+8',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
     neck="Sanctity Necklace",
     waist="Salire Belt",
@@ -258,7 +259,7 @@ function init_gear_sets()
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
     body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
-    legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Mag. Acc.+13',}},
+    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+23','Crit. hit damage +2%','STR+8',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
     neck="Sanctity Necklace",
     waist="Salire Belt",
@@ -547,6 +548,7 @@ function define_roll_values()
         ["Miser's Roll"]     = {lucky=5, unlucky=7, bonus="Save TP"},
         ["Companion's Roll"] = {lucky=2, unlucky=10, bonus="Pet Regain and Regen"},
         ["Avenger's Roll"]   = {lucky=4, unlucky=8, bonus="Counter Rate"},
+        ["Allies's Roll"]    = {lucky=3, unlucky=10, bonus="Skillchain Damage"},
     }
 end
 

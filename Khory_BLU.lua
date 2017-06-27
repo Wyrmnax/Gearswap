@@ -23,11 +23,10 @@ name = string.lower(n)
 if name == "terror" or name == "petrification" or name == "sleep" or name == "stun" then
     if gain == true then
         ChangeGear(sets.Utility.DerpDT)
-    elseif player.status == 'Engaged' then
-        ChangeGear(sets.TP[sets.TP.index[TP_ind]])
     else
-        ChangeGear(sets.Idle[sets.Idle.index[Idle_ind]])
+        ChangeGear(sets.TP[sets.TP.index[TP_ind]])
     end
+end
 end
 
 function user_setup()
@@ -482,7 +481,7 @@ function get_sets()
 		neck = "Loricate Torque",
 		ear1 = "Etiolation Earring",
 		ear2 = "Ethereal Earring",
-        body = "Jhakri Robe +1",
+        body = "Jhakri Robe +2",
 		hands = "Herculean Gloves",
 		ring1 = "Defending Ring",
 		ring2 = "Vocane Ring",
@@ -899,10 +898,10 @@ function get_sets()
 		neck = "Sanctity Necklace",
 		ear1 = "Moldavite Earring",
 		ear2 = "Friomisi earring",
-        body = "Jhakri Robe +1",
+        body = "Jhakri Robe +2",
 		hands = "Amalric Gages",
-		ring1 = "Strendu Ring",
-		ring2 = "Diamond Ring",
+		left_ring="Jhakri Ring",
+		ring2 = "Shiva Ring",
 		back = "Cornflower cape",
 		waist = "Salire Belt",
 		legs = "Amalric Slops",
@@ -915,10 +914,10 @@ function get_sets()
 		neck = "Sanctity Necklace",
 		ear1 = "Hermetic Earring",
 		ear2 = "Friomisi earring",
-		body = "Jhakri Robe +1",
+		body = "Jhakri Robe +2",
 		hands = "Amalric Gages",
 		ring1 = "Strendu Ring",
-		ring2 = "Diamond Ring",
+		ring2 = "Shiva Ring",
 		back = "Cornflower cape",
 		waist = "Salire Belt",
 		legs = "Amalric Slops",
@@ -931,7 +930,6 @@ function get_sets()
 
 	sets.BlueMagic.DarkNuke = set_combine(sets.BlueMagic.INT[sets.BlueMagic.INT.index[MAB_ind]], {
 		head = "Pixie Hairpin +1",
-		ring2 = "Archon Ring",
 	})
 
 	--CP cap 50%, CP Received cap 30%--
@@ -944,7 +942,7 @@ function get_sets()
 		body = "Waether. Robe +1",
 		hands = "Amalric Gages",
 		ring1 = "Strendu Ring",
-		ring2 = "Diamond Ring",
+		ring2 = "Shiva Ring",
 		back = "Cornflower cape",
 		waist = "Salire Belt",
 		legs = "Amalric Slops",
@@ -961,7 +959,7 @@ function get_sets()
 		body = "Waether. Robe +1",
 		hands = "Amalric Gages",
 		ring1 = "Strendu Ring",
-		ring2 = "Diamond Ring",
+		ring2 = "Shiva Ring",
 		back = "Cornflower cape",
 		waist = "Salire Belt",
 		legs = "Amalric Slops",
@@ -1036,7 +1034,7 @@ function get_sets()
 		body = "Waether. Robe +1",
 		hands = "Amalric Gages",
 		ring1 = "Shiva Ring +1",
-		ring2 = "Diamond Ring",
+		ring2 = "Shiva Ring",
 		back = "Cornflower cape",
 		waist = "Salire Belt",
 		legs = "Psycloth Lappas",
@@ -1150,7 +1148,7 @@ function get_sets()
 		neck = "Warder's Charm +1",
 		ear1 = "Flashward Earring",
 		ear2 = "Etiolation Earring",
-		body = "Jhakri Robe +1",
+		body = "Jhakri Robe +2",
 		hands = HerculeanGloves.DT,
 		ring1 = "Defending Ring",
 		ring2 = "Shadow Ring",
@@ -1167,7 +1165,7 @@ function get_sets()
 		neck = "Loricate Torque",
 		ear1 = "Etiolation Earring",
 		ear2 = "Odnowa Earring +1",
-		body = "Jhakri Robe +1",
+		body = "Jhakri Robe +2",
 		hands = HerculeanGloves.DT,
 		ring1 = "Defending Ring",
 		ring2 = "Vocane Ring",
@@ -1184,7 +1182,7 @@ function get_sets()
 		neck = "Loricate Torque",
 		ear1 = "Etiolation Earring",
 		ear2 = "Odnowa Earring +1",
-		body = "Jhakri Robe +1", 
+		body = "Jhakri Robe +2", 
 		hands = HerculeanGloves.DT,
 		ring1 = "Defending Ring",
 		ring2 = "Vocane Ring",
@@ -1201,7 +1199,7 @@ function get_sets()
 		neck = "Loricate Torque",
 		ear1 = "Flashward Earring",
 		ear2 = "Hearty Earring",
-		body = "Jhakri Robe +1",
+		body = "Jhakri Robe +2",
 		hands = "Leyline Gloves",
 		ring1 = "Shiva Ring +1",
 		ring2 = "Purity Ring",
@@ -1218,7 +1216,7 @@ function get_sets()
 		neck = "Invidia Torque",
 		ear1 = "Flashward Earring",
 		ear2 = "Hearty Earring",
-		body = "Jhakri Robe +1",
+		body = "Jhakri Robe +2",
 		hands = "Leyline Gloves",
 		ring1 = "Wuji Ring",
 		ring2 = "Purity Ring",
@@ -1266,9 +1264,9 @@ function get_sets()
 		neck = "Voltsurge Torque",
 		ear1 = "Loquac. Earring",
 		ear2 = "Etiolation Earring",
-		body = "Taeon Tabard",
+		body = "Khakri Robe +1",
 		hands = "Leyline Gloves",
-		ring1 = "Prolix Ring",
+		left_ring="Jhakri Ring",
 		ring2 = "Lebeche Ring",
 		back = "Perimede Cape",
 		waist = "Witful Belt",

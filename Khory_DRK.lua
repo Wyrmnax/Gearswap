@@ -83,6 +83,7 @@
            
             -- Fast cast sets for spells
 			sets.precast.FC = {
+			neck = "Voltsurge Torque",
 			ring2 = "Lebeche Ring",
 			}
                      
@@ -166,8 +167,8 @@
 			{
 				head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
 				body="Ignominy Cuirass +2",
-				hands={ name="Odyssean Gauntlets", augments={'Weapon skill damage +3%','Accuracy+10','Attack+15',}},
-				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+				hands={ name="Odyssean Gauntlets", augments={'Accuracy+28','Weapon skill damage +4%','AGI+1',}},
+				legs= "Sulev. Cuisses +2",
 				feet="Sulev. Leggings +2",
 				neck = "Fotia Gorget",
 				waist="Ioskeha Belt",
@@ -185,8 +186,8 @@
 			    ammo="Seething Bomblet",
 				head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
 				body="Ignominy Cuirass +2",
-				hands={ name="Odyssean Gauntlets", augments={'Weapon skill damage +3%','Accuracy+10','Attack+15',}},
-				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+				hands={ name="Odyssean Gauntlets", augments={'Accuracy+28','Weapon skill damage +4%','AGI+1',}},
+				legs= "Sulev. Cuisses +2",
 				feet="Sulev. Leggings +2",
 				neck = "Fotia Gorget",
 				waist="Ioskeha Belt",
@@ -211,7 +212,7 @@
             sets.idle.Town = {
 			ammo="Staunch Tathlum",
 			head="Carbie Cap",
-			body={ name="Argosy Hauberk", augments={'STR+10','DEX+10','Attack+15',}},
+			body= "Jumalik Mail",
 			hands="Sulev. Gauntlets +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 			feet="Sulev. Leggings +2",
@@ -225,9 +226,9 @@
 			}
            
             sets.idle.Field = {
-            ammo="Staunch Tathlum",
-			head="Loess Barbuta",
-			body="Sulevia's Plate. +1",
+            ammo="Staunch Tathlum",			
+			head= "Jumalik Helm",
+			body= "Jumalik mail",
 			hands="Sulev. Gauntlets +2",
 			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 			feet="Sulev. Leggings +2",
@@ -240,10 +241,7 @@
 			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}
      
-            sets.idle.Weak = {
-                    head="Twilight Helm",neck="Bale Choker",ear1="Bladeborn Earring",ear2="Steelflash Earring",
-                    body="Twilight Mail",hands="Buremte Gloves",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-                    back="Ankou's mantle",waist="Windbuffet Belt",legs="Cizin Breeches",feet="Whirlpool Greaves"}
+            sets.idle.Weak = {}
            
             -- Defense sets
             sets.defense.PDT = {
@@ -263,9 +261,9 @@
             sets.engaged = {
 			ammo="Seething Bomblet",
 			head="Flam. Zucchetto +1",			
-			body={ name="Argosy Hauberk", augments={'STR+10','DEX+10','Attack+15',}},
+			body="Found. Breastplate",
 			hands="Sulev. Gauntlets +2",
-			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
+			legs= "Sulev. Cuisses +2",
 			feet={ name="Valorous Greaves", augments={'Accuracy+24','"Store TP"+1','AGI+6','Attack+11',}},
 			neck="Subtlety Spec.",
 			waist="Ioskeha Belt",

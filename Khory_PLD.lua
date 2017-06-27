@@ -89,6 +89,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {ammo="Incantor Stone",
+		neck = "Voltsurge Torque",
         head="Cizin Helm",ear2="Loquacious Earring",ring2="Prolix Ring",ring2 = "Lebeche Ring",legs="Enif Cosciales"}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
@@ -200,8 +201,8 @@ function init_gear_sets()
     main={ name="Nixxer", augments={'DMG:+15','Accuracy+15','Attack+15',}},
     sub={ name="Nibiru Shield", augments={'HP+80','Enmity+7','Phys. dmg. taken -5',}},
     ammo="Staunch Tathlum",
-    head={ name="Souveran Schaller", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
-    body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+    head= "Jumalik Helm",
+    body= "Jumalik mail",
     hands={ name="Souv. Handschuhs", augments={'HP+50','Shield skill +10','Phys. dmg. taken -3',}},
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     feet="Souveran Schuhs",
@@ -215,8 +216,8 @@ function init_gear_sets()
 }
 
     sets.idle.Town = {main="Anahera Sword",ammo="Incantor Stone",
-        head="Reverence Coronet +1",neck="Creed Collar",ear1="Creed Earring",ear2="Bloodgem Earring",
-        body="Reverence Surcoat +1",hands="Reverence Gauntlets +1",ring1="Sheltered Ring",ring2="Meridian Ring",
+        head={ name="Souveran Schaller", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
+		body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
         back="Fierabras's Mantle",waist="Flume Belt +1",legs="Crimson Cuisses",feet="Reverence Leggings +1"}
     
     sets.idle.Weak = {ammo="Iron Gobbet",

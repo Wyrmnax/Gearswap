@@ -122,16 +122,16 @@ function init_gear_sets()
     sets.precast.FC = {
 	ammo="Staunch Tathlum",
     head={ name="Amalric Coif", augments={'INT+10','Mag. Acc.+20','Enmity-5',}},
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Shango Robe",
+    hands="Amalric Gages",
     legs="Mallquis Trews +1",
     feet={ name="Amalric Nails", augments={'Mag. Acc.+15','"Mag.Atk.Bns."+15','"Conserve MP"+6',}},
-    neck="Sanctity Necklace",
+	neck = "Voltsurge Torque",
     waist="Salire Belt",
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
-    left_ring="Vertigo Ring",
-    ring2 = "Lebeche Ring",
+    left_ring="Jhakri Ring",
+    right_ring = "Lebeche Ring",
     --back="Thauma. Cape",
 	}
 		
@@ -139,16 +139,16 @@ function init_gear_sets()
 	sets.precast.FC.HighMP = {
 	ammo="Staunch Tathlum",
     head={ name="Amalric Coif", augments={'INT+10','Mag. Acc.+20','Enmity-5',}},
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Shango Robe",
+    hands="Ea Cuffs",
     legs="Mallquis Trews +1",
     feet={ name="Amalric Nails", augments={'Mag. Acc.+15','"Mag.Atk.Bns."+15','"Conserve MP"+6',}},
-    neck="Sanctity Necklace",
+	neck = "Voltsurge Torque",
     waist="Salire Belt",
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
-    left_ring="Vertigo Ring",
-    ring2 = "Lebeche Ring",
+    left_ring="Jhakri Ring",
+    right_ring = "Lebeche Ring",
     --back="Thauma. Cape",
 	}
 		
@@ -165,7 +165,7 @@ function init_gear_sets()
 		sub="Niobid Strap",
 		ammo="Pemphredo Tathlum",
 		head="Pixie Hairpin +1",
-		body="Jhakri Robe +1",
+		body="Jhakri Robe +2",
 		hands={ name="Amalric Gages", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Magic burst mdg.+10%','Mag. Acc.+10','"Mag.Atk.Bns."+14',}},
 		feet="Merlinic Crackows",
@@ -229,10 +229,10 @@ function init_gear_sets()
     sets.midcast.Stoneskin = {}
  
     sets.midcast['Enfeebling Magic'] = {
-		ammo="Snow Sachet",
+		ammo="Witchstone",
     head={ name="Amalric Coif", augments={'INT+10','Mag. Acc.+20','Enmity-5',}},
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs="Mallquis Trews +1",
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
@@ -245,10 +245,10 @@ function init_gear_sets()
 	}   
 
     sets.midcast['Enfeebling Magic'].FreeNuke_Effect = set_combine(sets.midcast['Enfeebling Magic'],{
-	ammo="Snow Sachet",
+	ammo="Witchstone",
     head={ name="Amalric Coif", augments={'INT+10','Mag. Acc.+20','Enmity-5',}},
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs="Mallquis Trews +1",
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
@@ -261,10 +261,10 @@ function init_gear_sets()
 	})
 
 	sets.midcast['Enfeebling Magic'].Occult_Acumen = set_combine(sets.midcast['Enfeebling Magic'],{
-		ammo="Snow Sachet",
+		ammo="Witchstone",
     head={ name="Amalric Coif", augments={'INT+10','Mag. Acc.+20','Enmity-5',}},
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs="Mallquis Trews +1",
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
@@ -279,17 +279,17 @@ function init_gear_sets()
 	sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
  
     sets.midcast['Dark Magic'] = {
-	ammo="Snow Sachet",
+	ammo="Witchstone",
     head="Pixie Hairpin +1",
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
     neck="Sanctity Necklace",
     waist="Salire Belt",
     left_ear="Friomisi Earring",
     right_ear="Hermetic Earring",
-    left_ring="Vertigo Ring",
+    left_ring="Jhakri Ring",
     right_ring="Evanescence Ring",
     --back="Thauma. Cape",
 	}
@@ -299,17 +299,17 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'] = {
 	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
     sub="Niobid Strap",
-    ammo="Staunch Tathlum",
+    ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
     neck="Sanctity Necklace",
     waist="Salire Belt",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    left_ring="Shiva Ring",
+    left_ring="Jhakri Ring",
     right_ring="Mujin Band",
     --back="Thauma. Cape",
 	}
@@ -317,18 +317,18 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].FreeNuke_Effect = set_combine(sets.midcast['Elemental Magic'], {
 		    main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
     sub="Niobid Strap",
-    ammo="Staunch Tathlum",
+    ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
     neck="Sanctity Necklace",
     waist="Salire Belt",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    left_ring="Shiva Ring",
-    right_ring="Mujin Band",
+    left_ring="Jhakri Ring",
+    right_ring="Shiva Ring",
     --back="Thauma. Cape",
 	})
 		
@@ -340,18 +340,18 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].HighTierNuke.FreeNuke_Effect = set_combine(sets.midcast['Elemental Magic'].HighTierNuke, {
 	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
     sub="Niobid Strap",
-    ammo="Staunch Tathlum",
+    ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs={ name="Amalric Slops", augments={'MP+60','"Mag.Atk.Bns."+20','Enmity-5',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
     neck="Sanctity Necklace",
     waist="Salire Belt",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    left_ring="Shiva Ring",
-    right_ring="Mujin Band",
+    left_ring="Jhakri Ring",
+    right_ring="Shiva Ring",
     --back="Thauma. Cape",
 	})
 		
@@ -387,36 +387,36 @@ function init_gear_sets()
 	sets.midcast.HighMP = {
 		main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
     sub="Niobid Strap",
-    ammo="Snow Sachet",
+    ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
     neck="Sanctity Necklace",
     waist="Fucho-no-Obi",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    left_ring="Vertigo Ring",
-    right_ring="Evanescence Ring",
+    left_ring="Evanescence Ring",
+	right_ring="Mujin Band",
     --back="Thauma. Cape",
 	}
  
 	sets.midcast.LowMP = {
-		main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
+	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
     sub="Niobid Strap",
-    ammo="Snow Sachet",
+    ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
     neck="Sanctity Necklace",
     waist="Fucho-no-Obi",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    left_ring="Vertigo Ring",
-    right_ring="Evanescence Ring",
+    left_ring="Evanescence Ring",
+	right_ring="Mujin Band",
     --back="Thauma. Cape",
 	}
 		
@@ -438,9 +438,9 @@ function init_gear_sets()
 		sub="Niobid Strap",
 		ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-    legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
+    legs="Assid. Pants +1",
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
     waist="Fucho-no-Obi",
@@ -454,12 +454,12 @@ function init_gear_sets()
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
     sets.idle.PDT = { 
 	main="Earth Staff",
-    sub="Giuoco Grip",
+    sub="Niobid Strap",
     ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-    legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
+    legs="Assid. Pants +1",
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
     waist="Fucho-no-Obi",
@@ -490,11 +490,11 @@ function init_gear_sets()
 	
     sets.defense.PDT = {
 	main="Earth Staff",
-    sub="Giuoco Grip",
+    sub="Niobid Strap",
     ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
@@ -511,8 +511,8 @@ function init_gear_sets()
     sub="Niobid Strap",
     ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
@@ -533,9 +533,9 @@ function init_gear_sets()
     sub="Niobid Strap",
     ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
-    legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
+    legs="Assid. Pants +1",
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
     waist="Fucho-no-Obi",
@@ -576,8 +576,8 @@ function init_gear_sets()
     sub="Niobid Strap",
     ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
-    body="Jhakri Robe +1",
-    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    body="Jhakri Robe +2",
+    hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
@@ -816,11 +816,11 @@ function job_buff_change(buff, gain)
         handle_equipping_gear(player.status)
     end
     if buff == "Commitment" and not gain then
-        equip({ring2="Capacity Ring"})
+        equip({right_ring="Capacity Ring"})
         if player.equipment.right_ring == "Capacity Ring" then
-            disable("ring2")
+            disable("right_ring")
         else
-            enable("ring2")
+            enable("right_ring")
         end
     end
 end

@@ -73,11 +73,12 @@ function init_gear_sets()
     sets.precast.FC = {
         main="Grioavolr",
         head="Merlinic Hood",
+		neck = "Voltsurge Torque",
         ear2="Loquacious Earring",
         hands="Magavan Mitts",
-        --body="Vanir Cotehardie",
-        ring1="Prolix Ring",
-		ring2 = "Lebeche Ring",
+		body="Shango Robe",
+		left_ring="Jhakri Ring",
+		right_ring = "Lebeche Ring",
         back="Lifestream Cape",
         waist="Witful Belt",
         legs="Geomancy Pants",
@@ -91,8 +92,6 @@ function init_gear_sets()
     })
 
     sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {
-        neck="Stoicheion Medal",
-        hands="Bagua Mitaines",
     })
 
     
@@ -103,10 +102,10 @@ function init_gear_sets()
         neck=gear.ElementalGorget,		
 		ear1 = "Moonshade earring",
         ear2="Brutal Earring",
-        body="Jhakri Robe +1",
+        body="Jhakri Robe +2",
         hands="Gazu Bracelet",
         ring1="Rajas Ring",
-        ring2="Petrov Ring",
+        right_ring="Petrov Ring",
         back="Buquwik Cape",
         waist=gear.ElementalBelt,
     }
@@ -116,10 +115,10 @@ function init_gear_sets()
         neck=gear.ElementalGorget,
 		ear1 = "Moonshade earring",
         ear2="Brutal Earring",
-        body="Jhakri Robe +1",
+        body="Jhakri Robe +2",
         hands="Gazu Bracelet",
         ring1="Rajas Ring",
-        ring2="Petrov Ring",
+        right_ring="Petrov Ring",
         back="Buquwik Cape",
         waist=gear.ElementalBelt,
     }
@@ -139,7 +138,7 @@ function init_gear_sets()
         neck="Incanter's Torque",
         body="Azimuth Coat", -- 3%
         hands="Amalric Gages", 
-        ring1="Prolix Ring",
+		left_ring="Jhakri Ring",
         back="Lifestream Cape",
         waist="Witful Belt", -- 4%
         legs="Geomancy Pants", -- 5%
@@ -163,6 +162,7 @@ function init_gear_sets()
         ear1="Gwati Earring",
 		body="Bagua Tunic +1", -- 12
         hands="Geomancy Mitaines", -- 15
+		left_ring="Jhakri Ring",
         back="Lifestream Cape", -- 9
         legs="Geomancy Pants",
         feet="Amalric Nails"
@@ -192,15 +192,15 @@ function init_gear_sets()
         main="Grioavolr",
         sub="Niobid Strap",
         --sub="Wizzan Grip",
-        --ammo="Witchstone",
+        ammo="Witchstone",
         head="Amalric Coif",
         neck="Sanctity Necklace",
         ear1="Moldavite Earring",
         ear2="Friomisi Earring",
-        body="Jhakri Robe +1",
+        body="Jhakri Robe +2",
         hands="Amalric Gages", 
-        ring1="Shiva Ring",
-        ring2="Mujin Band",
+		left_ring="Jhakri Ring",
+        right_ring="Mujin Band",
         back="Twilight Cape",
         waist="Salire Belt", 
         legs="Amalric Slops",
@@ -227,6 +227,7 @@ function init_gear_sets()
         sub="Giuoco Grip",
         ear2="Friomisi Earring",
         body="Witching Robe",
+		left_ring="Jhakri Ring",
         feet="Amalric Nails"
     })
     
@@ -234,11 +235,12 @@ function init_gear_sets()
         head="Merlinic Hood",
         ear1="Moldavite Earring",
         ear2="Gwati Earring", 		
-        body="Jhakri Robe +1",
+        body="Jhakri Robe +2",
         hands="Amalric Gages", 
         legs="Amalric Slops",
         ring1="Sangoma Ring",
-        ring2="Mujin Band",
+		left_ring="Jhakri Ring",
+        right_ring="Mujin Band",
         back="Refraction Cape",
         feet="Amalric Nails"
     })
@@ -253,8 +255,8 @@ function init_gear_sets()
         ear2="Psystorm Earring",
         body="Azimuth Coat",
         hands="Amalric Gages",
-        ring1="Perception Ring", 
-        ring2="Sangoma Ring",
+		left_ring="Jhakri Ring",
+        right_ring="Sangoma Ring",
         back="Refraction Cape",
         legs="Psycloth Lappas",
         waist="Yamabuki-no-obi", 
@@ -265,7 +267,7 @@ function init_gear_sets()
         neck="Incanter's Torque", 
         ear1="Gwati Earring",
         ring1="Evanescence Ring",
-        ring2="Excelsis Ring",
+        right_ring="Excelsis Ring",
         body="Geomancy Tunic",
         legs="Azimuth Tights +1",
     })
@@ -276,7 +278,7 @@ function init_gear_sets()
         ear1="Gwati Earring",
         ear2="Hirudinea Earring",
         ring1="Evanescence Ring",
-        ring2="Excelsis Ring",
+        right_ring="Excelsis Ring",
         body="Geomancy Tunic",
         legs="Azimuth Tights +1",
     })
@@ -288,14 +290,14 @@ function init_gear_sets()
         waist="Casso Sash",
         back="Lifestream Cape",
         hands="Azimuth Gloves",
-        ring2="Globidonta Ring",
+        right_ring="Globidonta Ring",
         feet="Bagua Sandals"
     })
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast.Macc, {
         waist="Casso Sash",
         back="Lifestream Cape",
         ring1="Shiva Ring",
-        ring2="Globidonta Ring",
+        right_ring="Globidonta Ring",
         feet="Bagua Sandals"
     })
 
@@ -311,10 +313,10 @@ function init_gear_sets()
     -- Resting sets
     sets.resting = {
         neck="Loricate Torque",
-        body="Jhakri Robe +1",
+        body="Jhakri Robe +2",
         hands="Geomancy Mitaines",
         ring1="Defending Ring",
-        ring2="Paguroidea Ring",
+        right_ring="Paguroidea Ring",
         --waist="Austerity Belt",
         --legs="Nares Trews",
     }
@@ -329,13 +331,13 @@ function init_gear_sets()
         neck="Loricate Torque",
         ear1="Moldavite Earring",
         ear2="Friomisi Earring",
-        body="Jhakri Robe +1",
+        body="Jhakri Robe +2",
         hands="Geomancy Mitaines",
         ring1="Defending Ring",
-        ring2="Vocane Ring",
+        right_ring="Vocane Ring",
     	back="Cheviot Cape",
         waist="Fucho-no-obi",
-        legs="Merlinic Shalwar",
+        legs="Assid. Pants +1",
         feet="Geomancy Sandals"
     }
     sets.idle.PDT = set_combine(sets.idle, {
@@ -356,7 +358,7 @@ function init_gear_sets()
     })
 
     sets.idle.PDT.Pet = set_combine(sets.idle.Pet, {
-        ring2="Patricius Ring",
+        right_ring="Patricius Ring",
     })
 
     sets.idle.Melee = set_combine(sets.idle, {
@@ -383,10 +385,11 @@ function init_gear_sets()
     --    legs="Bagua Pants", 
     --})
 
-    sets.idle.Town = set_combine(sets.idle, {
-        hands="Amalric Gages", 
-		feet="Geomancy Sandals",
-    })
+    sets.idle.Town = {
+		body = "Novennial Dress",
+		legs = "Novennial Boots",
+		head = "Pixie Hairpin +1"		
+    }
 
     sets.idle.Weak = sets.idle
 
@@ -400,7 +403,7 @@ function init_gear_sets()
         body="Azimuth Coat",
         hands="Geomancy Mitaines",
         ring1="Defending Ring",
-        ring2="Vocane Ring",
+        right_ring="Vocane Ring",
         back="Cheviot Cape",
 		waist = "Flume belt +1",
 		legs="Nares Trews",
@@ -416,7 +419,7 @@ function init_gear_sets()
         body="Azimuth Coat",
         hands="Geomancy Mitaines",
         ring1="Defending Ring",
-        ring2="Vocane Ring",
+        right_ring="Vocane Ring",
         back="Dark Cape",
         waist="Yamabuki-no-Obi",
 		legs="Nares Trews",
@@ -447,7 +450,7 @@ function init_gear_sets()
         --body="Vanir Cotehardie",
         hands="Geomancy Mitaines",
         ring1="Petrov Ring",
-        ring2="K'ayres Ring",
+        right_ring="K'ayres Ring",
         back="Kayapa Cape",
         waist="Windbuffet Belt +1",
         legs="Geomancy Pants",

@@ -76,7 +76,8 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
     sets.precast.FC = {
-            head="Runeist bandeau", ear1="Loquacious Earring",
+            head="Runeist bandeau", 
+			neck = "Voltsurge Torque",ear1="Loquacious Earring",
             body="Dread Jupon", hands="Leyline Gloves", ring2 = "Lebeche Ring",
             legs="Ayanmo cosciales"}
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", legs="Futhark Trousers +1"})
