@@ -149,7 +149,7 @@ function init_gear_sets()
     hands="Meg. Gloves +1",
     left_ring="Epona's Ring",
     right_ring="Ifrit Ring",	
-    waist="Windbuffet Belt +1",
+	waist = "Fotia Belt",
     back="Camulus's Mantle",
     legs="Samnuha Tights",
     feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
@@ -162,7 +162,7 @@ function init_gear_sets()
     legs={ name="Herculean Trousers", augments={'Rng.Acc.+24','AGI+15',}},
     feet="Meg. Jam. +1",
 	neck = "Fotia Gorget",
-    waist="Kwahu Kachina Belt",
+	waist = "Fotia Belt",
     left_ear="Moonshade earring",
     right_ear="Ishivara Earring",
     left_ring="Epona's Ring",
@@ -176,7 +176,7 @@ function init_gear_sets()
     legs={ name="Herculean Trousers", augments={'Rng.Acc.+24','AGI+15',}},
     feet="Meg. Jam. +1",
 	neck = "Fotia Gorget",
-    waist="Kwahu Kachina Belt",
+	waist = "Fotia Belt",
     left_ear="Moonshade earring",
     right_ear="Ishivara Earring",
     left_ring="Hadjuk Ring",
@@ -191,7 +191,7 @@ function init_gear_sets()
     legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+23','Crit. hit damage +2%','STR+8',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
 	neck = "Fotia Gorget",
-    waist="Salire Belt",
+	waist = "Fotia Belt",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Garuda Ring",
@@ -205,7 +205,7 @@ function init_gear_sets()
     legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+23','Crit. hit damage +2%','STR+8',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
 	neck = "Fotia Gorget",
-    waist="Salire Belt",
+	waist = "Fotia Belt",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Garuda Ring",
@@ -310,7 +310,7 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {
-    head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
+    head= "Lak. Hat +1"
     body= "Meg. Cuirie +1",
     hands="Meg. Gloves +1",
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
@@ -380,7 +380,7 @@ function init_gear_sets()
     
     -- Normal melee group
     sets.engaged.Melee = {ammo=gear.RAbullet,
-    head= "Adhemar Bonnet",
+	head = "Dampening Tam",
 	body = "Adhemar jacket",
     hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},

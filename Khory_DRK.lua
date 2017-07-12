@@ -133,14 +133,14 @@
             -- Weaponskill sets
             -- Default set for any weaponskill that isn't any more specifically defined
             sets.precast.WS = {
-			ammo="Seething Bomblet",
+			ammo="Seeth. Bomblet +1",
 			head={ name="Argosy Celata", augments={'DEX+10','Accuracy+15','"Dbl.Atk."+2',}},
 			body={ name="Argosy Hauberk", augments={'STR+10','DEX+10','Attack+15',}},
 			hands={ name="Argosy Mufflers", augments={'STR+10','DEX+10','Attack+15',}},
 			legs={ name="Argosy Breeches", augments={'STR+10','DEX+10','Attack+15',}},
 			feet="Sulev. Leggings +2",
 			neck = "Fotia Gorget",
-			waist="Grunfeld Rope",
+			waist = "Fotia Belt",
 			ear1 = "Moonshade earring",
 			right_ear="Mache Earring",
 			left_ring="Ifrit Ring",
@@ -171,7 +171,7 @@
 				legs= "Sulev. Cuisses +2",
 				feet="Sulev. Leggings +2",
 				neck = "Fotia Gorget",
-				waist="Ioskeha Belt",
+				waist = "Fotia Belt",
 				ear1 = "Moonshade earring",
 				ear2 ="Mache Earring",
 				left_ring="Ifrit Ring",
@@ -183,14 +183,14 @@
 			
 			sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, 
 			{
-			    ammo="Seething Bomblet",
+			    ammo="Seeth. Bomblet +1",
 				head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
 				body="Ignominy Cuirass +2",
 				hands={ name="Odyssean Gauntlets", augments={'Accuracy+28','Weapon skill damage +4%','AGI+1',}},
 				legs= "Sulev. Cuisses +2",
 				feet="Sulev. Leggings +2",
 				neck = "Fotia Gorget",
-				waist="Ioskeha Belt",
+				waist = "Fotia Belt",
 				ear1 = "Moonshade earring",
 				ear2 = "Mache Earring",
 				left_ring="Apate Ring",
@@ -205,7 +205,7 @@
             -- Sets to return to when not performing an action.
            
             -- Resting sets
-            sets.resting = {ammo="Seething Bomblet",}
+            sets.resting = {ammo="Seeth. Bomblet +1",}
            
      
             -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
@@ -259,14 +259,14 @@
      
             -- Engaged sets
             sets.engaged = {
-			ammo="Seething Bomblet",
+			ammo="Seeth. Bomblet +1",
 			head="Flam. Zucchetto +1",			
 			body="Found. Breastplate",
 			hands="Sulev. Gauntlets +2",
 			legs= "Sulev. Cuisses +2",
 			feet={ name="Valorous Greaves", augments={'Accuracy+24','"Store TP"+1','AGI+6','Attack+11',}},
 			neck="Subtlety Spec.",
-			waist="Ioskeha Belt",
+			waist="Windbuffet Belt +1",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
 			left_ring="Apate Ring",

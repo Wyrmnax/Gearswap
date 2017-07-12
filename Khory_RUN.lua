@@ -87,14 +87,14 @@ function init_gear_sets()
 
 	-- Weaponskill sets
     sets.precast.WS['Resolution'] = {       
-				ammo="Seething Bomblet",
+				ammo="Seeth. Bomblet +1",
 				head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
 				body= "Meg. Cuirie +1",
 				hands="Meg. Gloves +1",
 				legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
 				feet="Meg. Jam. +1",
 				neck = "Fotia Gorget",
-				waist="Grunfeld Rope",
+				waist = "Fotia Belt",
 				left_ear = "Moonshade earring",
 				right_ear="Mache Earring",
 				left_ring="Epona's Ring",
@@ -111,7 +111,7 @@ function init_gear_sets()
 				legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
 				feet="Meg. Jam. +1",
 				neck = "Fotia Gorget",
-				waist="Grunfeld Rope",
+				waist = "Fotia Belt",
 				left_ear = "Moonshade earring",
 				right_ear="Mache Earring",
 				left_ring="Epona's Ring",
@@ -119,7 +119,7 @@ function init_gear_sets()
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
 				}
     sets.precast.WS['Dimidiation'].Acc = set_combine(sets.precast.WS['Dimidiation'].Normal, 
-        {ammo="Honed Tathlum", head="Whirlpool Mask", hands="Buremte Gloves", back="Evasionist's Cape", waist="Thunder Belt"})
+        {ammo="Honed Tathlum", head="Whirlpool Mask", hands="Buremte Gloves", back="Evasionist's Cape"})
     sets.precast.WS['Herculean Slash'] = set_combine(sets.precast['Lunge'], {hands="Umuthi Gloves"})
     sets.precast.WS['Herculean Slash'].Acc = set_combine(sets.precast.WS['Herculean Slash'].Normal, {})
 
@@ -182,8 +182,8 @@ function init_gear_sets()
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
 				}
     sets.engaged.DD = {
-				ammo="Seething Bomblet",
-				head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+				ammo="Seeth. Bomblet +1",
+				head="Dampening Tam",
 				body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
 				hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
 				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},

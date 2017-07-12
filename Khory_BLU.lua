@@ -533,7 +533,7 @@ function get_sets()
 	--DW III +1200JP--
 	sets.TP.DualWield = {
 		ammo = "Ginsen",
-		head = "Adhemar Bonnet",
+		head = "Dampening Tam",
 		neck = "Subtlety spectacles",
 		ear1 = "Suppanomimi",
 		ear2 = "Brutal earring",
@@ -549,7 +549,7 @@ function get_sets()
 
 	sets.TP.CappedHaste = {
 		ammo = "Ginsen",
-		head = "Adhemar Bonnet",
+		head = "Dampening Tam",
 		neck = "Subtlety spectacles",
 		ear1 = "Suppanomimi",
 		ear2 = "Brutal earring",
@@ -565,7 +565,7 @@ function get_sets()
 
 	sets.TP.AccuracyLite = {
 		ammo = "Ginsen",
-		head = "Adhemar Bonnet",
+		head = "Dampening Tam",
 		neck = "Subtlety spectacles",
 		ear1 = "Suppanomimi",
 		ear2 = "Brutal earring",
@@ -581,7 +581,7 @@ function get_sets()
 
 	sets.TP.AccuracyMid = {
 		ammo = "Falcon Eye",
-		head = "Adhemar Bonnet",
+		head = "Dampening Tam",
 		neck = "Subtlety spectacles",
 		ear1 = "Suppanomimi",
 		ear2 = "Brutal earring",
@@ -597,7 +597,7 @@ function get_sets()
 
 	sets.TP.AccuracyFull = {
 		ammo = "Falcon Eye",
-		head = "Adhemar Bonnet",
+		head = "Dampening Tam",
 		neck = "Subtlety spectacles",
 		ear1 = "Suppanomimi",
 		ear2 = "Brutal earring",
@@ -631,7 +631,7 @@ function get_sets()
 		ring1 = "Epona's ring",
 		ring2 = "Petrov Ring",
 		back = Rosmerta.Crit,
-		waist = "Windbuffet Belt +1",
+		waist = "Fotia Belt",
 		legs = "Carmine Cuisses +1",
 		feet = HerculeanFeet.TA
 	}
@@ -647,7 +647,7 @@ function get_sets()
 		ring1 = "Epona's ring",
 		ring2 = "Petrov Ring",
 		back = Rosmerta.Crit,
-		waist = "Windbuffet Belt +1",
+		waist = "Fotia Belt",
 		legs = "Carmine Cuisses +1",
 		feet = HerculeanFeet.TA
 	}

@@ -139,14 +139,14 @@ function init_gear_sets()
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {    
-	ammo="Seething Bomblet",
+	ammo="Seeth. Bomblet +1",
     head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
     body="Meg. Cuirie +1",
     hands="Meg. Gloves +1",
     legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
     feet="Meg. Jam. +1",
     neck="Fotia Gorget",
-    waist="Grunfeld Rope",
+	waist = "Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
     right_ear="Mache Earring",
     left_ring="Ramuh Ring",
@@ -163,28 +163,28 @@ function init_gear_sets()
     left_ring="Garuda Ring",
     right_ring="Garuda Ring",})
     sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'], {ammo="Honed Tathlum", back="Letalis Mantle"})
-    sets.precast.WS['Exenterator'].Mod = set_combine(sets.precast.WS['Exenterator'], {head="Felistris Mask",waist=gear.ElementalBelt})
+    sets.precast.WS['Exenterator'].Mod = set_combine(sets.precast.WS['Exenterator'], {head="Felistris Mask",waist = "Fotia Belt"})
     sets.precast.WS['Exenterator'].SA = set_combine(sets.precast.WS['Exenterator'].Mod, {ammo="Qirmiz Tathlum"})
     sets.precast.WS['Exenterator'].TA = set_combine(sets.precast.WS['Exenterator'].Mod, {ammo="Qirmiz Tathlum"})
     sets.precast.WS['Exenterator'].SATA = set_combine(sets.precast.WS['Exenterator'].Mod, {ammo="Qirmiz Tathlum"})
 
     sets.precast.WS['Dancing Edge'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Dancing Edge'].Acc = set_combine(sets.precast.WS['Dancing Edge'], {ammo="Honed Tathlum", back="Letalis Mantle"})
-    sets.precast.WS['Dancing Edge'].Mod = set_combine(sets.precast.WS['Dancing Edge'], {waist=gear.ElementalBelt})
+    sets.precast.WS['Dancing Edge'].Mod = set_combine(sets.precast.WS['Dancing Edge'], {waist = "Fotia Belt"})
     sets.precast.WS['Dancing Edge'].SA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {ammo="Qirmiz Tathlum"})
     sets.precast.WS['Dancing Edge'].TA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {ammo="Qirmiz Tathlum"})
     sets.precast.WS['Dancing Edge'].SATA = set_combine(sets.precast.WS['Dancing Edge'].Mod, {ammo="Qirmiz Tathlum"})
 
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Evisceration'].Acc = set_combine(sets.precast.WS['Evisceration'], {ammo="Honed Tathlum", back="Letalis Mantle"})
-    sets.precast.WS['Evisceration'].Mod = set_combine(sets.precast.WS['Evisceration'], {back="Kayapa Cape",waist=gear.ElementalBelt})
+    sets.precast.WS['Evisceration'].Mod = set_combine(sets.precast.WS['Evisceration'], {back="Kayapa Cape",waist = "Fotia Belt"})
     sets.precast.WS['Evisceration'].SA = set_combine(sets.precast.WS['Evisceration'].Mod, {})
     sets.precast.WS['Evisceration'].TA = set_combine(sets.precast.WS['Evisceration'].Mod, {})
     sets.precast.WS['Evisceration'].SATA = set_combine(sets.precast.WS['Evisceration'].Mod, {})
 
     sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {})
     sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS["Rudra's Storm"], {ammo="Honed Tathlum", back="Letalis Mantle"})
-    sets.precast.WS["Rudra's Storm"].Mod = set_combine(sets.precast.WS["Rudra's Storm"], {back="Kayapa Cape",waist=gear.ElementalBelt})
+    sets.precast.WS["Rudra's Storm"].Mod = set_combine(sets.precast.WS["Rudra's Storm"], {back="Kayapa Cape",waist = "Fotia Belt"})
     sets.precast.WS["Rudra's Storm"].SA = set_combine(sets.precast.WS["Rudra's Storm"].Mod, {ammo="Qirmiz Tathlum",
         body="Pillager's Vest +1",legs="Pillager's Culottes +1"})
     sets.precast.WS["Rudra's Storm"].TA = set_combine(sets.precast.WS["Rudra's Storm"].Mod, {ammo="Qirmiz Tathlum",
@@ -194,7 +194,7 @@ function init_gear_sets()
 
     sets.precast.WS["Shark Bite"] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Shark Bite'].Acc = set_combine(sets.precast.WS['Shark Bite'], {ammo="Honed Tathlum", back="Letalis Mantle"})
-    sets.precast.WS['Shark Bite'].Mod = set_combine(sets.precast.WS['Shark Bite'], {back="Kayapa Cape",waist=gear.ElementalBelt})
+    sets.precast.WS['Shark Bite'].Mod = set_combine(sets.precast.WS['Shark Bite'], {back="Kayapa Cape",waist = "Fotia Belt"})
     sets.precast.WS['Shark Bite'].SA = set_combine(sets.precast.WS['Shark Bite'].Mod, {ammo="Qirmiz Tathlum",
         body="Pillager's Vest +1",legs="Pillager's Culottes +1"})
     sets.precast.WS['Shark Bite'].TA = set_combine(sets.precast.WS['Shark Bite'].Mod, {ammo="Qirmiz Tathlum",
@@ -204,7 +204,7 @@ function init_gear_sets()
 
     sets.precast.WS['Mandalic Stab'] = set_combine(sets.precast.WS, {})
     sets.precast.WS['Mandalic Stab'].Acc = set_combine(sets.precast.WS['Mandalic Stab'], {ammo="Honed Tathlum", back="Letalis Mantle"})
-    sets.precast.WS['Mandalic Stab'].Mod = set_combine(sets.precast.WS['Mandalic Stab'], {back="Kayapa Cape",waist=gear.ElementalBelt})
+    sets.precast.WS['Mandalic Stab'].Mod = set_combine(sets.precast.WS['Mandalic Stab'], {back="Kayapa Cape",waist = "Fotia Belt"})
     sets.precast.WS['Mandalic Stab'].SA = set_combine(sets.precast.WS['Mandalic Stab'].Mod, {ammo="Qirmiz Tathlum",
         body="Pillager's Vest +1",legs="Pillager's Culottes +1"})
     sets.precast.WS['Mandalic Stab'].TA = set_combine(sets.precast.WS['Mandalic Stab'].Mod, {ammo="Qirmiz Tathlum",
@@ -213,14 +213,14 @@ function init_gear_sets()
         body="Pillager's Vest +1",legs="Pillager's Culottes +1"})
 
     sets.precast.WS['Aeolian Edge'] = {
-	ammo="Seething Bomblet",
+	ammo="Seeth. Bomblet +1",
     head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
     hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
     legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Mag. Acc.+13',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
     neck="Fotia Gorget",
-    waist="Salire Belt",
+	waist = "Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
     right_ear="Friomisi Earring",
     left_ring="Vertigo Ring",
@@ -366,8 +366,8 @@ function init_gear_sets()
 
     -- Normal melee group
     sets.engaged = {
-	ammo="Seething Bomblet",
-    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+	ammo="Seeth. Bomblet +1",
+    head="Dampening Tam",
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
     hands= "Meg. Gloves +1",
     legs={ name="Adhemar Kecks", augments={'DEX+10','AGI+10','Accuracy+15',}},
@@ -381,8 +381,8 @@ function init_gear_sets()
     back="Atheling Mantle",}
 	
     sets.engaged.Acc = {
-	ammo="Seething Bomblet",
-    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+	ammo="Seeth. Bomblet +1",
+    head="Dampening Tam",
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
     hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
     legs={ name="Adhemar Kecks", augments={'DEX+10','AGI+10','Accuracy+15',}},
@@ -396,8 +396,8 @@ function init_gear_sets()
     back="Atheling Mantle",}
         
     -- Mod set for trivial mobs (Skadi+1)
-    sets.engaged.Mod = {ammo="Seething Bomblet",
-    head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
+    sets.engaged.Mod = {ammo="Seeth. Bomblet +1",
+    head="Dampening Tam",
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
     hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
     legs={ name="Adhemar Kecks", augments={'DEX+10','AGI+10','Accuracy+15',}},
@@ -412,7 +412,7 @@ function init_gear_sets()
 
     -- Mod set for trivial mobs (Thaumas)
     sets.engaged.Mod2 = {
-	ammo="Seething Bomblet",
+	ammo="Seeth. Bomblet +1",
     head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
     hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
@@ -427,7 +427,7 @@ function init_gear_sets()
     back="Atheling Mantle",}
 
     sets.engaged.Evasion = {
-	ammo="Seething Bomblet",
+	ammo="Seeth. Bomblet +1",
     head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
     hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
@@ -442,7 +442,7 @@ function init_gear_sets()
     back="Atheling Mantle",}
 	
     sets.engaged.Acc.Evasion = {
-	ammo="Seething Bomblet",
+	ammo="Seeth. Bomblet +1",
     head={ name="Adhemar Bonnet", augments={'DEX+10','AGI+10','Accuracy+15',}},
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
     hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},

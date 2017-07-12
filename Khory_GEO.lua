@@ -99,9 +99,10 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
         --head="Nahtirah Hat",
-        neck=gear.ElementalGorget,		
+        neck= "Fotia Gorget",		
 		ear1 = "Moonshade earring",
-        ear2="Brutal Earring",
+        ear2="Brutal Earring",		
+		waist = "Fotia Belt",
         body="Jhakri Robe +2",
         hands="Gazu Bracelet",
         ring1="Rajas Ring",
@@ -112,7 +113,7 @@ function init_gear_sets()
 
     sets.precast.WS['Flash Nova'] = {
         --head="Nahtirah Hat",
-        neck=gear.ElementalGorget,
+        neck= "Fotia Gorget",
 		ear1 = "Moonshade earring",
         ear2="Brutal Earring",
         body="Jhakri Robe +2",
