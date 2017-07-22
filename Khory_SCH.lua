@@ -282,21 +282,7 @@ function init_gear_sets()
 
     -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 
-    sets.idle.Town = {
-    main="Plenitas Virga",
-    sub="Niobid Strap",
-    ammo="Witchstone",
-    head="Arbatel Bonnet",
-    body="Novennial Dress",
-    legs="Novennial Boots",
-    neck="Sanctity Necklace",
-    waist="Fucho-no-Obi",
-    left_ear="Moldavite Earring",
-    right_ear="Friomisi Earring",
-    left_ring="Mujin Band",
-    right_ring="Evanescence Ring",
-    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+4','"Mag.Atk.Bns."+10',}},
-}
+    sets.idle.Town = sets.idle.Field;
 
     sets.idle.Field = {
     main="Nibiru Staff",

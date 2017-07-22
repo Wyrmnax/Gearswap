@@ -90,7 +90,8 @@ function init_gear_sets()
     
     sets.precast.FC = {ammo="Incantor Stone",
 		neck = "Voltsurge Torque",
-        head="Cizin Helm",ear2="Loquacious Earring",ring2="Prolix Ring",ring2 = "Lebeche Ring",legs="Enif Cosciales"}
+        head="Cizin Helm",ear2="Loquacious Earring",ring2="Prolix Ring",ring2 = "Lebeche Ring",
+		legs = "Founder's Hose",}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 
@@ -215,11 +216,8 @@ function init_gear_sets()
     back={ name="Weard Mantle", augments={'VIT+2','Enmity+6',}},
 }
 
-    sets.idle.Town = {main="Anahera Sword",ammo="Incantor Stone",
-        head={ name="Souveran Schaller", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
-		body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
-        back="Fierabras's Mantle",waist="Flume Belt +1",legs="Crimson Cuisses",feet="Reverence Leggings +1"}
-    
+    sets.idle.Town = sets.idle;
+	
     sets.idle.Weak = {ammo="Iron Gobbet",
         head="Reverence Coronet +1",neck="Creed Collar",ear1="Creed Earring",ear2="Bloodgem Earring",
         body="Reverence Surcoat +1",hands="Reverence Gauntlets +1",ring1="Sheltered Ring",ring2="Meridian Ring",

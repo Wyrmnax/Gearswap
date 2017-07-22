@@ -386,11 +386,7 @@ function init_gear_sets()
     --    legs="Bagua Pants", 
     --})
 
-    sets.idle.Town = {
-		body = "Novennial Dress",
-		legs = "Novennial Boots",
-		head = "Pixie Hairpin +1"		
-    }
+    sets.idle.Town = sets.idle
 
     sets.idle.Weak = sets.idle
 

@@ -473,7 +473,7 @@ function get_sets()
 	
 	sets.Idle = {}
 	--Idle Sets--
-	sets.Idle.index = { 'Standard', 'DT', 'Town' }
+	sets.Idle.index = { 'Standard', 'DT' }
 	Idle_ind = 3
 	sets.Idle.Standard = {	
 		ammo = "Ginsen",
@@ -507,21 +507,7 @@ function get_sets()
 		feet = "Aya. Gambieras +1"
 	}
 
-	sets.Idle.Town = {
-		ammo = "Ginsen",
-		head = HerculeanHelm.TP,
-		neck = "Loricate Torque",
-		ear1 = "Etiolation Earring",
-		ear2 = "Ethereal Earring",
-		body = "Herculean Vest",
-		hands = "Herculean Gloves",
-		ring1 = "Defending Ring",
-		ring2 = "Vocane Ring",
-		back = "Cheviot Cape",
-		waist = "Flume belt +1",
-		legs = "Carmine Cuisses +1",
-		feet = HerculeanFeet.TA
-	}
+	sets.Idle.Town = sets.precast.Idle.Standard;
 
 
 	--TP Sets--
@@ -540,7 +526,7 @@ function get_sets()
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.TP,
 		ring1 = "Epona's ring",
-		ring2 = "Petrov Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Windbuffet Belt +1",
 		legs = "Carmine Cuisses +1",
@@ -556,7 +542,7 @@ function get_sets()
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.TP,
 		ring1 = "Epona's ring",
-		ring2 = "Petrov Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Windbuffet Belt +1",
 		legs = "Carmine Cuisses +1",
@@ -572,7 +558,7 @@ function get_sets()
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.TP,
 		ring1 = "Epona's ring",
-		ring2 = "Petrov Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Windbuffet Belt +1",
 		legs = "Carmine Cuisses +1",
@@ -588,7 +574,7 @@ function get_sets()
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.TP,
 		ring1 = "Epona's ring",
-		ring2 = "Petrov Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Windbuffet Belt +1",
 		legs = "Carmine Cuisses +1",
@@ -604,7 +590,7 @@ function get_sets()
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.TP,
 		ring1 = "Epona's ring",
-		ring2 = "Petrov Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Windbuffet Belt +1",
 		legs = "Carmine Cuisses +1",
@@ -629,7 +615,7 @@ function get_sets()
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.TP,
 		ring1 = "Epona's ring",
-		ring2 = "Petrov Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Fotia Belt",
 		legs = "Carmine Cuisses +1",
@@ -645,7 +631,7 @@ function get_sets()
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.TP,
 		ring1 = "Epona's ring",
-		ring2 = "Petrov Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Fotia Belt",
 		legs = "Carmine Cuisses +1",
@@ -666,7 +652,7 @@ function get_sets()
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.Crit,
 		ring1 = "Epona's ring",
-		ring2 = "Ramuh Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Fotia Belt",
 		legs = "Samnuha Tights",
@@ -682,7 +668,7 @@ function get_sets()
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.HighAcc,
 		ring1 = "Epona's ring",
-		ring2 = "Ramuh Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		--back = Rosmerta.Crit,
 		waist = "Fotia Belt",
@@ -699,7 +685,7 @@ function get_sets()
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.HighAcc,
 		ring1 = "Begrudging Ring",
-		ring2 = "Ramuh Ring +1",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Fotia Belt",
 		legs = "Samnuha Tights",
@@ -720,7 +706,7 @@ function get_sets()
 		body = "Abnoba Kaftan",
 		hands = HerculeanGloves.Crit,
 		ring1 = "Epona's ring",
-		ring2 = "Ifrit Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Fotia Belt",
 		legs = "Samnuha Tights",
@@ -736,7 +722,7 @@ function get_sets()
 		body = "Abnoba Kaftan",
 		hands = HerculeanGloves.Crit,
 		ring1 = "Epona's ring",
-		ring2 = "Ifrit Ring",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Fotia Belt",
 		legs = "Samnuha Tights",
@@ -870,8 +856,8 @@ function get_sets()
 		ear2 = "Odnowa earring +1",
 		body = "Adhemar Jacket",
 		hands = HerculeanGloves.TP,
-		ring1 = "Ifrit Ring +1",
-		ring2 = "Petrov Ring",
+		ring1 = "Ilabrat Ring +1",
+		ring2 = "Ilabrat Ring",
 		back = "Cornflower cape",
 		waist = "Prosilio Belt +1",
 		legs = "Samnuha Tights",
@@ -1001,8 +987,8 @@ function get_sets()
 		ear2 = "Kuwunga Earring",
 		body = "Adhemar Jacket",
 		hands = HerculeanGloves.Crit,
-		ring1 = "Ifrit Ring +1",
-		ring2 = "Petrov Ring",
+		ring1 = "Ilabrat Ring +1",
+		ring2 = "Ilabrat Ring",
 		back = Rosmerta.WSD,
 		waist = "Prosilio Belt +1",
 		legs = "Samnuha Tights",

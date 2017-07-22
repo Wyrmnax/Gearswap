@@ -98,7 +98,7 @@ function init_gear_sets()
 				left_ear = "Moonshade earring",
 				right_ear="Mache Earring",
 				left_ring="Epona's Ring",
-				right_ring="Ifrit Ring",
+				right_ring="Ilabrat Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
 				}
     sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS['Resolution'].Normal, 
@@ -115,7 +115,7 @@ function init_gear_sets()
 				left_ear = "Moonshade earring",
 				right_ear="Mache Earring",
 				left_ring="Epona's Ring",
-				right_ring="Ramuh Ring",
+				right_ring="Ilabrat Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
 				}
     sets.precast.WS['Dimidiation'].Acc = set_combine(sets.precast.WS['Dimidiation'].Normal, 
@@ -193,7 +193,7 @@ function init_gear_sets()
 				left_ear="Brutal Earring",
 				right_ear="Mache Earring",
 				left_ring="Epona's Ring",
-				right_ring="Petrov Ring",
+				right_ring="Ilabrat Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
 				}
     sets.engaged.Acc = set_combine(sets.engaged.DD, {sub="Tzacab Grip", ammo="Honed Tathlum", head="Whirlpool Mask",

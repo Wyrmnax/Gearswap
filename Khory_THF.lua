@@ -301,20 +301,7 @@ function init_gear_sets()
     right_ring="Vocane Ring",
     back="Atheling Mantle",}
 
-    sets.idle.Town = {    
-	ammo="Staunch Tathlum",
-    head="Carbie Cap",
-    body="Meg. Cuirie +1",
-    hands="Meg. Gloves +1",
-    legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
-    feet="Jute Boots +1",
-    neck="Loricate Torque",
-    waist="Flume Belt +1",
-    left_ear="Mache Earring",
-    right_ear="Suppanomimi",
-    left_ring="Defending Ring",
-    right_ring="Vocane Ring",
-    back="Atheling Mantle",}
+    sets.idle.Town = sets.idle ;
 
     sets.idle.Weak = {ammo="Thew Bomblet",
         head="Pillager's Bonnet +1",neck="Wiglen Gorget",ear1="Dudgeon Earring",ear2="Heartseeker Earring",

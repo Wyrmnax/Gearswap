@@ -165,8 +165,8 @@ function init_gear_sets()
 	waist = "Fotia Belt",
     left_ear="Moonshade earring",
     right_ear="Ishivara Earring",
-    left_ring="Epona's Ring",
-    right_ring="Garuda Ring",
+    left_ring="Hadjuk Ring",
+    right_ring="Ilabrat Ring",
     back="Camulus's Mantle",}
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
@@ -195,7 +195,7 @@ function init_gear_sets()
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Garuda Ring",
-    right_ring="Garuda Ring",
+    right_ring="Ilabrat Ring",
     back="Camulus's Mantle",}
 
     sets.precast.WS['Wildfire'].Brew = {ammo=gear.MAbullet, 
@@ -209,7 +209,7 @@ function init_gear_sets()
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Garuda Ring",
-    right_ring="Garuda Ring",
+    right_ring="Ilabrat Ring",
     back="Camulus's Mantle",}
     
     sets.precast.WS['Leaden Salute'] = set_combine(sets.precast.WS['Wildfire'], {left_ear="Moonshade earring"})
@@ -238,7 +238,7 @@ function init_gear_sets()
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Epona's Ring",
-    right_ring="Apate Ring",
+    right_ring="Ilabrat Ring",
     back="Camulus's Mantle",}
 
     sets.midcast.CorsairShot.Acc = {ammo=gear.QDbullet, 
@@ -252,7 +252,7 @@ function init_gear_sets()
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Epona's Ring",
-    right_ring="Apate Ring",
+    right_ring="Ilabrat Ring",
     back="Camulus's Mantle",}
 
     sets.midcast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet, 
@@ -266,7 +266,7 @@ function init_gear_sets()
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Epona's Ring",
-    right_ring="Apate Ring",
+    right_ring="Ilabrat Ring",
     back="Camulus's Mantle",}
 
     sets.midcast.CorsairShot['Dark Shot'] = sets.midcast.CorsairShot['Light Shot']
@@ -310,7 +310,7 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {
-    head= "Lak. Hat +1"
+    head= "Lak. Hat +1",
     body= "Meg. Cuirie +1",
     hands="Meg. Gloves +1",
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
@@ -321,23 +321,10 @@ function init_gear_sets()
     right_ear="Suppanomimi",
     left_ring="Defending Ring",
     right_ring="Vocane Ring",
-    back="Camulus's Mantle",
+    back="Camulus's Mantle"
 }
 
-    sets.idle.Town = {
-    head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    body= "Meg. Cuirie +1",
-    hands="Meg. Gloves +1",
-    legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-    feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
-    neck="Loricate torque",
-    waist="Flume Belt +1",
-    left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
-    left_ring="Defending Ring",
-    right_ring="Vocane Ring",
-    back="Camulus's Mantle",
-	}
+    sets.idle.Town = sets.precast.Idle;
     
     -- Defense sets
     sets.defense.PDT = {
@@ -351,7 +338,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
     left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
     back="Camulus's Mantle",}
 
     sets.defense.MDT = {
@@ -365,7 +352,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
     left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
     back="Camulus's Mantle",}
     
 
@@ -390,7 +377,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
     left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
     back="Camulus's Mantle",}
     
     sets.engaged.Acc = {ammo=gear.RAbullet,

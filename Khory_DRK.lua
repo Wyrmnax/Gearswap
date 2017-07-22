@@ -85,6 +85,7 @@
 			sets.precast.FC = {
 			neck = "Voltsurge Torque",
 			ring2 = "Lebeche Ring",
+			legs = "Founder's Hose",
 			}
                      
             -- Midcast Sets
@@ -158,6 +159,12 @@
             sets.precast.WS['Entropy'] = set_combine(sets.precast.WS, {})
             sets.precast.WS['Entropy'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Entropy'].Mod = set_combine(sets.precast.WS['Entropy'], {})
+			
+			sets.precast.WS['Cross Reaper'] = set_combine(sets.precast.WS, {
+			
+			})
+            sets.precast.WS['Cross Reaper'].Acc = set_combine(sets.precast.WS.Acc, {})
+            sets.precast.WS['Cross Reaper'].Mod = set_combine(sets.precast.WS['Cross Reaper'], {})
      
             sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {})
             sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc, {})
@@ -165,18 +172,19 @@
 			
 			sets.precast.WS['Scourge'] = set_combine(sets.precast.WS, 
 			{
-				head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
+				ammo="Seeth. Bomblet +1",
+				head="Flam. Zucchetto +1",
 				body="Ignominy Cuirass +2",
 				hands={ name="Odyssean Gauntlets", augments={'Accuracy+28','Weapon skill damage +4%','AGI+1',}},
-				legs= "Sulev. Cuisses +2",
+				legs="Sulev. Cuisses +2",
 				feet="Sulev. Leggings +2",
-				neck = "Fotia Gorget",
-				waist = "Fotia Belt",
-				ear1 = "Moonshade earring",
-				ear2 ="Mache Earring",
+				neck="Fotia Gorget",
+				waist="Fotia Belt",
+				left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+				right_ear="Mache Earring",
 				left_ring="Ifrit Ring",
 				right_ring="Begrudging Ring",
-				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
+				back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
 				})
             sets.precast.WS['Scourge'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Scourge'].Mod = set_combine(sets.precast.WS['Scourge'], {})
@@ -209,21 +217,7 @@
            
      
             -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-            sets.idle.Town = {
-			ammo="Staunch Tathlum",
-			head="Carbie Cap",
-			body= "Jumalik Mail",
-			hands="Sulev. Gauntlets +2",
-			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet="Sulev. Leggings +2",
-			neck="Loricate Torque",
-			waist="Flume Belt +1",
-			left_ear="Brutal Earring",
-			right_ear="Mache Earring",
-			left_ring="Defending Ring",
-			right_ring="Vocane Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
-			}
+            sets.idle.Town = set_combine(sets.idle.Field, {});
            
             sets.idle.Field = {
             ammo="Staunch Tathlum",			
