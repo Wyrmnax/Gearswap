@@ -162,7 +162,7 @@ function init_gear_sets()
 
     sets.midcast['Death'] = {
 		main="Grioavolr",
-		sub="Niobid Strap",
+		sub="Enki Strap",
 		ammo="Pemphredo Tathlum",
 		head="Pixie Hairpin +1",
 		body="Jhakri Robe +2",
@@ -181,7 +181,7 @@ function init_gear_sets()
 
     sets.precast.WS['Myrkr'] = {
 		main="Grioavolr",
-		sub="Niobid Strap",
+		sub="Enki Strap",
 		ammo="Pemphredo Tathlum",
 		head="Pixie Hairpin +1",
 		body={ name="Witching Robe", augments={'MP+50','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Refresh"+1',}},
@@ -203,7 +203,7 @@ function init_gear_sets()
 
     sets.midcast['Enhancing Magic'] = {
 		main={ name="Grioavolr", augments={'MP+32','Mag. Acc.+30','"Mag.Atk.Bns."+30',}},
-		sub="Niobid Strap",
+		sub="Enki Strap",
 		ammo="Pemphredo Tathlum",
 		head={ name="Telchine Cap", augments={'Enh. Mag. eff. dur. +4',}},
 		body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +4',}},
@@ -285,7 +285,7 @@ function init_gear_sets()
     hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
-    neck="Sanctity Necklace",
+    neck="Erra Pendant",
     waist="Salire Belt",
     left_ear="Friomisi Earring",
     right_ear="Hermetic Earring",
@@ -298,7 +298,7 @@ function init_gear_sets()
      
     sets.midcast['Elemental Magic'] = {
 	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
-    sub="Niobid Strap",
+    sub="Enki Strap",
     ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Jhakri Robe +2",
@@ -316,7 +316,7 @@ function init_gear_sets()
 
     sets.midcast['Elemental Magic'].FreeNuke_Effect = set_combine(sets.midcast['Elemental Magic'], {
 		    main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
-    sub="Niobid Strap",
+    sub="Enki Strap",
     ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Jhakri Robe +2",
@@ -339,7 +339,7 @@ function init_gear_sets()
 	
     sets.midcast['Elemental Magic'].HighTierNuke.FreeNuke_Effect = set_combine(sets.midcast['Elemental Magic'].HighTierNuke, {
 	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
-    sub="Niobid Strap",
+    sub="Enki Strap",
     ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Jhakri Robe +2",
@@ -386,7 +386,7 @@ function init_gear_sets()
 
 	sets.midcast.HighMP = {
 		main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
-    sub="Niobid Strap",
+    sub="Enki Strap",
     ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Jhakri Robe +2",
@@ -404,7 +404,7 @@ function init_gear_sets()
  
 	sets.midcast.LowMP = {
 	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
-    sub="Niobid Strap",
+    sub="Enki Strap",
     ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Jhakri Robe +2",
@@ -435,7 +435,7 @@ function init_gear_sets()
 
     sets.idle = {
 		main="Grioavolr",
-		sub="Niobid Strap",
+		sub="Enki Strap",
 		ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
     body="Jhakri Robe +2",
@@ -454,7 +454,7 @@ function init_gear_sets()
     -- Idle mode that keeps PDT gear on, but doesn't prevent normal gear swaps for precast/etc.
     sets.idle.PDT = { 
 	main="Earth Staff",
-    sub="Niobid Strap",
+    sub="Enki Strap",
     ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
     body="Jhakri Robe +2",
@@ -490,7 +490,7 @@ function init_gear_sets()
 	
     sets.defense.PDT = {
 	main="Earth Staff",
-    sub="Niobid Strap",
+    sub="Enki Strap",
     ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
     body="Jhakri Robe +2",
@@ -508,7 +508,7 @@ function init_gear_sets()
  
     sets.defense.MDT = {
 		    main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
-    sub="Niobid Strap",
+    sub="Enki Strap",
     ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
     body="Jhakri Robe +2",
@@ -530,7 +530,7 @@ function init_gear_sets()
 	
 	sets.auto_refresh = {
 	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
-    sub="Niobid Strap",
+    sub="Enki Strap",
     ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
     body="Jhakri Robe +2",
@@ -550,7 +550,7 @@ function init_gear_sets()
 
     sets.buff['Mana Wall'] = {
 		main="Terra's Staff",
-		sub="Niobid Strap",
+		sub="Enki Strap",
 		ammo="Pemphredo Tathlum",
 		head="Kaabnax Hat",
 		body="Merlinic Jubbah",
@@ -561,7 +561,7 @@ function init_gear_sets()
 		waist="Slipor Sash",
 		left_ear="Merman's Earring",
 		right_ear="Merman's Earring",
-		left_ring={ name="Dark Ring", augments={'Phys. dmg. taken -6%','Magic dmg. taken -4%',}},
+		left_ring="Vocane Ring",
 		right_ring="Defending Ring",
 		back={ name="Taranus's Cape", augments={'MP+60','Mag. Acc+20 /Mag. Dmg.+20','MP+20','"Fast Cast"+10',}},}
  
@@ -573,7 +573,7 @@ function init_gear_sets()
 	
 	sets.engaged = {    
 	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
-    sub="Niobid Strap",
+    sub="Enki Strap",
     ammo="Staunch Tathlum",
     head="Pixie Hairpin +1",
     body="Jhakri Robe +2",

@@ -162,7 +162,7 @@ function init_gear_sets()
         neck="Incanter's Torque", -- 10		
         ear1="Gwati Earring",
 		body="Bagua Tunic +1", -- 12
-        hands="Geomancy Mitaines", -- 15
+        hands="Geo. Mitaines +2", -- 15
 		left_ring="Jhakri Ring",
         back="Lifestream Cape", -- 9
         legs="Geomancy Pants",
@@ -265,7 +265,7 @@ function init_gear_sets()
     }
     sets.midcast.Absorb = set_combine(sets.midcast.Macc, {
         head="Amalric Coif",
-        neck="Incanter's Torque", 
+        neck="Erra Pendant", 
         ear1="Gwati Earring",
         ring1="Evanescence Ring",
         right_ring="Excelsis Ring",
@@ -288,14 +288,14 @@ function init_gear_sets()
     
     sets.midcast['Enfeebling Magic'] = set_combine(sets.midcast.Macc, {
         neck="Incanter's Torque",
-        waist="Casso Sash",
+		waist = "Rumination Sash",
         back="Lifestream Cape",
         hands="Azimuth Gloves",
         right_ring="Globidonta Ring",
         feet="Bagua Sandals"
     })
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast.Macc, {
-        waist="Casso Sash",
+		waist = "Rumination Sash",
         back="Lifestream Cape",
         ring1="Shiva Ring",
         right_ring="Globidonta Ring",
@@ -315,7 +315,7 @@ function init_gear_sets()
     sets.resting = {
         neck="Loricate Torque",
         body="Jhakri Robe +2",
-        hands="Geomancy Mitaines",
+        hands="Geo. Mitaines +2",
         ring1="Defending Ring",
         right_ring="Paguroidea Ring",
         --waist="Austerity Belt",
@@ -333,7 +333,7 @@ function init_gear_sets()
         ear1="Moldavite Earring",
         ear2="Friomisi Earring",
         body="Jhakri Robe +2",
-        hands="Geomancy Mitaines",
+        hands="Geo. Mitaines +2",
         ring1="Defending Ring",
         right_ring="Vocane Ring",
     	back="Cheviot Cape",
@@ -344,7 +344,7 @@ function init_gear_sets()
     sets.idle.PDT = set_combine(sets.idle, {
         head="Hike Khat",
         neck="Loricate Torque",
-        hands="Geomancy Mitaines",
+        hands="Geo. Mitaines +2",
     	back="Solemnity Cape",
         feet="Azimuth Gaiters"
     })
@@ -353,7 +353,7 @@ function init_gear_sets()
     sets.idle.Pet = set_combine(sets.idle, {
         head="Hike Khat",
         neck="Loricate Torque",
-        hands="Geomancy Mitaines",
+        hands="Geo. Mitaines +2",
         back="Lifestream Cape",
         feet="Bagua Sandals"
     })
@@ -398,7 +398,7 @@ function init_gear_sets()
         neck="Loricate Torque",
         ear1="Zennaroi Earring",
         body="Azimuth Coat",
-        hands="Geomancy Mitaines",
+        hands="Geo. Mitaines +2",
         ring1="Defending Ring",
         right_ring="Vocane Ring",
         back="Cheviot Cape",
@@ -414,7 +414,7 @@ function init_gear_sets()
         ear1="Zennaroi Earring",
         ear2="Loquacious Earring",
         body="Azimuth Coat",
-        hands="Geomancy Mitaines",
+        hands="Geo. Mitaines +2",
         ring1="Defending Ring",
         right_ring="Vocane Ring",
         back="Dark Cape",
@@ -445,7 +445,7 @@ function init_gear_sets()
         ear2="Steelflash Earring",
         body="Azimuth Coat",
         --body="Vanir Cotehardie",
-        hands="Geomancy Mitaines",
+        hands="Geo. Mitaines +2",
         ring1="Petrov Ring",
         right_ring="K'ayres Ring",
         back="Kayapa Cape",

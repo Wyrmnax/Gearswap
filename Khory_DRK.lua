@@ -102,17 +102,17 @@
             sets.midcast.DarkMagic = {
 					ammo="Snow Sachet",
                     head="Pixie Hairpin +1",
-					neck="Sanctity Necklace",
+					neck="Erra Pendant",
 					ear1="Hermetic Earring",
 					ear2="Friomisi Earring",
-					body="Ignominy Cuirass +2",
+					body="Valorous Mail",
 					hands="Leyline Gloves",
-					ring1="Diamond Ring",
+					ring1="Shiva Ring",
 					ring2="Evanescence Ring",
                     back="Abyss Cape",
 					waist="Salire Belt",
 					legs="Heath. Flanchard",
-					feet="Odyssean Greaves"}
+					feet="Igno. Sollerets"}
            
 		    sets.midcast.EnfeeblingMagic = set_combine(sets.midcast.DarkMagic, {
             })
@@ -121,7 +121,7 @@
 			{body="Heathen's Cuirass"})
 			
 			sets.midcast['Absorb-TP'] = set_combine(sets.midcast.DarkMagic,
-			{hands="Heathen's gauntlets"})
+			{hands="Heath. Gauntlets +1"})
            
             sets.midcast.Stun = set_combine(sets.midcast.DarkMagic, {
                     head="Cizin Helm"
@@ -145,7 +145,7 @@
 			ear1 = "Moonshade earring",
 			right_ear="Mache Earring",
 			left_ring="Ifrit Ring",
-			right_ring="Begrudging Ring",
+			right_ring="Chirich Ring",
 			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}
 			
@@ -172,37 +172,37 @@
 			
 			sets.precast.WS['Scourge'] = set_combine(sets.precast.WS, 
 			{
-				ammo="Seeth. Bomblet +1",
-				head="Flam. Zucchetto +1",
+				ammo="Knobkierrie",
+				head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
 				body="Ignominy Cuirass +2",
 				hands={ name="Odyssean Gauntlets", augments={'Accuracy+28','Weapon skill damage +4%','AGI+1',}},
-				legs="Sulev. Cuisses +2",
+				legs={ name="Odyssean Cuisses", augments={'Weapon skill damage +3%','VIT+10','Accuracy+14',}},
 				feet="Sulev. Leggings +2",
 				neck="Fotia Gorget",
 				waist="Fotia Belt",
 				left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
-				right_ear="Mache Earring",
+				right_ear="Ishvara Earring",
 				left_ring="Ifrit Ring",
-				right_ring="Begrudging Ring",
-				back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
+				right_ring="Chirich Ring",
+				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 				})
             sets.precast.WS['Scourge'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Scourge'].Mod = set_combine(sets.precast.WS['Scourge'], {})
 			
 			sets.precast.WS['Torcleaver'] = set_combine(sets.precast.WS, 
 			{
-			    ammo="Seeth. Bomblet +1",
+			    ammo="Knobkierrie",
 				head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
 				body="Ignominy Cuirass +2",
 				hands={ name="Odyssean Gauntlets", augments={'Accuracy+28','Weapon skill damage +4%','AGI+1',}},
-				legs= "Sulev. Cuisses +2",
+				legs={ name="Odyssean Cuisses", augments={'Weapon skill damage +3%','VIT+10','Accuracy+14',}},
 				feet="Sulev. Leggings +2",
 				neck = "Fotia Gorget",
 				waist = "Fotia Belt",
 				ear1 = "Moonshade earring",
-				ear2 = "Mache Earring",
+				ear2 = "Ishvara Earring",
 				left_ring="Apate Ring",
-				right_ring="Begrudging Ring",
+				right_ring="Chirich Ring",
 				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 			})
             sets.precast.WS['Torcleaver'].Acc = set_combine(sets.precast.WS.Acc, {})
@@ -254,17 +254,17 @@
             -- Engaged sets
             sets.engaged = {
 			ammo="Seeth. Bomblet +1",
-			head="Flam. Zucchetto +1",			
-			body="Found. Breastplate",
+			head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','Accuracy+8',}},			
+			body="Valorous Mail",
 			hands="Sulev. Gauntlets +2",
 			legs= "Sulev. Cuisses +2",
 			feet={ name="Valorous Greaves", augments={'Accuracy+24','"Store TP"+1','AGI+6','Attack+11',}},
 			neck="Subtlety Spec.",
-			waist="Windbuffet Belt +1",
+			waist="Ioskeha Belt",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
-			left_ring="Apate Ring",
-			right_ring="Petrov Ring",
+			left_ring="Petrov Ring",
+			right_ring="Chirich Ring",
 			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}
 

@@ -142,7 +142,7 @@ function init_gear_sets()
 	ammo="Seeth. Bomblet +1",
     head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
     body="Meg. Cuirie +1",
-    hands="Meg. Gloves +1",
+    hands="Meg. Gloves +2",
     legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
     feet="Meg. Jam. +1",
     neck="Fotia Gorget",
@@ -290,7 +290,7 @@ function init_gear_sets()
 	ammo="Staunch Tathlum",
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     body="Meg. Cuirie +1",
-    hands="Meg. Gloves +1",
+    hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+3','DEX+2',}},
     feet="Jute Boots +1",
     neck="Loricate Torque",
@@ -320,7 +320,7 @@ function init_gear_sets()
 	ammo="Staunch Tathlum",
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     body="Meg. Cuirie +1",
-    hands="Meg. Gloves +1",
+    hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+3','DEX+2',}},
     feet="Jute Boots +1",
     neck="Loricate Torque",
@@ -335,7 +335,7 @@ function init_gear_sets()
 	ammo="Staunch Tathlum",
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     body="Meg. Cuirie +1",
-    hands="Meg. Gloves +1",
+    hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+3','DEX+2',}},
     feet="Jute Boots +1",
     neck="Loricate Torque",
@@ -356,7 +356,7 @@ function init_gear_sets()
 	ammo="Seeth. Bomblet +1",
     head="Dampening Tam",
     body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
-    hands= "Meg. Gloves +1",
+    hands= "Meg. Gloves +2",
     legs={ name="Adhemar Kecks", augments={'DEX+10','AGI+10','Accuracy+15',}},
     feet="Meg. Jam. +1",
     neck="Subtlety Spec.",
@@ -364,7 +364,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
     left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
 	
     sets.engaged.Acc = {
@@ -379,7 +379,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
     left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
         
     -- Mod set for trivial mobs (Skadi+1)
@@ -394,7 +394,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
     left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
 
     -- Mod set for trivial mobs (Thaumas)
@@ -410,7 +410,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
     left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
 
     sets.engaged.Evasion = {
@@ -425,7 +425,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
     left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
 	
     sets.engaged.Acc.Evasion = {
@@ -440,14 +440,14 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
     left_ring="Epona's Ring",
-    right_ring="Petrov Ring",
+    right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
 
     sets.engaged.PDT = {
 	ammo="Staunch Tathlum",
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     body="Meg. Cuirie +1",
-    hands="Meg. Gloves +1",
+    hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+3','DEX+2',}},
     feet="Jute Boots +1",
     neck="Loricate Torque",
@@ -462,7 +462,7 @@ function init_gear_sets()
 	ammo="Staunch Tathlum",
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
     body="Meg. Cuirie +1",
-    hands="Meg. Gloves +1",
+    hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+3','DEX+2',}},
     feet="Jute Boots +1",
     neck="Loricate Torque",

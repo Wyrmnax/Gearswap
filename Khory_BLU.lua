@@ -507,7 +507,21 @@ function get_sets()
 		feet = "Aya. Gambieras +1"
 	}
 
-	sets.Idle.Town = sets.precast.Idle.Standard;
+	sets.Idle.Town = {
+		ammo = "Ginsen",
+		head = "Rawhide Mask",
+		neck = "Loricate Torque",
+		ear1 = "Etiolation Earring",
+		ear2 = "Ethereal Earring",
+        body = "Jhakri Robe +2",
+		hands = "Herculean Gloves",
+		ring1 = "Defending Ring",
+		ring2 = "Vocane Ring",
+		back = "Cheviot Cape",
+		waist = "Flume belt +1",
+		legs = "Carmine Cuisses +1",
+		feet = "Aya. Gambieras +1"
+	}
 
 
 	--TP Sets--
@@ -589,7 +603,7 @@ function get_sets()
 		ear2 = "Brutal earring",
 		body = "Adhemar jacket",
 		hands = HerculeanGloves.TP,
-		ring1 = "Epona's ring",
+		ring1 = "Chirich ring",
 		ring2 = "Ilabrat Ring",
 		back = Rosmerta.Crit,
 		waist = "Windbuffet Belt +1",
@@ -930,7 +944,7 @@ function get_sets()
 		ring1 = "Strendu Ring",
 		ring2 = "Shiva Ring",
 		back = "Cornflower cape",
-		waist = "Salire Belt",
+		waist = "Rumination Sash",
 		legs = "Amalric Slops",
 		feet = "Hashishin Basmak"
 	}

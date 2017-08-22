@@ -48,7 +48,13 @@ end
 
 
 function init_gear_sets()
-    sets.enmity = {ammo="Aqreqaq Bomblet", hands="Futhark Gloves +1", back="Mubvumbamiri mantle", waist="Warwolf Belt"}
+    sets.enmity = {ammo="Aqreqaq Bomblet", neck="Warder's Charm +1",
+	left_ear="Frimosi Earring",
+	hands="Futhark Gloves +1", 
+	ring2="Begrudging Ring",
+	legs="Erilaz Leg Guards",
+	feet="Erilaz Greaves +1",
+	back="Mubvumbamiri mantle", waist="Warwolf Belt"}
 
 	--------------------------------------
 	-- Precast sets
@@ -77,8 +83,9 @@ function init_gear_sets()
 	-- Fast cast sets for spells
     sets.precast.FC = {
             head="Runeist bandeau", 
-			neck = "Voltsurge Torque",ear1="Loquacious Earring",
-            body="Dread Jupon", hands="Leyline Gloves", ring2 = "Lebeche Ring",
+			neck = "Voltsurge Torque",ear1="Halasz Earring",
+            body="Samnuha Coat", hands="Leyline Gloves", ring2 = "Lebeche Ring",
+			waist="Rumination sash",
             legs="Ayanmo cosciales"}
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", legs="Futhark Trousers +1"})
     sets.precast.FC['Utsusemi: Ichi'] = set_combine(sets.precast.FC, {neck='Magoraga beads', back="Mujin Mantle"})
@@ -90,8 +97,8 @@ function init_gear_sets()
 				ammo="Seeth. Bomblet +1",
 				head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
 				body= "Meg. Cuirie +1",
-				hands="Meg. Gloves +1",
-				legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
+				hands="Meg. Gloves +2",
+				legs="Carmine Cuisses +1",
 				feet="Meg. Jam. +1",
 				neck = "Fotia Gorget",
 				waist = "Fotia Belt",
@@ -107,7 +114,7 @@ function init_gear_sets()
 				ammo="Falcon Eye",
 				head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
 				body="Meg. Cuirie +1",
-				hands="Meg. Gloves +1",
+				hands="Meg. Gloves +2",
 				legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
 				feet="Meg. Jam. +1",
 				neck = "Fotia Gorget",
@@ -170,7 +177,7 @@ function init_gear_sets()
 				ammo="Staunch Tathlum",
 				head="Futhark Bandeau +1",
 				body="Erilaz Surcoat",
-				hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
+				hands="Meg. Gloves +2",
 				legs="Erilaz Leg Guards",
 				feet="Erilaz Greaves +1",
 				neck="Loricate Torque",
@@ -183,9 +190,9 @@ function init_gear_sets()
 				}
     sets.engaged.DD = {
 				ammo="Seeth. Bomblet +1",
-				head="Dampening Tam",
-				body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
-				hands={ name="Adhemar Wristbands", augments={'DEX+10','AGI+10','Accuracy+15',}},
+				head="Dampening Tam",				
+				body= "Meg. Cuirie +1",
+				hands="Meg. Gloves +2",
 				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 				feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
 				neck="Subtlety Spec.",

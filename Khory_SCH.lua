@@ -94,7 +94,7 @@ function init_gear_sets()
     legs="Gyve Trousers",
     feet={ name="Amalric Nails", augments={'Mag. Acc.+15','"Mag.Atk.Bns."+15','"Conserve MP"+6',}},
     neck="Voltsurge Torque",
-    waist="Fucho-no-Obi",
+	waist = "Rumination Sash",
     left_ear="Halasz Earring",
     right_ear="Friomisi Earring",
     left_ring="Lebeche Ring",
@@ -180,7 +180,7 @@ function init_gear_sets()
     sets.midcast.ElementalEnfeeble = sets.midcast.IntEnfeebles
 
     sets.midcast['Dark Magic'] = {main="Lehbrailg +2",sub="Mephitis Grip",ammo="Incantor Stone",
-        head="Nahtirah Hat",neck="Aesir Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
+        head="Nahtirah Hat",neck="Erra Pendant",ear1="Psystorm Earring",ear2="Lifestorm Earring",
         body="Vanir Cotehardie",hands="Yaoyotl Gloves",ring1="Shiva Ring",ring2="Sangoma Ring",
         back="Refraction Cape",waist="Goading Belt",legs="Bokwus Slops",feet="Bokwus Boots"}
 
@@ -238,7 +238,7 @@ function init_gear_sets()
     hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
-    neck="Sanctity Necklace",
+    neck="Mizu. Kubikazari",
     waist="Salire Belt",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",

@@ -91,6 +91,7 @@ function init_gear_sets()
     sets.precast.FC = {ammo="Incantor Stone",
 		neck = "Voltsurge Torque",
         head="Cizin Helm",ear2="Loquacious Earring",ring2="Prolix Ring",ring2 = "Lebeche Ring",
+		waist = "Rumination Sash",
 		legs = "Founder's Hose",}
 
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
@@ -99,18 +100,17 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-			ammo="Amar Cluster",
-			head={ name="Argosy Celata", augments={'DEX+10','Accuracy+15','"Dbl.Atk."+2',}},
-			body={ name="Found. Breastplate", augments={'Accuracy+11','Mag. Acc.+10','Attack+10','"Mag.Atk.Bns."+9',}},
-			hands={ name="Argosy Mufflers", augments={'STR+10','DEX+10','Attack+15',}},
-			legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-			feet={ name="Argosy Sollerets", augments={'STR+10','DEX+10','Attack+15',}},
+			head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
+			body="Lustratio Harness",
+			hands={ name="Odyssean Gauntlets", augments={'Accuracy+28','Weapon skill damage +4%','AGI+1',}},
+			legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
+			feet="Sulev. Leggings +2",
 			neck="Fotia Gorget",
-			waist = "Fotia Belt",
-			ear1 = "Moonshade earring",
+			waist="Fotia Belt",
+			left_ear="Moonshade earring",
 			right_ear="Mache Earring",
-			left_ring="Ifrit Ring",
-			right_ring="Petrov Ring",
+			left_ring="Ramuh Ring",
+			right_ring="Chirich Ring",
 			back="Atheling Mantle",
 			}
 
@@ -163,7 +163,7 @@ function init_gear_sets()
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
     feet={ name="Odyssean Greaves", augments={'Phys. dmg. taken -5%','STR+7','Accuracy+15',}},
     neck="Warder's Charm +1",
-    waist="Flume Belt +1",
+	waist = "Rumination Sash",
     left_ear="Halasz Earring",
     right_ear="Friomisi Earring",
     left_ring="Defending Ring",
@@ -199,8 +199,6 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle ={
-    main={ name="Nixxer", augments={'DMG:+15','Accuracy+15','Attack+15',}},
-    sub={ name="Nibiru Shield", augments={'HP+80','Enmity+7','Phys. dmg. taken -5',}},
     ammo="Staunch Tathlum",
     head= "Jumalik Helm",
     body= "Jumalik mail",
@@ -275,8 +273,6 @@ function init_gear_sets()
     --------------------------------------
     
     sets.engaged ={
-    main={ name="Nixxer", augments={'DMG:+15','Accuracy+15','Attack+15',}},
-    sub={ name="Nibiru Shield", augments={'HP+80','Enmity+7','Phys. dmg. taken -5',}},
     ammo="Staunch Tathlum",
     head={ name="Souveran Schaller", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
     body={ name="Souveran Cuirass", augments={'HP+80','Enmity+7','Potency of "Cure" effect received +10%',}},
