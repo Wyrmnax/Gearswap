@@ -127,12 +127,12 @@ function init_gear_sets()
     legs="Mallquis Trews +1",
     feet={ name="Amalric Nails", augments={'Mag. Acc.+15','"Mag.Atk.Bns."+15','"Conserve MP"+6',}},
 	neck = "Voltsurge Torque",
-    waist="Salire Belt",
+    waist="Eschan Stone",
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Jhakri Ring",
     right_ring = "Lebeche Ring",
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	}
 		
 	
@@ -144,12 +144,12 @@ function init_gear_sets()
     legs="Mallquis Trews +1",
     feet={ name="Amalric Nails", augments={'Mag. Acc.+15','"Mag.Atk.Bns."+15','"Conserve MP"+6',}},
 	neck = "Voltsurge Torque",
-    waist="Salire Belt",
+    waist="Eschan Stone",
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Jhakri Ring",
     right_ring = "Lebeche Ring",
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	}
 		
 		
@@ -216,7 +216,7 @@ function init_gear_sets()
 		right_ear="Dominance Earring",
 		left_ring="Stikini Ring",
 		right_ring="Stikini Ring",
-		--back="Solemnity Cape",
+		back="Solemnity Cape",
 		}
  
 	-- I personally do not have gear to alter these abilities as of the time of disseminating this file, but 
@@ -236,12 +236,12 @@ function init_gear_sets()
     legs="Mallquis Trews +1",
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
-    waist="Salire Belt",
+    waist="Eschan Stone",
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Vertigo Ring",
     right_ring={ name="Diamond Ring", augments={'INT+2','Spell interruption rate down -1%','"Resist Silence"+1',}},
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	}   
 
     sets.midcast['Enfeebling Magic'].FreeNuke_Effect = set_combine(sets.midcast['Enfeebling Magic'],{
@@ -252,12 +252,12 @@ function init_gear_sets()
     legs="Mallquis Trews +1",
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
-    waist="Salire Belt",
+    waist="Eschan Stone",
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Vertigo Ring",
     right_ring={ name="Diamond Ring", augments={'INT+2','Spell interruption rate down -1%','"Resist Silence"+1',}},
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	})
 
 	sets.midcast['Enfeebling Magic'].Occult_Acumen = set_combine(sets.midcast['Enfeebling Magic'],{
@@ -268,12 +268,12 @@ function init_gear_sets()
     legs="Mallquis Trews +1",
     feet="Mallquis Clogs +1",
     neck="Sanctity Necklace",
-    waist="Salire Belt",
+    waist="Eschan Stone",
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Vertigo Ring",
     right_ring={ name="Diamond Ring", augments={'INT+2','Spell interruption rate down -1%','"Resist Silence"+1',}},
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	})
 	
 	sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
@@ -286,12 +286,12 @@ function init_gear_sets()
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
     neck="Erra Pendant",
-    waist="Salire Belt",
+    waist="Eschan Stone",
     left_ear="Friomisi Earring",
     right_ear="Hermetic Earring",
     left_ring="Jhakri Ring",
     right_ring="Evanescence Ring",
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	}
  
     -- Elemental Magic sets
@@ -301,17 +301,17 @@ function init_gear_sets()
     sub="Enki Strap",
     ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
-    body="Jhakri Robe +2",
+    body="Spaekona's Coat +2",
     hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
     neck="Sanctity Necklace",
-    waist="Salire Belt",
+    waist="Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Jhakri Ring",
     right_ring="Mujin Band",
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	}
 
     sets.midcast['Elemental Magic'].FreeNuke_Effect = set_combine(sets.midcast['Elemental Magic'], {
@@ -319,17 +319,17 @@ function init_gear_sets()
     sub="Enki Strap",
     ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
-    body="Jhakri Robe +2",
+    body="Spaekona's Coat +2",
     hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
     neck="Sanctity Necklace",
-    waist="Salire Belt",
+    waist="Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Jhakri Ring",
     right_ring="Shiva Ring",
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	})
 		
     sets.midcast['Elemental Magic'].Occult_Acumen = set_combine(sets.midcast['Elemental Magic'], {
@@ -342,17 +342,17 @@ function init_gear_sets()
     sub="Enki Strap",
     ammo="Witchstone",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
-    body="Jhakri Robe +2",
+    body="Spaekona's Coat +2",
     hands="Ea Cuffs",
     legs={ name="Amalric Slops", augments={'MP+60','"Mag.Atk.Bns."+20','Enmity-5',}},
     feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
     neck="Sanctity Necklace",
-    waist="Salire Belt",
+    waist="Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Jhakri Ring",
     right_ring="Shiva Ring",
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	})
 		
     sets.midcast['Elemental Magic'].HighTierNuke.Occult_Acumen = set_combine(sets.midcast['Elemental Magic'].HighTierNuke, {
@@ -399,7 +399,7 @@ function init_gear_sets()
     right_ear="Friomisi Earring",
     left_ring="Evanescence Ring",
 	right_ring="Mujin Band",
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	}
  
 	sets.midcast.LowMP = {
@@ -417,7 +417,7 @@ function init_gear_sets()
     right_ear="Friomisi Earring",
     left_ring="Evanescence Ring",
 	right_ring="Mujin Band",
-    --back="Thauma. Cape",
+    back="Thauma. Cape",
 	}
 		
     --Set to be equipped when Day/Weather match current spell element

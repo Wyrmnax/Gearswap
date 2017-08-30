@@ -30,7 +30,7 @@ function get_sets()
     right_ear="Halasz Earring",
     left_ring="Defending Ring",
     right_ring="Vocane Ring",
-    back="Cheviot Cape",
+    back="Campestre's cape",
     }
       
     -- Your MP Recovered Whilst Resting Set
@@ -49,7 +49,7 @@ function get_sets()
     right_ear="Halasz Earring",
     left_ring="Defending Ring",
     right_ring="Vocane Ring",
-    back="Cheviot Cape",
+    back="Campestre's cape",
     }
       
     -----------------------
@@ -66,14 +66,14 @@ function get_sets()
     body="Shomonjijoe +1",
     hands="Asteria Mitts",
     legs="Assid. Pants +1",
-    feet={ name="Apogee Pumps", augments={'Pet: Attack+20','Pet: "Mag.Atk.Bns."+20','Blood Pact Dmg.+7',}},
+    feet="Convo. Pigaches +2",
     neck="Caller's Pendant",
     waist="Klouskap Sash",    
 	lear="Evans earring",
     right_ear="Halasz Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     }
   
     -- The following sets base off of perpetuation, so you can consider them idle sets.
@@ -89,14 +89,14 @@ function get_sets()
     body="Shomonjijoe +1",
     hands="Asteria Mitts",
     legs="Assid. Pants +1",
-    feet={ name="Apogee Pumps", augments={'Pet: Attack+20','Pet: "Mag.Atk.Bns."+20','Blood Pact Dmg.+7',}},
+    feet="Convo. Pigaches +2",
     neck="Caller's Pendant",
     waist="Klouskap Sash", 
     left_ear="Moldavite Earring",
     right_ear="Halasz Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     })
       
     -- When we want our avatar to shred
@@ -108,14 +108,14 @@ function get_sets()
     body="Shomonjijoe +1",
     hands="Tali'ah Gages +1",
     legs="Assid. Pants +1",
-    feet="Tali'ah Crackows +1",
+    feet="Convo. Pigaches +2",
     neck="Caller's Pendant",
     waist="Klouskap Sash", 
     left_ear="Moldavite Earring",
     right_ear="Halasz Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     })
       
     -- When we want our avatar to hit
@@ -127,33 +127,21 @@ function get_sets()
     body="Shomonjijoe +1",
     hands="Tali'ah Gages +1",
     legs="Assid. Pants +1",
-    feet="Tali'ah Crackows +1",
+    feet="Convo. Pigaches +2",
     neck="Caller's Pendant",
     waist="Klouskap Sash", 
     left_ear="Moldavite Earring",
     right_ear="Halasz Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     })
       
     -- When Avatar's Favori s active
     sets.avatar.favor = set_combine(sets.avatar.perp,{
             
     sub="Elan Strap",
-    ammo="Sancus Sachet",
-    head="Beckoner's Horn +1",
-    body="Shomonjijoe +1",
-    hands="Tali'ah Gages +1",
-    legs="Assid. Pants +1",
-    feet="Tali'ah Crackows +1",
-    neck="Caller's Pendant",
-    waist="Klouskap Sash", 
-    left_ear="Moldavite Earring",
-    right_ear="Halasz Earring",
-    left_ring="Varar Ring",
-    right_ring="Varar Ring",
-	back="Scintillating Cape",
+   
     })
       
     ----------------------------
@@ -177,7 +165,7 @@ function get_sets()
     right_ear="Halasz Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     }
       
     -------------------------
@@ -186,100 +174,99 @@ function get_sets()
       
     -- Physical damage
     sets.avatar.atk = set_combine(sets.avatar.skill,{
-    
+    main = "Was",        
     sub="Elan Strap",
     ammo="Sancus Sachet",
-    head={ name="Merlinic Hood", augments={'Pet: Mag. Acc.+2','Blood Pact Dmg.+9','Pet: STR+7',}},
-    body="Con. Doublet +1",
+    head={ name="Apogee Crown", augments={'MP+60','Pet: Attack+30','Blood Pact Dmg.+7',}},
+    body="Con. Doublet +2",
     hands={ name="Merlinic Dastanas", augments={'Pet: Attack+30 Pet: Rng.Atk.+30','Blood Pact Dmg.+6','Pet: DEX+4','Pet: Mag. Acc.+6',}},
     legs={ name="Enticer's Pants", augments={'MP+50','Pet: Accuracy+15 Pet: Rng. Acc.+15','Pet: Mag. Acc.+15','Pet: Damage taken -5%',}},
-    feet={ name="Apogee Pumps", augments={'Pet: Attack+20','Pet: "Mag.Atk.Bns."+20','Blood Pact Dmg.+7',}},
+    feet="Convo. Pigaches +2",
     neck="Empath Necklace",
     waist="Klouskap Sash", 
     left_ear="Evans Earring",
     right_ear="Gelos Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     })
     sets.avatar.pacc = set_combine(sets.avatar.atk,{
-    
+    main = "Was",        
     sub="Elan Strap",
     ammo="Sancus Sachet",
-    head={ name="Merlinic Hood", augments={'Pet: Mag. Acc.+2','Blood Pact Dmg.+9','Pet: STR+7',}},
-    body="Con. Doublet +1",
+    head={ name="Apogee Crown", augments={'MP+60','Pet: Attack+30','Blood Pact Dmg.+7',}},
+    body="Con. Doublet +2",
     hands="Apogee Mitts",
     legs={ name="Enticer's Pants", augments={'MP+50','Pet: Accuracy+15 Pet: Rng. Acc.+15','Pet: Mag. Acc.+15','Pet: Damage taken -5%',}},
-    feet={ name="Apogee Pumps", augments={'Pet: Attack+20','Pet: "Mag.Atk.Bns."+20','Blood Pact Dmg.+7',}},
+    feet="Convo. Pigaches +2",
     neck="Empath Necklace",
     waist="Klouskap Sash", 
     left_ear="Evans Earring",
     right_ear="Gelos Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     })
       
     -- Magic Attack
     sets.avatar.mab = set_combine(sets.avatar.skill,{
-    
+    main = "Espiritus",
     sub="Elan Strap",
     ammo="Sancus Sachet",
-    head={ name="Merlinic Hood", augments={'Pet: Mag. Acc.+2','Blood Pact Dmg.+9','Pet: STR+7',}},
-    body="Con. Doublet +1",
+    head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    body="Con. Doublet +2",
     hands={ name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+17 Pet: "Mag.Atk.Bns."+17','Blood Pact Dmg.+10','Pet: INT+9','Pet: Mag. Acc.+8',}},
     legs={ name="Enticer's Pants", augments={'MP+50','Pet: Accuracy+15 Pet: Rng. Acc.+15','Pet: Mag. Acc.+15','Pet: Damage taken -5%',}},
-    feet={ name="Apogee Pumps", augments={'Pet: Attack+20','Pet: "Mag.Atk.Bns."+20','Blood Pact Dmg.+7',}},
+    feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     neck="Adad Amulet",
     waist="Klouskap Sash", 
 	lear="Evans earring",
     right_ear="Gelos Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     })
     sets.avatar.mb = set_combine(sets.avatar.mab,{hands="Glyphic Bracers +1"})
     -- Hybrid
     sets.avatar.hybrid = set_combine(sets.avatar.skill,{
-    
+    main = "Was",    
     sub="Elan Strap",
     ammo="Sancus Sachet",
-	head={ name="Merlinic Hood", augments={'Pet: Mag. Acc.+2','Blood Pact Dmg.+9','Pet: STR+7',}},
-    body="Con. Doublet +1",
+    head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
+    body="Con. Doublet +2",
     hands={ name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+17 Pet: "Mag.Atk.Bns."+17','Blood Pact Dmg.+10','Pet: INT+9','Pet: Mag. Acc.+8',}},
     legs={ name="Enticer's Pants", augments={'MP+50','Pet: Accuracy+15 Pet: Rng. Acc.+15','Pet: Mag. Acc.+15','Pet: Damage taken -5%',}},
-    feet={ name="Apogee Pumps", augments={'Pet: Attack+20','Pet: "Mag.Atk.Bns."+20','Blood Pact Dmg.+7',}},
+    feet="Convo. Pigaches +2",
     neck="Adad Amulet",
     waist="Klouskap Sash", 
 	lear="Evans earring",
     right_ear="Gelos Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     })
       
     -- Magic Accuracy
     sets.avatar.macc = set_combine(sets.avatar.skill,{
-    
+    main = "Espiritus",    
     sub="Elan Strap",
     ammo="Sancus Sachet",
     head="Tali'ah Turban +1",
     body="Con. Doubelt +1",
     hands={ name="Merlinic Dastanas", augments={'Pet: Mag. Acc.+17 Pet: "Mag.Atk.Bns."+17','Blood Pact Dmg.+10','Pet: INT+9','Pet: Mag. Acc.+8',}},
     legs={ name="Enticer's Pants", augments={'MP+50','Pet: Accuracy+15 Pet: Rng. Acc.+15','Pet: Mag. Acc.+15','Pet: Damage taken -5%',}},
-    feet={ name="Apogee Pumps", augments={'Pet: Attack+20','Pet: "Mag.Atk.Bns."+20','Blood Pact Dmg.+7',}},
+    feet={ name="Apogee Pumps", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
     neck="Adad Amulet",
     waist="Klouskap Sash", 
 	lear="Evans earring",
     right_ear="Gelos Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     })
       
     -- Buffs
     sets.avatar.buff = set_combine(sets.avatar.skill,{
-    
     sub="Elan Strap",
     ammo="Sancus Sachet",
     head="Beckoner's Horn +1",
@@ -293,7 +280,7 @@ function get_sets()
     right_ear="Gelos Earring",
     left_ring="Varar Ring",
     right_ring="Varar Ring",
-	back="Scintillating Cape",
+	back="Campestre's cape",
     })
       
     -- Other
