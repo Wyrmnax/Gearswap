@@ -187,7 +187,7 @@ function init_gear_sets()
     sets.midcast.Kaustra = {
 	main="Nibiru Staff",
     sub="Niobid Strap",
-    ammo="Witchstone",
+    ammo="Ghastly Tathlum +1",
     head="Pixie Hairpin +1",
     body="Jhakri Robe +2",
     hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
@@ -202,7 +202,7 @@ function init_gear_sets()
     back="Lugh's Cape",}
 
     sets.midcast.Drain = {
-    ammo="Witchstone",
+    ammo="Ghastly Tathlum +1",
     head="Pixie Hairpin +1",
     body="Jhakri Robe +2",
     hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
@@ -232,7 +232,7 @@ function init_gear_sets()
 	{
     main="Nibiru Staff",
     sub="Niobid Strap",
-    ammo="Witchstone",
+    ammo="Ghastly Tathlum +1",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Jhakri Robe +2",
     hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
@@ -249,7 +249,7 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].Resistant = {
     main="Nibiru Staff",
     sub="Niobid Strap",
-    ammo="Witchstone",
+    ammo="Ghastly Tathlum +1",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Jhakri Robe +2",
     hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
@@ -287,7 +287,7 @@ function init_gear_sets()
     sets.idle.Field = {
     main="Nibiru Staff",
     sub="Niobid Strap",
-    ammo="Witchstone",
+    ammo="Ghastly Tathlum +1",
     head="Hike Khat",
     body="Jhakri Robe +2",
     hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},

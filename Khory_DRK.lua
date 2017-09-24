@@ -100,19 +100,19 @@
                     }
      
             sets.midcast.DarkMagic = {
-					ammo="Snow Sachet",
-                    head="Pixie Hairpin +1",
+					ammo="Ghastly Tathlum +1",
+                    head="Ratri Sallet",
 					neck="Erra Pendant",
 					ear1="Hermetic Earring",
-					ear2="Friomisi Earring",
-					body="Valorous Mail",
+					ear2="Lempo Earring",
+					body="Ratri Plate",
 					hands="Leyline Gloves",
 					ring1="Shiva Ring",
 					ring2="Evanescence Ring",
                     back="Abyss Cape",
-					waist="Salire Belt",
-					legs="Heath. Flanchard",
-					feet="Igno. Sollerets"}
+					waist="Eschan Stone",
+					legs="Ratri Cuisses",
+					feet="Ratri Sollerets",}
            
 		    sets.midcast.EnfeeblingMagic = set_combine(sets.midcast.DarkMagic, {
             })
@@ -135,18 +135,18 @@
             -- Default set for any weaponskill that isn't any more specifically defined
             sets.precast.WS = {
 			ammo="Seeth. Bomblet +1",
-			head={ name="Argosy Celata", augments={'DEX+10','Accuracy+15','"Dbl.Atk."+2',}},
-			body={ name="Argosy Hauberk", augments={'STR+10','DEX+10','Attack+15',}},
-			hands={ name="Argosy Mufflers", augments={'STR+10','DEX+10','Attack+15',}},
-			legs={ name="Argosy Breeches", augments={'STR+10','DEX+10','Attack+15',}},
+			head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','"Dbl.Atk."+3','Accuracy+11',}},
+			body="Ignominy Cuirass +2",
+			hands={ name="Odyssean Gauntlets", augments={'Accuracy+28','Weapon skill damage +4%','AGI+1',}},
+			legs="Ig. Flanchard +2",
 			feet="Sulev. Leggings +2",
-			neck = "Fotia Gorget",
-			waist = "Fotia Belt",
-			ear1 = "Moonshade earring",
+			neck="Fotia Gorget",
+			waist="Fotia Belt",
+			left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 			right_ear="Mache Earring",
-			left_ring="Ifrit Ring",
+			left_ring="Niqmaddu Ring",
 			right_ring="Chirich Ring",
-			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
+			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
 			}
 			
             sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
@@ -161,12 +161,16 @@
             sets.precast.WS['Entropy'].Mod = set_combine(sets.precast.WS['Entropy'], {})
 			
 			sets.precast.WS['Cross Reaper'] = set_combine(sets.precast.WS, {
-			
+					ammo="Knobkierrie",
+                    head="Ratri Sallet",	
+					body="Ratri Plate",					
+					legs="Ratri Cuisses",	
 			})
             sets.precast.WS['Cross Reaper'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Cross Reaper'].Mod = set_combine(sets.precast.WS['Cross Reaper'], {})
      
-            sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {})
+            sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {
+			head = "Argosy Celata",})
             sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Resolution'].Mod = set_combine(sets.precast.WS['Resolution'], {})
 			
@@ -182,7 +186,7 @@
 				waist="Fotia Belt",
 				left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 				right_ear="Ishvara Earring",
-				left_ring="Ifrit Ring",
+				left_ring="Niqmaddu Ring",
 				right_ring="Chirich Ring",
 				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 				})
@@ -201,7 +205,7 @@
 				waist = "Fotia Belt",
 				ear1 = "Moonshade earring",
 				ear2 = "Ishvara Earring",
-				left_ring="Apate Ring",
+				left_ring="Niqmaddu Ring",
 				right_ring="Chirich Ring",
 				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 			})
@@ -216,9 +220,7 @@
             sets.resting = {ammo="Seeth. Bomblet +1",}
            
      
-            -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
-            sets.idle.Town = set_combine(sets.idle.Field, {});
-           
+            -- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)           
             sets.idle.Field = {
             ammo="Staunch Tathlum",			
 			head= "Jumalik Helm",
@@ -234,6 +236,8 @@
 			right_ring="Vocane Ring",
 			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}
+			
+			            sets.idle.Town = set_combine(sets.idle.Field, {});
      
             sets.idle.Weak = {}
            
@@ -263,7 +267,7 @@
 			waist="Ioskeha Belt",
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
-			left_ring="Petrov Ring",
+			left_ring="Niqmaddu Ring",
 			right_ring="Chirich Ring",
 			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}

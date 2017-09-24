@@ -255,7 +255,7 @@ function init_gear_sets()
     neck="Subtlety Spec.",
     waist="Yemaya Belt",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Garuda Ring",
     right_ring="Garuda Ring",
     back="Sokolski Mantle",}
@@ -269,7 +269,7 @@ function init_gear_sets()
     neck="Subtlety Spec.",
     waist="Yemaya Belt",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Garuda Ring",
     right_ring="Garuda Ring",
     back="Sokolski Mantle",}
@@ -296,7 +296,7 @@ function init_gear_sets()
     neck="Loricate Torque",
     waist="Flume Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Defending Ring",
     right_ring="Vocane Ring",
     back="Atheling Mantle",}
@@ -326,7 +326,7 @@ function init_gear_sets()
     neck="Loricate Torque",
     waist="Flume Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Defending Ring",
     right_ring="Vocane Ring",
     back="Atheling Mantle",}
@@ -341,7 +341,7 @@ function init_gear_sets()
     neck="Loricate Torque",
     waist="Flume Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Defending Ring",
     right_ring="Vocane Ring",
     back="Atheling Mantle",}
@@ -362,7 +362,7 @@ function init_gear_sets()
     neck="Subtlety Spec.",
     waist="Windbuffet Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Epona's Ring",
     right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
@@ -377,7 +377,7 @@ function init_gear_sets()
     neck="Subtlety Spec.",
     waist="Windbuffet Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Epona's Ring",
     right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
@@ -392,7 +392,7 @@ function init_gear_sets()
     neck="Subtlety Spec.",
     waist="Windbuffet Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Epona's Ring",
     right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
@@ -408,7 +408,7 @@ function init_gear_sets()
     neck="Subtlety Spec.",
     waist="Windbuffet Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Epona's Ring",
     right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
@@ -423,7 +423,7 @@ function init_gear_sets()
     neck="Subtlety Spec.",
     waist="Windbuffet Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Epona's Ring",
     right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
@@ -438,7 +438,7 @@ function init_gear_sets()
     neck="Subtlety Spec.",
     waist="Windbuffet Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Epona's Ring",
     right_ring="Ilabrat Ring",
     back="Atheling Mantle",}
@@ -453,7 +453,7 @@ function init_gear_sets()
     neck="Loricate Torque",
     waist="Flume Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Defending Ring",
     right_ring="Vocane Ring",
     back="Atheling Mantle",}
@@ -468,7 +468,7 @@ function init_gear_sets()
     neck="Loricate Torque",
     waist="Flume Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Sherida Earring",
     left_ring="Defending Ring",
     right_ring="Vocane Ring",
     back="Atheling Mantle",}

@@ -107,7 +107,7 @@ function init_gear_sets()
      
     -- Precast sets to enhance JAs
 	
-    sets.precast.JA['Mana Wall'] = {back="Taranus's cape",feet="Wicce Sabots +1"}
+    sets.precast.JA['Mana Wall'] = {back="Taranus's Cape",feet="Wicce Sabots +1"}
  
     sets.precast.JA.Manafont = {body="Sorcerer's Coat +2"}
      
@@ -169,7 +169,7 @@ function init_gear_sets()
 		hands={ name="Amalric Gages", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
 		legs={ name="Merlinic Shalwar", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Magic burst mdg.+10%','Mag. Acc.+10','"Mag.Atk.Bns."+14',}},
 		feet="Merlinic Crackows",
-		neck="Mizukage-no-Kubikazari",
+		neck="Mizu. Kubikazari",
 		waist="Eschan Stone",
 		left_ear="Barkaro. Earring",
 		right_ear="Static Earring",
@@ -229,7 +229,7 @@ function init_gear_sets()
     sets.midcast.Stoneskin = {}
  
     sets.midcast['Enfeebling Magic'] = {
-		ammo="Witchstone",
+		ammo="Ghastly Tathlum +1",
     head={ name="Amalric Coif", augments={'INT+10','Mag. Acc.+20','Enmity-5',}},
     body="Jhakri Robe +2",
     hands="Ea Cuffs",
@@ -241,11 +241,11 @@ function init_gear_sets()
     right_ear="Hermetic Earring",
     left_ring="Vertigo Ring",
     right_ring={ name="Diamond Ring", augments={'INT+2','Spell interruption rate down -1%','"Resist Silence"+1',}},
-    back="Thauma. Cape",
+    --back="Taranus's Cape",
 	}   
 
     sets.midcast['Enfeebling Magic'].FreeNuke_Effect = set_combine(sets.midcast['Enfeebling Magic'],{
-	ammo="Witchstone",
+	ammo="Ghastly Tathlum +1",
     head={ name="Amalric Coif", augments={'INT+10','Mag. Acc.+20','Enmity-5',}},
     body="Jhakri Robe +2",
     hands="Ea Cuffs",
@@ -257,11 +257,11 @@ function init_gear_sets()
     right_ear="Hermetic Earring",
     left_ring="Vertigo Ring",
     right_ring={ name="Diamond Ring", augments={'INT+2','Spell interruption rate down -1%','"Resist Silence"+1',}},
-    back="Thauma. Cape",
+    --back="Taranus's Cape",
 	})
 
 	sets.midcast['Enfeebling Magic'].Occult_Acumen = set_combine(sets.midcast['Enfeebling Magic'],{
-		ammo="Witchstone",
+		ammo="Ghastly Tathlum +1",
     head={ name="Amalric Coif", augments={'INT+10','Mag. Acc.+20','Enmity-5',}},
     body="Jhakri Robe +2",
     hands="Ea Cuffs",
@@ -273,25 +273,25 @@ function init_gear_sets()
     right_ear="Hermetic Earring",
     left_ring="Vertigo Ring",
     right_ring={ name="Diamond Ring", augments={'INT+2','Spell interruption rate down -1%','"Resist Silence"+1',}},
-    back="Thauma. Cape",
+    --back="Taranus's Cape",
 	})
 	
 	sets.midcast.ElementalEnfeeble = sets.midcast['Enfeebling Magic']
  
     sets.midcast['Dark Magic'] = {
-	ammo="Witchstone",
+	ammo="Ghastly Tathlum +1",
     head="Pixie Hairpin +1",
     body="Jhakri Robe +2",
     hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
-    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +6','"Mag.Atk.Bns."+9',}},
     neck="Erra Pendant",
     waist="Eschan Stone",
     left_ear="Friomisi Earring",
     right_ear="Hermetic Earring",
     left_ring="Jhakri Ring",
     right_ring="Evanescence Ring",
-    back="Thauma. Cape",
+    --back="Taranus's Cape",
 	}
  
     -- Elemental Magic sets
@@ -299,37 +299,37 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'] = {
 	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
     sub="Enki Strap",
-    ammo="Witchstone",
+    ammo="Ghastly Tathlum +1",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Spaekona's Coat +2",
     hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
-    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
-    neck="Sanctity Necklace",
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +6','"Mag.Atk.Bns."+9',}},
+    neck="Mizu. Kubikazari",
     waist="Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Jhakri Ring",
     right_ring="Mujin Band",
-    back="Thauma. Cape",
+    --back="Taranus's Cape",
 	}
 
     sets.midcast['Elemental Magic'].FreeNuke_Effect = set_combine(sets.midcast['Elemental Magic'], {
 		    main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
     sub="Enki Strap",
-    ammo="Witchstone",
+    ammo="Ghastly Tathlum +1",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Spaekona's Coat +2",
     hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
-    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
-    neck="Sanctity Necklace",
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +6','"Mag.Atk.Bns."+9',}},
+    neck="Mizu. Kubikazari",
     waist="Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Jhakri Ring",
     right_ring="Shiva Ring",
-    back="Thauma. Cape",
+    --back="Taranus's Cape",
 	})
 		
     sets.midcast['Elemental Magic'].Occult_Acumen = set_combine(sets.midcast['Elemental Magic'], {
@@ -340,19 +340,19 @@ function init_gear_sets()
     sets.midcast['Elemental Magic'].HighTierNuke.FreeNuke_Effect = set_combine(sets.midcast['Elemental Magic'].HighTierNuke, {
 	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
     sub="Enki Strap",
-    ammo="Witchstone",
+    ammo="Ghastly Tathlum +1",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Spaekona's Coat +2",
     hands="Ea Cuffs",
     legs={ name="Amalric Slops", augments={'MP+60','"Mag.Atk.Bns."+20','Enmity-5',}},
-    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
-    neck="Sanctity Necklace",
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +6','"Mag.Atk.Bns."+9',}},
+    neck="Mizu. Kubikazari",
     waist="Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Jhakri Ring",
     right_ring="Shiva Ring",
-    back="Thauma. Cape",
+    --back="Taranus's Cape",
 	})
 		
     sets.midcast['Elemental Magic'].HighTierNuke.Occult_Acumen = set_combine(sets.midcast['Elemental Magic'].HighTierNuke, {
@@ -387,37 +387,37 @@ function init_gear_sets()
 	sets.midcast.HighMP = {
 		main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
     sub="Enki Strap",
-    ammo="Witchstone",
+    ammo="Ghastly Tathlum +1",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Jhakri Robe +2",
     hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
-    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +6','"Mag.Atk.Bns."+9',}},
     neck="Sanctity Necklace",
     waist="Fucho-no-Obi",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Evanescence Ring",
 	right_ring="Mujin Band",
-    back="Thauma. Cape",
+    --back="Taranus's Cape",
 	}
  
 	sets.midcast.LowMP = {
 	main={ name="Lathi", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
     sub="Enki Strap",
-    ammo="Witchstone",
+    ammo="Ghastly Tathlum +1",
     head={ name="Merlinic Hood", augments={'Mag. Acc.+19','Magic burst dmg.+11%','MND+1','"Mag.Atk.Bns."+4',}},
     body="Jhakri Robe +2",
     hands="Ea Cuffs",
     legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
-    feet={ name="Merlinic Crackows", augments={'"Mag.Atk.Bns."+27','Magic burst dmg.+8%','MND+1',}},
+    feet={ name="Merlinic Crackows", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','"Drain" and "Aspir" potency +6','"Mag.Atk.Bns."+9',}},
     neck="Sanctity Necklace",
     waist="Fucho-no-Obi",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
     left_ring="Evanescence Ring",
 	right_ring="Mujin Band",
-    back="Thauma. Cape",
+    --back="Taranus's Cape",
 	}
 		
     --Set to be equipped when Day/Weather match current spell element

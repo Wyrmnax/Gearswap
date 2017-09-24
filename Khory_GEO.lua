@@ -193,7 +193,7 @@ function init_gear_sets()
         main="Grioavolr",
         sub="Niobid Strap",
         --sub="Wizzan Grip",
-        ammo="Witchstone",
+        ammo="Ghastly Tathlum +1",
         head="Amalric Coif",
         neck="Sanctity Necklace",
         ear1="Moldavite Earring",

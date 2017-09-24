@@ -184,7 +184,9 @@ function init_gear_sets()
     back="Camulus's Mantle",}
 
 
-    sets.precast.WS['Wildfire'] = {ammo=gear.MAbullet, 
+    sets.precast.WS['Wildfire'] = {
+	ammo=gear.MAbullet, 
+	--ammo="Bronze Bullet",
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
     body="Meg. Cuirie +1",
     hands="Leyline Gloves",
