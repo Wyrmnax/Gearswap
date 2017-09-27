@@ -298,7 +298,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Sherida Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Atheling Mantle",}
 
     sets.idle.Town = sets.idle ;
@@ -328,7 +328,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Sherida Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Atheling Mantle",}
 
     sets.defense.MDT = {
@@ -343,7 +343,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Sherida Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Atheling Mantle",}
 
 
@@ -455,7 +455,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Sherida Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Atheling Mantle",}
 	
     sets.engaged.Acc.PDT = {
@@ -470,7 +470,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Sherida Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Atheling Mantle",}
 
 end

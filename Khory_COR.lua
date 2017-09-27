@@ -324,7 +324,7 @@ function init_gear_sets()
     left_ear="Brutal Earring",
     right_ear="Suppanomimi",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Camulus's Mantle"
 }
 

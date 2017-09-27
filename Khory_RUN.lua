@@ -157,7 +157,7 @@ function init_gear_sets()
 				left_ear="Brutal Earring",
 				right_ear="Sherida Earring",
 				left_ring="Defending Ring",
-				right_ring="Vocane Ring",
+				right_ring="Karieyh Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}}
 				}
     sets.idle.Refresh = set_combine(sets.idle, {body="Runeist Coat", waist="Fucho-no-obi"})
@@ -185,7 +185,7 @@ function init_gear_sets()
 				left_ear="Brutal Earring",
 				right_ear="Sherida Earring",
 				left_ring="Defending Ring",
-				right_ring="Vocane Ring",
+				right_ring="Karieyh Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
 				}
     sets.engaged.DD = {
@@ -217,7 +217,7 @@ function init_gear_sets()
 				left_ear="Brutal Earring",
 				right_ear="Sherida Earring",
 				left_ring="Defending Ring",
-				right_ring="Vocane Ring",
+				right_ring="Karieyh Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},}
     sets.engaged.MDT = {            
 				ammo="Staunch Tathlum",
@@ -231,7 +231,7 @@ function init_gear_sets()
 				left_ear="Brutal Earring",
 				right_ear="Sherida Earring",
 				left_ring="Defending Ring",
-				right_ring="Vocane Ring",
+				right_ring="Karieyh Ring",
 				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},}
     sets.engaged.repulse = {back="Repulse Mantle"}
 

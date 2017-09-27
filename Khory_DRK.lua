@@ -233,7 +233,7 @@
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
-			right_ring="Vocane Ring",
+			right_ring="Karieyh Ring",
 			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}
 			
@@ -284,7 +284,7 @@
 			left_ear="Brutal Earring",
 			right_ear="Mache Earring",
 			left_ring="Defending Ring",
-			right_ring="Vocane Ring",
+			right_ring="Karieyh Ring",
 			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			})
 	        sets.engaged.Multi = set_combine(sets.engaged, {

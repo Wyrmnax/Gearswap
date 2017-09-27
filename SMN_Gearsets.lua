@@ -29,7 +29,7 @@ function get_sets()
     left_ear="Moldavite Earring",
     right_ear="Halasz Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Campestre's cape",
     }
       
@@ -48,7 +48,7 @@ function get_sets()
     left_ear="Moldavite Earring",
     right_ear="Halasz Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Campestre's cape",
     }
       

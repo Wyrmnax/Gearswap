@@ -447,7 +447,7 @@ function init_gear_sets()
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     --back="Cheviot Cape"
 	}
  
@@ -466,7 +466,7 @@ function init_gear_sets()
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     --back="Cheviot Cape"
 	}
      
@@ -502,7 +502,7 @@ function init_gear_sets()
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     --back="Cheviot Cape",
 	}
  
@@ -520,7 +520,7 @@ function init_gear_sets()
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     --back="Cheviot Cape",
 	}
  
@@ -542,7 +542,7 @@ function init_gear_sets()
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     --back="Cheviot Cape",
 	}
  
@@ -561,7 +561,7 @@ function init_gear_sets()
 		waist="Slipor Sash",
 		left_ear="Merman's Earring",
 		right_ear="Merman's Earring",
-		left_ring="Vocane Ring",
+		left_ring="Karieyh Ring",
 		right_ring="Defending Ring",
 		back={ name="Taranus's Cape", augments={'MP+60','Mag. Acc+20 /Mag. Dmg.+20','MP+20','"Fast Cast"+10',}},}
  
@@ -585,7 +585,7 @@ function init_gear_sets()
     left_ear="Halasz Earring",
     right_ear="Hermetic Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     --back="Cheviot Cape",
 	}
 end

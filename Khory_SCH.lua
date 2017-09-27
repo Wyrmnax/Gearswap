@@ -298,7 +298,7 @@ function init_gear_sets()
     left_ear="Hermetic Earring",
     right_ear="Friomisi Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Cheviot Cape",
 }
 

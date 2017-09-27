@@ -25,7 +25,7 @@ sets.idle.PDT = {     ammo="Staunch Tathlum",
     left_ear="Brutal Earring",
     right_ear="Odnowa Earring +1",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Cichol's Mantle",
 }
 
@@ -40,7 +40,7 @@ sets.idle.MDT = {     ammo="Staunch Tathlum",
     left_ear="Brutal Earring",
     right_ear="Odnowa Earring +1",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back="Cichol's Mantle",
 }
 

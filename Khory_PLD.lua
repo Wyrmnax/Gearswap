@@ -210,7 +210,7 @@ function init_gear_sets()
     left_ear="Odnowa earring +1",
     right_ear="Friomisi Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back={ name="Weard Mantle", augments={'VIT+2','Enmity+6',}},
 }
 
@@ -284,7 +284,7 @@ function init_gear_sets()
     left_ear="Odnowa earring +1",
     right_ear="Friomisi Earring",
     left_ring="Defending Ring",
-    right_ring="Vocane Ring",
+    right_ring="Karieyh Ring",
     back={ name="Weard Mantle", augments={'VIT+2','Enmity+6',}},
 }
 
