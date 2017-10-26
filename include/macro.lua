@@ -289,23 +289,25 @@ if player.main_job == "SAM" then
 	-- sets Macros off = 0  on = 1
 		automacroset = 1
 		if automacroset == 1 then
-			if player.sub_job =='NIN' then
-				set_macro_page(1,17)
+			if player.sub_job =='DRK' then
+				set_macro_page(1,13)
 			elseif player.sub_job =='WAR' then
-				set_macro_page(2,17)
+				set_macro_page(2,13)
 			elseif player.sub_job =='DNC' then
-				set_macro_page(3,17)
+				set_macro_page(3,13)
 			elseif player.sub_job =='DRG' then 
-				set_macro_page(4,17)
+				set_macro_page(4,13)
 			elseif player.sub_job =='RNG' then 
-				set_macro_page(5,17)
+				set_macro_page(5,13)
 			elseif player.sub_job =='RUN' then 
-				set_macro_page(6,17)
+				set_macro_page(6,13)
+			elseif player.sub_job =='NIN' then
+				set_macro_page(7,13)
 			else
-				set_macro_page(2,17)
+				set_macro_page(2,13)
 			end
 		else
-			set_macro_page(2,17)
+			set_macro_page(2,13)
 		end
 	end
 end
