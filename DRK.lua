@@ -1,4 +1,4 @@
--- Feary's WAR LUA
+-- Feary's DRK LUA
 -- Created: 6/13/2014
 -- Last Update: 6/13/2014
 -- To Do List
@@ -17,8 +17,8 @@ function get_sets()
 	include('include/utility.lua')
 	include('include/macro.lua')
 	
-	-- Get WAR Gearsets
-	include('Gearsets/'..player.name..'/WAR_Gearsets.lua')
+	-- Get DRK Gearsets
+	include('Gearsets/'..player.name..'/DRK_Gearsets.lua')
 
 -- Define Default Values for Variables
 	Mode = 0
@@ -26,7 +26,7 @@ function get_sets()
 	MDT = 0
 	ShadowType = 'None'
 	
-	GreatAxes = T{'Castigation','Sverga'}
+	Scythes = T{}
 	GreatSwords = T{}
 	
 end 
@@ -92,7 +92,7 @@ function self_command(command)
 				equip(sets.idle.Standard)
 			end
 		else
-			if Mode >= 2 then
+			if Mode >= 1 then
 			-- Reset to 0
 				Mode = 0
 			else
@@ -106,7 +106,7 @@ function self_command(command)
 				equip(sets.idle.Standard)
 			end
 		end
-	elseif command == 'twilight' then
+	elseif command == 'twilight' or command == "t" then
 		-- Twilight Helm/Mail logic
 		if player.equipment.head == 'Twilight Helm' and player.equipment.body == 'Twilight Mail' then
 			enable('head','body')
@@ -124,42 +124,29 @@ function self_command(command)
 end
 
 function status_change(new,old)
-    if T{'Idle','Resting'}:contains(new) then
-		if areas.Town:contains(world.zone) then
-			windower.add_to_chat(121, "Town Gear")
-			equip(sets.misc.Town)
-		else	
-			if PDT == 1 then
-				if buffactive['Weakness'] or player.hpp < 30 then
-					equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
-				else
-					equip(sets.idle.PDT)
-				end
-			elseif MDT == 1 then
-				equip(sets.idle.MDT)
-			elseif new == "Resting" then
-				equip(sets.Resting)
-			else
-				equip(sets.idle.Standard)
-			end
+    if T{'Idle'}:contains(new) then
+		if PDT == 1 then
+			equip(sets.idle.PDT)
+		elseif MDT == 1 then
+			equip(sets.idle.MDT)
+		else
+			equip(sets.idle.Standard)
 		end
+	elseif new == 'Resting' then
+		equip(sets.Resting)
 	elseif new == 'Engaged' then
  		-- Automatically activate Hasso when engaging
-		if player.sub_job["SAM"] and not buffactive['Hasso'] and not buffactive.Amnesia and not buffactive.Obliviscence and	not buffactive.Paralysis and windower.ffxi.get_ability_recasts()[138] < 1 then
+		if player.sub_job['SAM'] and not buffactive['Hasso'] and not buffactive.Amnesia and not buffactive.Obliviscence and	not buffactive.Paralysis and windower.ffxi.get_ability_recasts()[138] < 1 then
 			windower.send_command('Hasso')
         end
 		-- Engaged Sets
 		if PDT == 1 then
-			if buffactive['Weakness'] or player.hpp < 30 then
-				equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
-			else
-				equip(sets.idle.PDT)
-			end
+			equip(sets.idle.PDT)
 		elseif MDT == 1 then
 			equip(sets.idle.MDT)
 		else
-			-- Equip apporiate sets
-				previous_set()
+		-- Equip apporiate sets
+			previous_set()
 		end
     end
 end
@@ -175,29 +162,21 @@ function precast(spell,arg)
 		if player.status == 'Engaged' then
 			if player.tp >= 100 then
 				if spell.target.distance <= 5 then
-					if buffactive["Mighty Strikes"] then
-						if sets.precast.WS.MS[spell.name] then
-							equip(sets.precast.WS.MS[spell.name])
-						else
-							equip(sets.precast.WS.MS)
-						end
-					else
-						if Mode == 1 then
-							if sets.precast.WS.Acc[spell.name] then
-								equip(sets.precast.WS.Acc[spell.name])
-							else
-								if sets.precast.WS[spell.name] then
-									equip(sets.precast.WS[spell.name])
-								else
-									equip(sets.precast.WS)
-								end
-							end
+					if Mode == 1 then
+						if sets.precast.WS.Acc[spell.name] then
+							equip(sets.precast.WS.Acc[spell.name])
 						else
 							if sets.precast.WS[spell.name] then
 								equip(sets.precast.WS[spell.name])
 							else
 								equip(sets.precast.WS)
 							end
+						end
+					else
+						if sets.precast.WS[spell.name] then
+							equip(sets.precast.WS[spell.name])
+						else
+							equip(sets.precast.WS)
 						end
 					end
 				else
@@ -213,6 +192,7 @@ function precast(spell,arg)
 			windower.add_to_chat(121, 'You must be Engaged to WS')
 		end
 	elseif spell.type:endswith('Magic') then
+		 equip(sets.precast.Fastcast)
 		-- Cancel Sneak
 		if spell.name == 'Sneak' and buffactive.Sneak and spell.target.type == 'SELF' then
 			windower.ffxi.cancel_buff(71)
@@ -224,6 +204,10 @@ function precast(spell,arg)
         if windower.wc_match(spell.name,'Utsusemi*') then
             equip(sets.precast.Utsusemi)
         end
+		if spell.name == 'Monomi: Ichi' and buffactive.Sneak and spell.target.type == 'SELF' then
+			windower.ffxi.cancel_buff(71)
+			cast_delay(0.3)
+		end	
     else
 		-- Special handling to remove Dancer sub job Sneak effect
 		if spell.name == 'Spectral Jig' and buffactive.Sneak then
@@ -240,7 +224,44 @@ function precast(spell,arg)
 end
 
 function midcast(spell,arg)	
-	if spell.type == 'Ninjutsu' then
+	if spell.skill == 'Enhancing Magic' then	
+	-- Enfeebling Magic
+	elseif spell.skill == 'Enfeebling Magic' then
+		equip(sets.midcast.Macc)
+	-- Dark Magic
+	elseif spell.skill == 'Dark Magic' then
+		if spell.name == "Drain" then
+			equip(sets.midcast.Aspir) 
+		elseif spell.name == "Aspir" then
+			equip(sets.midcast.Aspir)
+		elseif spell.name == "Stun" then
+			equip(sets.midcast.Macc)
+		elseif spell.english:wcmatch('Absorb*') then
+			if spell.name == "Absorb-TP" then
+				equip(sets.midcast.Absorb,{hands="Bale Gauntlets +2"})
+			else
+				equip(sets.midcast.Absorb)
+			end
+		elseif spell.name == "Dread Spikes" then
+			equip(sets.midcast.Dread)
+		elseif spell.name == "Bind" then
+			equip(sets.midcast.INT)
+		elseif spell.name == "Endark" then
+			equip(sets.midcast.DarkMagic)
+		else
+			equip(sets.midcast.Macc)
+		end
+	-- Elemental Magic
+	elseif spell.skill == 'Elemental Magic' then
+		if spell.name == "Impact" or player.equipment.body == "Twilight Cloak" then
+			equip(sets.midcast.Macc, {head="", body="Twilight Cloak"})
+		elseif spell.english:wcmatch('Frost|Drown|Rasp|Burn|Shock|Choke') then
+			equip(sets.midcast.Elemental)
+		else
+			equip(sets.midcast.MAB)
+		end
+	-- Ninjutsu
+	elseif spell.type == 'Ninjutsu' then
 		-- Gear change to Damage Taken set when in midcast of Utsusemi
 		-- Special handling to remove Utsusemi, Sneak, and Stoneskin effects if they are active
 		if windower.wc_match(spell.name,'Utsusemi*') then
@@ -266,11 +287,7 @@ function aftercast(spell,arg)
 -- Engaged
 		if player.status == 'Engaged' then
 			if PDT == 1 then
-				if buffactive['Weakness'] or player.hpp < 30 then
-					equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
-				else
-					equip(sets.idle.PDT)
-				end
+				equip(sets.idle.PDT)
 			elseif MDT == 1 then
 				equip(sets.idle.MDT)
 			else
@@ -278,11 +295,7 @@ function aftercast(spell,arg)
 			end
 		else
 			if PDT == 1 then
-				if buffactive['Weakness'] or player.hpp < 30 then
-					equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
-				else
-					equip(sets.idle.PDT)
-				end
+				equip(sets.idle.PDT)
 			elseif MDT == 1 then
 				equip(sets.idle.MDT)
 			else
@@ -299,41 +312,21 @@ end
 
 function previous_set()
 	slot_lock()
-	-- Great Axe
-	if GreatAxes:contains(player.equipment.main) then
+	-- Scythes
+	if Scythes:contains(player.equipment.main) then
 		if Mode == 1 then
-			if buffactive.Ionis and areas.Adoulin:contains(world.area) then
-				equip(sets.TP.GA.Acc.Ionis)
-			--windower.add_to_chat(121,'Ionis buffed')
-			else
-				equip(sets.TP.GA.Acc)
-			end
-		elseif Mode == 2 then
-			equip(sets.TP.Hybrid)
+			equip(sets.TP.Acc)
 		else
-			if buffactive.Ionis and areas.Adoulin:contains(world.area) then
-				equip(sets.TP.GA.Ionis)
-			--windower.add_to_chat(121,'Ionis buffed')
-			else
-				equip(sets.TP.GA)
-			end
+			equip(sets.TP)
 		end
 	elseif GreatSwords:contains(player.equipment.main) then
 		if Mode == 1 then
 			equip(sets.TP.GS.Acc)
-		elseif Mode == 2 then
-			equip(sets.TP.Hybrid)
 		else
 			equip(sets.TP.GS)
 		end
 	else
-		if Mode == 1 then
-			equip(sets.TP.Acc)
-		elseif Mode == 2 then
-			equip(sets.TP.Hybrid)
-		else
-			equip(sets.TP)
-		end
+		equip(sets.TP)
 	end
 end
 

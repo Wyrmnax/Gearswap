@@ -110,7 +110,7 @@ function init_gear_sets()
 			left_ear="Moonshade earring",
 			right_ear="Mache Earring",
 			left_ring="Ramuh Ring",
-			right_ring="Chirich Ring",
+			right_ring="Karieyh ring",
 			back="Atheling Mantle",
 			}
 
@@ -125,7 +125,7 @@ function init_gear_sets()
 			ear1 = "Moonshade earring",
 			right_ear="Mache Earring",
 			left_ring="Ifrit Ring",
-			right_ring="Petrov Ring",
+			right_ring="Karieyh ring",
 			back="Atheling Mantle",}
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.

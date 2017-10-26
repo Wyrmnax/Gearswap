@@ -28,14 +28,14 @@ function buff_change(buff,gain)
 	-- Haste
 	if buff == "Haste" and not gain and S{"MNK","SAM","THF","DRK","WAR","COR","DRG","PUP","PLD"}:contains(player.main_job) then
 		--windower.send_command('wait 1;input /p Lost Haste')
-		windower.add_to_chat(121,"Haste")
+		--windower.add_to_chat(121,"Haste")
 	end
 	
 	-- Doom 
 	if buff == 'doom' and gain then
 		windower.send_command('input /p Doomed')
 	elseif buff == 'doom' and not gain then
-		windower.send_command('input /p Doom off Woot -.-')
+		--windower.send_command('input /p Doom off Woot -.-')
 	end
 	
 	-- Defense Down
@@ -46,7 +46,7 @@ function buff_change(buff,gain)
 	-- Accuracy Down
 	if buff == 'Accuracy Down' and gain then
 		if Mode == 0 then
-			windower.send_command('input gs c TP')
+			--windower.send_command('input gs c TP')
 		end
 		--windower.send_command('input /p Accuracy Down')
 	elseif buff == 'Accuracy Down' and not gain then
@@ -65,7 +65,7 @@ function buff_change(buff,gain)
 	
 	-- Slow
 	if buff == 'slow' and gain then
-		windower.send_command('input /p Slowed')
+		--windower.send_command('input /p Slowed')
 	end
 	
 	-- Phalanx

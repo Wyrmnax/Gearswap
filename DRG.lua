@@ -1,6 +1,6 @@
--- Feary's WAR LUA
--- Created: 6/13/2014
--- Last Update: 6/13/2014
+-- Feary's DRG LUA
+-- Created: 3/15/2014
+-- Last Update: 5/26/2014
 -- To Do List
 --
 --
@@ -17,18 +17,14 @@ function get_sets()
 	include('include/utility.lua')
 	include('include/macro.lua')
 	
-	-- Get WAR Gearsets
-	include('Gearsets/'..player.name..'/WAR_Gearsets.lua')
+	-- Get DRG Gearsets
+	include('Gearsets/'..player.name..'/DRG_Gearsets.lua')
 
 -- Define Default Values for Variables
 	Mode = 0
 	PDT = 0
 	MDT = 0
 	ShadowType = 'None'
-	
-	GreatAxes = T{'Castigation','Sverga'}
-	GreatSwords = T{}
-	
 end 
 
 function file_unload()
@@ -92,7 +88,7 @@ function self_command(command)
 				equip(sets.idle.Standard)
 			end
 		else
-			if Mode >= 2 then
+			if Mode >= 1 then
 			-- Reset to 0
 				Mode = 0
 			else
@@ -128,19 +124,21 @@ function status_change(new,old)
 		if areas.Town:contains(world.zone) then
 			windower.add_to_chat(121, "Town Gear")
 			equip(sets.misc.Town)
-		else	
+		else
 			if PDT == 1 then
-				if buffactive['Weakness'] or player.hpp < 30 then
-					equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
+				if buffactive['Weakness'] then
+					equip(sets.idle.PDT,{head="Twilight Helm", body="Twilight Mail"})
 				else
 					equip(sets.idle.PDT)
 				end
 			elseif MDT == 1 then
 				equip(sets.idle.MDT)
-			elseif new == "Resting" then
-				equip(sets.Resting)
 			else
-				equip(sets.idle.Standard)
+				if new == 'Resting' then
+					equip(sets.Resting)
+				else
+					equip(sets.idle.Standard)
+				end
 			end
 		end
 	elseif new == 'Engaged' then
@@ -167,38 +165,34 @@ end
 function precast(spell,arg)
     -- Job Abilities
 	if spell.type == 'JobAbility' then
-		if sets.precast.JA[spell.name] then
+		if spell.name == 'Convert' then
+			cancel_spell()
+		elseif sets.precast.JA[spell.name] then
 			equip(sets.precast.JA[spell.name])
+		end
+	-- Pet Commands 
+	elseif spell.type == 'PetCommand' then
+		if pet.isvalid == true then
+			-- midcast delay
+			if spell.name == "Smiting Breath" then
+				equip(sets.precast.HealingBreath)
+			elseif spell.name == 'Restoring Breath' then
+				equip(sets.precast.HealingBreath)
+			elseif spell.name == 'Steady Wing' then
+				equip(sets.precast.JA["Steady Wing"])
+			end
+		else
+			cancel_spell()
 		end
 	-- Weaponskills
 	elseif spell.type == 'WeaponSkill' then
 		if player.status == 'Engaged' then
 			if player.tp >= 100 then
 				if spell.target.distance <= 5 then
-					if buffactive["Mighty Strikes"] then
-						if sets.precast.WS.MS[spell.name] then
-							equip(sets.precast.WS.MS[spell.name])
-						else
-							equip(sets.precast.WS.MS)
-						end
+					if sets.precast.WS[spell.name] then
+						equip(sets.precast.WS[spell.name])
 					else
-						if Mode == 1 then
-							if sets.precast.WS.Acc[spell.name] then
-								equip(sets.precast.WS.Acc[spell.name])
-							else
-								if sets.precast.WS[spell.name] then
-									equip(sets.precast.WS[spell.name])
-								else
-									equip(sets.precast.WS)
-								end
-							end
-						else
-							if sets.precast.WS[spell.name] then
-								equip(sets.precast.WS[spell.name])
-							else
-								equip(sets.precast.WS)
-							end
-						end
+						equip(sets.precast.WS)
 					end
 				else
 					cancel_spell()
@@ -213,6 +207,14 @@ function precast(spell,arg)
 			windower.add_to_chat(121, 'You must be Engaged to WS')
 		end
 	elseif spell.type:endswith('Magic') then
+		-- Healing Breath Triggers
+		if spell.english:wcmatch("Bar*") and player.hpp <= 51 then
+			equip(sets.precast.HealingBreath)
+		end
+		-- Cure casting time
+		if spell.english:wcmatch('Cure*') or spell.english:wcmatch("Curaga*") then
+			equip(sets.precast.Fastcast)
+		end
 		-- Cancel Sneak
 		if spell.name == 'Sneak' and buffactive.Sneak and spell.target.type == 'SELF' then
 			windower.ffxi.cancel_buff(71)
@@ -239,8 +241,32 @@ function precast(spell,arg)
     end
 end
 
+function pet_precast(spell,arg)
+	if spell.english:startswith('Healing Breath') or spell.english:startswith('Restoring Breath') then
+		equip(sets.precast.HealingBreath)
+	else 
+		equip(sets.precast.HealingBreath)
+	end
+end
+
 function midcast(spell,arg)	
-	if spell.type == 'Ninjutsu' then
+	-- Pet Command
+	if spell.type == 'PetCommand' then
+		if pet.isvalid == true then
+			if spell.name == "Smiting Breath" then
+				equip(sets.midcast.Breath)
+			elseif spell.name == 'Restoring Breath' then
+				equip(sets.midcast.HealingBreath)
+			elseif spell.name == 'Steady Wing' then
+				equip(sets.precast.JA["Steady Wing"])
+			end
+		end
+	elseif spell.type:endswith('Magic') then
+		-- Healing Breath Triggers
+		if spell.english:wcmatch("Stone|Bar*") and player.hpp < 51 then
+			equip(sets.midcast.HealingBreath)
+		end
+    elseif spell.type == 'Ninjutsu' then
 		-- Gear change to Damage Taken set when in midcast of Utsusemi
 		-- Special handling to remove Utsusemi, Sneak, and Stoneskin effects if they are active
 		if windower.wc_match(spell.name,'Utsusemi*') then
@@ -262,75 +288,101 @@ function midcast(spell,arg)
 	end
 end
 
+function pet_midcast(spell,arg)
+	if spell.english:wcmatch('Healing Breath*') then
+		equip(sets.midcast.HealingBreath)
+	elseif spell.english:wcmatch('*Breath') then
+		equip(sets.midcast.Breath)
+	end
+end
+
 function aftercast(spell,arg)
--- Engaged
-		if player.status == 'Engaged' then
-			if PDT == 1 then
-				if buffactive['Weakness'] or player.hpp < 30 then
-					equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
-				else
-					equip(sets.idle.PDT)
-				end
-			elseif MDT == 1 then
-				equip(sets.idle.MDT)
-			else
-				previous_set()
-			end
+	if areas.Town:contains(world.zone) then
+		windower.add_to_chat(121, "Town Gear")
+		equip(sets.misc.Town)
+	else
+		-- Leaving Healing Breath Gear on and use pet aftercast
+		if spell.english:wcmatch("Bar*") and player.hpp < 51 or pet_midaction() == true then
+				equip(sets.midcast.HealingBreath)
 		else
-			if PDT == 1 then
-				if buffactive['Weakness'] or player.hpp < 30 then
-					equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
+		-- Engaged
+			if player.status == 'Engaged' then
+				if PDT == 1 then
+					if buffactive['Weakness'] or player.hpp < 30 then
+						equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
+					else
+						equip(sets.idle.PDT)
+					end
+				elseif MDT == 1 then
+					equip(sets.idle.MDT)
 				else
-					equip(sets.idle.PDT)
+					previous_set()
 				end
-			elseif MDT == 1 then
-				equip(sets.idle.MDT)
 			else
-				equip(sets.idle.Standard)
+				if PDT == 1 then
+					if buffactive['Weakness'] or player.hpp < 30 then
+						equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
+					else
+						equip(sets.idle.PDT)
+					end
+				elseif MDT == 1 then
+					equip(sets.idle.MDT)
+				else
+					equip(sets.idle.Standard)
+				end
+			end
+			-- Changes shadow type variable to allow cancel Copy Image if last cast was Utsusemi: Ni
+			if spell and spell.name == 'Utsusemi: Ni' then
+				ShadowType = 'Ni'
+			elseif spell and spell.name == 'Utsusemi: Ichi' then
+				ShadowType = 'Ichi'
 			end
 		end
-		-- Changes shadow type variable to allow cancel Copy Image if last cast was Utsusemi: Ni
-		if spell and spell.name == 'Utsusemi: Ni' then
-			ShadowType = 'Ni'
-		elseif spell and spell.name == 'Utsusemi: Ichi' then
-			ShadowType = 'Ichi'
+	end
+end
+
+function pet_aftercast(spell,arg)
+-- Engaged
+	if player.status == 'Engaged' or spell.english:wcmatch("Stone|Bar") then
+		if PDT == 1 then
+			if buffactive['Weakness'] or player.hpp < 30 then
+				equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
+			else
+				equip(sets.idle.PDT)
+			end
+		elseif MDT == 1 then
+			equip(sets.idle.MDT)
+		else
+			previous_set()
 		end
+	else
+		if PDT == 1 then
+			if buffactive['Weakness'] or player.hpp < 30 then
+				equip(sets.idle.PDT,{head="Twilight Helm",body="Twilight Mail"})
+			else
+				equip(sets.idle.PDT)
+			end
+		elseif MDT == 1 then
+			equip(sets.idle.MDT)
+		else
+			equip(sets.idle.Standard)
+		end
+	end
 end
 
 function previous_set()
 	slot_lock()
-	-- Great Axe
-	if GreatAxes:contains(player.equipment.main) then
-		if Mode == 1 then
-			if buffactive.Ionis and areas.Adoulin:contains(world.area) then
-				equip(sets.TP.GA.Acc.Ionis)
+	if Mode == 1 then
+		if buffactive.Ionis and areas.Adoulin:contains(world.area) then
+			equip(sets.TP.Acc.Ionis)
 			--windower.add_to_chat(121,'Ionis buffed')
-			else
-				equip(sets.TP.GA.Acc)
-			end
-		elseif Mode == 2 then
-			equip(sets.TP.Hybrid)
 		else
-			if buffactive.Ionis and areas.Adoulin:contains(world.area) then
-				equip(sets.TP.GA.Ionis)
-			--windower.add_to_chat(121,'Ionis buffed')
-			else
-				equip(sets.TP.GA)
-			end
-		end
-	elseif GreatSwords:contains(player.equipment.main) then
-		if Mode == 1 then
-			equip(sets.TP.GS.Acc)
-		elseif Mode == 2 then
-			equip(sets.TP.Hybrid)
-		else
-			equip(sets.TP.GS)
+			equip(sets.TP.Acc)
 		end
 	else
-		if Mode == 1 then
-			equip(sets.TP.Acc)
-		elseif Mode == 2 then
-			equip(sets.TP.Hybrid)
+		if buffactive.Ionis and areas.Adoulin:contains(world.area) then
+			equip(sets.TP.Ionis)
+			--windower.add_to_chat(121,'Ionis buffed')
 		else
 			equip(sets.TP)
 		end
@@ -354,3 +406,4 @@ function slot_lock()
         enable('left_ear','right_ear')
     end
 end
+

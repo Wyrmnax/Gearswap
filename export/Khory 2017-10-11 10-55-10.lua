@@ -1,0 +1,17 @@
+sets.exported={
+    main="Beryllium Tachi",
+    sub="Utu Grip",
+    ammo="Staunch Tathlum",
+    head="Loess Barbuta",
+    body="Ken. Samue",
+    hands="Ken. Tekko",
+    legs={ name="Valor. Hose", augments={'Attack+3','Weapon skill damage +2%','VIT+13','Accuracy+14',}},
+    feet={ name="Valorous Greaves", augments={'Accuracy+22 Attack+22','AGI+10','Accuracy+12',}},
+    neck="Loricate Torque",
+    waist="Flume Belt +1",
+    left_ear="Odnowa Earring +1",
+    right_ear="Cessance Earring",
+    left_ring="Defending Ring",
+    right_ring="Warp Ring",
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Store TP"+10',}},
+}

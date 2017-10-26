@@ -141,7 +141,7 @@ function init_gear_sets()
     sets.precast.WS = {    
 	ammo="Seeth. Bomblet +1",
     head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
-    body="Meg. Cuirie +1",
+    body="Meg. Cuirie +2",
     hands="Meg. Gloves +2",
     legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
     feet="Meg. Jam. +1",
@@ -149,8 +149,8 @@ function init_gear_sets()
 	waist = "Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
     right_ear="Mache Earring",
-    left_ring="Ramuh Ring",
-    right_ring="Apate Ring",
+    left_ring="Ilabrat Ring",
+	right_ring="Karieyh ring",
     back="Atheling Mantle",}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
 
@@ -159,9 +159,7 @@ function init_gear_sets()
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},    
     legs={ name="Adhemar Kecks", augments={'DEX+10','AGI+10','Accuracy+15',}},
     feet="Meg. Jam. +1",
-    right_ear="Ishvara Earring",
-    left_ring="Garuda Ring",
-    right_ring="Garuda Ring",})
+    right_ear="Ishvara Earring",})
     sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'], {ammo="Honed Tathlum", back="Letalis Mantle"})
     sets.precast.WS['Exenterator'].Mod = set_combine(sets.precast.WS['Exenterator'], {head="Felistris Mask",waist = "Fotia Belt"})
     sets.precast.WS['Exenterator'].SA = set_combine(sets.precast.WS['Exenterator'].Mod, {ammo="Qirmiz Tathlum"})
@@ -224,7 +222,7 @@ function init_gear_sets()
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
     right_ear="Friomisi Earring",
     left_ring="Vertigo Ring",
-    right_ring="Ifrit Ring",
+	right_ring="Karieyh ring",
     back="Atheling Mantle",}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
@@ -248,7 +246,7 @@ function init_gear_sets()
     -- Ranged gear
     sets.midcast.RA = {
     head={ name="Herculean Helm", augments={'Rng.Acc.+27','Damage taken-1%','STR+4','Rng.Atk.+11',}},
-    body="Meg. Cuirie +1",
+    body="Meg. Cuirie +2",
     hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
     legs={ name="Herculean Trousers", augments={'Rng.Acc.+24','AGI+15',}},
     feet="Meg. Jam. +1",
@@ -262,7 +260,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Acc = {
     head={ name="Herculean Helm", augments={'Rng.Acc.+27','Damage taken-1%','STR+4','Rng.Atk.+11',}},
-    body="Meg. Cuirie +1",
+    body="Meg. Cuirie +2",
     hands={ name="Adhemar Wristbands", augments={'AGI+10','Rng.Acc.+15','Rng.Atk.+15',}},
     legs={ name="Herculean Trousers", augments={'Rng.Acc.+24','AGI+15',}},
     feet="Meg. Jam. +1",
@@ -289,7 +287,7 @@ function init_gear_sets()
     sets.idle = {
 	ammo="Staunch Tathlum",
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    body="Meg. Cuirie +1",
+    body="Meg. Cuirie +2",
     hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+3','DEX+2',}},
     feet="Jute Boots +1",
@@ -319,7 +317,7 @@ function init_gear_sets()
     sets.defense.PDT = {
 	ammo="Staunch Tathlum",
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    body="Meg. Cuirie +1",
+    body="Meg. Cuirie +2",
     hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+3','DEX+2',}},
     feet="Jute Boots +1",
@@ -334,7 +332,7 @@ function init_gear_sets()
     sets.defense.MDT = {
 	ammo="Staunch Tathlum",
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    body="Meg. Cuirie +1",
+    body="Meg. Cuirie +2",
     hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+3','DEX+2',}},
     feet="Jute Boots +1",
@@ -446,7 +444,7 @@ function init_gear_sets()
     sets.engaged.PDT = {
 	ammo="Staunch Tathlum",
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    body="Meg. Cuirie +1",
+    body="Meg. Cuirie +2",
     hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+3','DEX+2',}},
     feet="Jute Boots +1",
@@ -461,7 +459,7 @@ function init_gear_sets()
     sets.engaged.Acc.PDT = {
 	ammo="Staunch Tathlum",
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    body="Meg. Cuirie +1",
+    body="Meg. Cuirie +2",
     hands="Meg. Gloves +2",
     legs={ name="Samnuha Tights", augments={'STR+3','DEX+2',}},
     feet="Jute Boots +1",

@@ -135,17 +135,17 @@
             -- Default set for any weaponskill that isn't any more specifically defined
             sets.precast.WS = {
 			ammo="Seeth. Bomblet +1",
-			head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','"Dbl.Atk."+3','Accuracy+11',}},
+			head="Flam. Zucchetto +2",
 			body="Ignominy Cuirass +2",
 			hands={ name="Odyssean Gauntlets", augments={'Accuracy+28','Weapon skill damage +4%','AGI+1',}},
-			legs="Ig. Flanchard +2",
+			legs="Ig. Flanchard +3",
 			feet="Sulev. Leggings +2",
 			neck="Fotia Gorget",
 			waist="Fotia Belt",
 			left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 			right_ear="Mache Earring",
 			left_ring="Niqmaddu Ring",
-			right_ring="Chirich Ring",
+			right_ring="Karieyh ring",
 			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
 			}
 			
@@ -169,8 +169,7 @@
             sets.precast.WS['Cross Reaper'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Cross Reaper'].Mod = set_combine(sets.precast.WS['Cross Reaper'], {})
      
-            sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {
-			head = "Argosy Celata",})
+            sets.precast.WS['Resolution'] = set_combine(sets.precast.WS, {})
             sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS.Acc, {})
             sets.precast.WS['Resolution'].Mod = set_combine(sets.precast.WS['Resolution'], {})
 			
@@ -187,7 +186,7 @@
 				left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
 				right_ear="Ishvara Earring",
 				left_ring="Niqmaddu Ring",
-				right_ring="Chirich Ring",
+				right_ring="Karieyh ring",
 				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 				})
             sets.precast.WS['Scourge'].Acc = set_combine(sets.precast.WS.Acc, {})
@@ -206,7 +205,7 @@
 				ear1 = "Moonshade earring",
 				ear2 = "Ishvara Earring",
 				left_ring="Niqmaddu Ring",
-				right_ring="Chirich Ring",
+				right_ring="Karieyh ring",
 				back={ name="Ankou's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}}
 			})
             sets.precast.WS['Torcleaver'].Acc = set_combine(sets.precast.WS.Acc, {})
@@ -258,17 +257,17 @@
             -- Engaged sets
             sets.engaged = {
 			ammo="Seeth. Bomblet +1",
-			head={ name="Valorous Mask", augments={'Accuracy+22 Attack+22','Accuracy+8',}},			
+			head="Flam. Zucchetto +2",		
 			body="Valorous Mail",
 			hands="Sulev. Gauntlets +2",
-			legs= "Sulev. Cuisses +2",
-			feet={ name="Valorous Greaves", augments={'Accuracy+22 Attack+22','AGI+10','Accuracy+12',}},
+			legs= "Ig. Flanchard +3",
+			feet="Flam. Gambieras +2",
 			neck="Subtlety Spec.",
 			waist="Ioskeha Belt",
 			left_ear="Brutal Earring",
-			right_ear="Mache Earring",
+			right_ear="Cessance Earring",
 			left_ring="Niqmaddu Ring",
-			right_ring="Chirich Ring",
+			right_ring="Flamma Ring",
 			back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}}
 			}
 
@@ -278,7 +277,7 @@
 			body="Sulevia's Plate. +1",
 			hands="Sulev. Gauntlets +2",
 			legs= "Sulev. Cuisses +2",
-			feet={ name="Valorous Greaves", augments={'Accuracy+22 Attack+22','AGI+10','Accuracy+12',}},
+			feet="Flam. Gambieras +2",
 			neck="Loricate Torque",
 			waist="Flume Belt +1",
 			left_ear="Brutal Earring",

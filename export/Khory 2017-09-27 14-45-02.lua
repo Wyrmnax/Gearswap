@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Ichigohitofuri", augments={'DMG:+20','STR+15','Accuracy+10',}},
+    sub="Utu Grip",
+    ammo="Staunch Tathlum",
+    head="Loess Barbuta",
+    body={ name="Valorous Mail", augments={'Accuracy+25','STR+6','Chance of successful block +5','Accuracy+10 Attack+10','Mag. Acc.+13 "Mag.Atk.Bns."+13',}},
+    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+    legs={ name="Valor. Hose", augments={'Attack+3','Weapon skill damage +2%','VIT+13','Accuracy+14',}},
+    feet={ name="Valorous Greaves", augments={'Accuracy+22 Attack+22','AGI+10','Accuracy+12',}},
+    neck="Loricate Torque",
+    waist="Flume Belt +1",
+    left_ear="Odnowa Earring +1",
+    right_ear="Mache Earring",
+    left_ring="Defending Ring",
+    right_ring="Karieyh Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+33%','Rng.Acc.+1','DEF+6',}},
+}
