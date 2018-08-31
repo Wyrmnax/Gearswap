@@ -122,7 +122,7 @@ function init_gear_sets()
     sets.precast.FC = {
 	ammo="Staunch Tathlum",
     head={ name="Amalric Coif", augments={'INT+10','Mag. Acc.+20','Enmity-5',}},
-    body="Shango Robe",
+    body="Merlinic Jubbah",
     hands="Amalric Gages",
     legs="Mallquis Trews +1",
     feet={ name="Amalric Nails", augments={'Mag. Acc.+15','"Mag.Atk.Bns."+15','"Conserve MP"+6',}},

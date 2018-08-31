@@ -80,7 +80,7 @@ function init_gear_sets()
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
 
     
-    sets.precast.CorsairRoll = {head="Lanun Tricorne",hands="Navarch's Gants +2", ring1="Barataria Ring"}
+    sets.precast.CorsairRoll = {head="Lanun Tricorne",hands="Navarch's Gants +2", neck="Regal Necklace"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Navarch's Culottes +2"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Navarch's Bottes +2"})

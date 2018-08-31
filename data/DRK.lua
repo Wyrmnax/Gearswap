@@ -136,9 +136,9 @@ function status_change(new,old)
 		equip(sets.Resting)
 	elseif new == 'Engaged' then
  		-- Automatically activate Hasso when engaging
-		if player.sub_job['SAM'] and not buffactive['Hasso'] and not buffactive.Amnesia and not buffactive.Obliviscence and	not buffactive.Paralysis and windower.ffxi.get_ability_recasts()[138] < 1 then
-			windower.send_command('Hasso')
-        end
+		--if player.sub_job['SAM'] and not buffactive['Hasso'] and not buffactive.Amnesia and not buffactive.Obliviscence and	not buffactive.Paralysis and windower.ffxi.get_ability_recasts()[138] < 1 then
+		--	windower.send_command('Hasso')
+        --end
 		-- Engaged Sets
 		if PDT == 1 then
 			equip(sets.idle.PDT)
