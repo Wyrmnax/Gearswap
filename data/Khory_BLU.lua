@@ -503,7 +503,7 @@ function get_sets()
 		ring2 = "Karieyh Ring",
 		back = "Cheviot Cape",
 		waist = "Flume belt +1",
-		legs = "Ayanmo Cosciales",
+		legs = "Carmine Cuisses +1",
 		feet = "Aya. Gambieras +1"
 	}
 
@@ -1065,7 +1065,7 @@ function get_sets()
 		neck = "Warder's Charm +1",
 		ear1 = "None",
 		ear2 = "None",
-		body = "Emet Harness +1",
+		body = "Emet Harness +1 +1",
 		hands = "None",
 		ring1 = "Supershear Ring",
 		ring2 = "Pernicious Ring",
@@ -1131,7 +1131,7 @@ function get_sets()
 		neck = "Loricate Torque",
 		ear1 = "Etiolation Earring",
 		ear2 = "Odnowa Earring +1",
-		body = "Emet Harness +1",
+		body = "Emet Harness +1 +1",
 		hands = HerculeanGloves.DT,
 		ring1 = "Defending Ring",
 		ring2 = "Karieyh Ring",
