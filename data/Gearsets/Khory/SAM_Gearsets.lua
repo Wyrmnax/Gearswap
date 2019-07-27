@@ -38,7 +38,7 @@ sets.idle.PDT = {
     ammo="Staunch Tathlum",
     head="Loess Barbuta",
     body="Hiza. Haramaki +1",
-    hands="Sakonji Kote",
+    hands="Sakonji Kote +1",
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Loricate Torque",
@@ -47,14 +47,14 @@ sets.idle.PDT = {
     right_ear="Cessance Earring",
     left_ring="Defending Ring",
     right_ring="Karieyh Ring",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},
 	}
 
 sets.idle.MDT = {     
 	ammo="Staunch Tathlum",
     head="Loess Barbuta",
     body="Hiza. Haramaki +1",
-    hands="Sakonji Kote",
+    hands="Sakonji Kote +1",
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Loricate Torque",
@@ -63,7 +63,7 @@ sets.idle.MDT = {
     right_ear="Cessance Earring",
     left_ring="Defending Ring",
     right_ring="Karieyh Ring",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10',}},
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},
 	}
 
 sets.idle.Evasion = {}
@@ -82,12 +82,12 @@ sets.TP = {
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
-    waist="Kentarch Belt",
+    waist="Windbuffet Belt +1",
     left_ear="Brutal Earring",
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Flamma Ring",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},
 	}
 sets.TP.Acc = { 	
     ammo="Ginsen",
@@ -102,7 +102,7 @@ sets.TP.Acc = {
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Flamma Ring",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},
 	}
 -- TP - 28 18
 sets.TP.Buffed = { 	
@@ -118,7 +118,7 @@ sets.TP.Buffed = {
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Flamma Ring",
-    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},
 	}
 
 -- Bow TP
@@ -135,7 +135,7 @@ sets.TP.Bow = {
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Ilabrat Ring",
-    back="Smertrios's Mantle",
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},
 	}
 sets.TP.Bow.Acc = { 	
 	ammo="Amar Cluster",
@@ -150,7 +150,7 @@ sets.TP.Bow.Acc = {
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Ilabrat Ring",
-    back="Smertrios's Mantle",
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},
 	}
 sets.TP.Bow.Buffed = { 	
 	ammo="Amar Cluster",
@@ -165,7 +165,7 @@ sets.TP.Bow.Buffed = {
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Ilabrat Ring",
-    back="Smertrios's Mantle",
+    back={ name="Smertrios's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage taken-5%',}},
 	}
 
 -- JA
@@ -174,11 +174,11 @@ sets.precast.JA["Yaegasumi"] = {}
 
 sets.precast.JA["Meditate"] = set_combine(sets.idle.PDT, {
 				head="Wakido Kabuto",
-				hands="Sakonji Kote",})
+				hands="Sakonji Kote +1",})
 sets.precast.JA["Hasso"] = {hands="Wakido Kote",legs="Unkai Haidate +2"}
 sets.precast.JA["Third Eye"] = {legs="Saotome Haidate"}
 sets.precast.JA["Seigan"] = {head="Unkai Kabuto +2"}
-sets.precast.JA["Blade Bash"] = {hands="Sakonji Kote"}
+sets.precast.JA["Blade Bash"] = {hands="Sakonji Kote +1"}
 sets.precast.JA["Sekkanoki"] = {hands="Unkai Kote +2"}
 sets.precast.JA["Sengikori"] = {feet="Unkai Sune-ate +2"}
 sets.precast.JA["Hagakore"] = {feet="Hes. Gaiters"}
@@ -188,123 +188,153 @@ sets.precast.JA["Warding Circle"] = {head="Wakido Kabuto"}
 -- Weaponskills
 sets.precast.WS = { 	
 	ammo="Knobkierrie",
-    head={ name="Valorous Mask", augments={'Accuracy+30','Weapon skill damage +2%','STR+7',}},
+    head="Flam. Zucchetto +2",
     body="Wakido Domaru +2",
-    hands={ name="Valorous Mitts", augments={'Accuracy+21 Attack+21','Weapon skill damage +2%','VIT+3','Accuracy+2','Attack+14',}},
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
-    feet={ name="Valorous Greaves", augments={'Attack+22','Weapon skill damage +4%',}},
-    neck="Fotia Gorget",
-    waist="Fotia Belt",
-    left_ear="Mache earring",
-    right_ear="Cessance Earring",
+    feet="Flam. Gambieras +2",
+    neck="Sam. Nodowa +1",
+    waist="Prosilio Belt +1",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
     left_ring="Niqmaddu Ring",
-    right_ring="Karieyh ring",
+    right_ring="Karieyh Ring",
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
 	}
-sets.precast.WS['Tachi: Fudo'] = { 	
+sets.precast.WS['Thunder Thrust'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body="Wakido Domaru +2",
-    hands={ name="Valorous Mitts", augments={'Accuracy+21 Attack+21','Weapon skill damage +2%','VIT+3','Accuracy+2','Attack+14',}},
+    body={ name="Found. Breastplate", augments={'Accuracy+14','Mag. Acc.+13','Attack+14','"Mag.Atk.Bns."+14',}},
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Prosilio Belt +1",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Niqmaddu Ring",
-    right_ring="Karieyh ring",
-    back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+    right_ring="Karieyh Ring",
+    back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
+	}
+sets.precast.WS['Raiden Thrust'] = { 	
+	ammo="Knobkierrie",
+    head="Flam. Zucchetto +2",
+    body={ name="Found. Breastplate", augments={'Accuracy+14','Mag. Acc.+13','Attack+14','"Mag.Atk.Bns."+14',}},
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+    legs="Wakido Haidate +3",
+    feet="Flam. Gambieras +2",
+    neck="Sam. Nodowa +1",
+    waist="Prosilio Belt +1",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Niqmaddu Ring",
+    right_ring="Karieyh Ring",
+    back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 	}	
-	sets.precast.WS['Impulse Drive'] = { 	
+sets.precast.WS['Impulse Drive'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
     body="Wakido Domaru +2",
-    hands={ name="Valorous Mitts", augments={'Accuracy+21 Attack+21','Weapon skill damage +2%','VIT+3','Accuracy+2','Attack+14',}},
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Prosilio Belt +1",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Niqmaddu Ring",
-    right_ring="Karieyh ring",
+    right_ring="Karieyh Ring",
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+	}
+sets.precast.WS['Tachi: Jinpu'] = { 	
+	ammo="Knobkierrie",
+    head="Flam. Zucchetto +2",
+    body={ name="Found. Breastplate", augments={'Accuracy+14','Mag. Acc.+13','Attack+14','"Mag.Atk.Bns."+14',}},
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+    legs="Wakido Haidate +3",
+    feet="Flam. Gambieras +2",
+    neck="Sam. Nodowa +1",
+    waist="Prosilio Belt +1",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Niqmaddu Ring",
+    right_ring="Karieyh Ring",
+    back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 	}
 sets.precast.WS['Tachi: Shoha'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
     body="Wakido Domaru +2",
-    hands={ name="Valorous Mitts", augments={'Accuracy+21 Attack+21','Weapon skill damage +2%','VIT+3','Accuracy+2','Attack+14',}},
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Prosilio Belt +1",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Niqmaddu Ring",
-    right_ring="Karieyh ring",
+    right_ring="Karieyh Ring",
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
 	}
 sets.precast.WS['Tachi: Gekko'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
     body="Wakido Domaru +2",
-    hands={ name="Valorous Mitts", augments={'Accuracy+21 Attack+21','Weapon skill damage +2%','VIT+3','Accuracy+2','Attack+14',}},
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Prosilio Belt +1",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Niqmaddu Ring",
-    right_ring="Karieyh ring",
+    right_ring="Karieyh Ring",
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
 	}
 sets.precast.WS['Tachi: Rana'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
     body="Wakido Domaru +2",
-    hands={ name="Valorous Mitts", augments={'Accuracy+21 Attack+21','Weapon skill damage +2%','VIT+3','Accuracy+2','Attack+14',}},
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
-    neck="Fotia Gorget",
+    neck="Sam. Nodowa +1",
     waist="Prosilio Belt +1",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Niqmaddu Ring",
-    right_ring="Karieyh ring",
+    right_ring="Karieyh Ring",
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
 	}
 sets.precast.WS['Tachi: Kaiten'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
     body="Wakido Domaru +2",
-    hands={ name="Valorous Mitts", augments={'Accuracy+21 Attack+21','Weapon skill damage +2%','VIT+3','Accuracy+2','Attack+14',}},
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Prosilio Belt +1",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Niqmaddu Ring",
+    right_ring="Karieyh Ring",
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
-    right_ring="Karieyh ring",
 	}
 -- Sword 
 sets.precast.WS['Requiescat'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body="Valorous Mail",
-    hands={ name="Valorous Mitts", augments={'Accuracy+21 Attack+21','Weapon skill damage +2%','VIT+3','Accuracy+2','Attack+14',}},
+    body="Wakido Domaru +2",
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
-    feet={ name="Valorous Greaves", augments={'Attack+22','Weapon skill damage +4%',}},
+    feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
-    waist="Fotia Belt",
-    left_ear="Odnowa Earring +1",
-    right_ear="Cessance Earring",
+    waist="Prosilio Belt +1",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
     left_ring="Niqmaddu Ring",
-    right_ring="Karieyh ring",
+    right_ring="Karieyh Ring",
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
 	}
 -- Ranged Weaponskill

@@ -58,9 +58,9 @@ function get_sets()
     sets.precast = {}
     sets.precast.JA = {}
     sets.precast.JA['Blade Bash'] = {
-                hands="Sakonji Kote"}
+                hands="Sakonji Kote +1"}
     sets.precast.JA.Meditate = {
-                head="Wakido Kabuto +1", hands="Sakonji Kote"}
+                head="Wakido Kabuto +1", hands="Sakonji Kote +1"}
     sets.precast.JA['Warding Circle'] = {
                 head="Wakido Kabuto +1"}
 

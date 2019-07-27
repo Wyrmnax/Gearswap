@@ -222,7 +222,7 @@ elseif player.name == 'Derion' then
 		sets.precast.Fastcast = { ammo="Incantor stone",
 				head="Nahtirah Hat", neck="Orison Locket", lear="Loquac. Earring", rear="",
                 body="Anhur Robe", hands="Gendewitha Gages", lring="", rring="Prolix Ring",
-                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1 +1", feet="Chelona boots"}
+                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1", feet="Chelona boots"}
 		sets.precast.Cure = set_combine(sets.precast.Fastcast, {
 				head="Clr Cap +2", neck="", lear="", rear="",
                 body="Heka's Kalasiris", hands="", lring="", rring="",
@@ -378,7 +378,7 @@ elseif player.name == 'Aniyah' then
 		sets.precast.Fastcast = { ammo="Incantor stone",
 				head="Nahtirah Hat", neck="Orison Locket", lear="Loquac. Earring", rear="",
                 body="Anhur Robe", hands="Gendewitha Gages", lring="", rring="Prolix Ring",
-                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1 +1", feet="Chelona boots"}
+                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1", feet="Chelona boots"}
 		sets.precast.Cure = set_combine(sets.precast.Fastcast, {
 				head="Clr Cap +2", neck="", lear="", rear="",
                 body="Heka's Kalasiris", hands="", lring="", rring="",
@@ -534,7 +534,7 @@ elseif player.name =='Firetoplay' then
 		sets.precast.Fastcast = { ammo="Incantor stone",
 				head="Nahtirah Hat", neck="Orison Locket", lear="Loquac. Earring", rear="",
                 body="Anhur Robe", hands="Gendewitha Gages", lring="", rring="Prolix Ring",
-                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1 +1", feet="Chelona boots"}
+                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1", feet="Chelona boots"}
 		sets.precast.Cure = set_combine(sets.precast.Fastcast, {
 				head="Clr Cap +2", neck="", lear="", rear="",
                 body="Heka's Kalasiris", hands="", lring="", rring="",
@@ -693,7 +693,7 @@ elseif player.name == 'Carrisa' then
 		sets.precast.Fastcast = {ammo="Impatiens", sub="Vivid Strap",
 				head="Nahtirah Hat", neck="Orison Locket", lear="Loquac. Earring", rear="Orison Earring",
                 body="Anhur Robe", hands="Repartie Gloves", lring="Prolix Ring", rring="",
-                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1 +1", feet="Chelona Boots"}
+                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1", feet="Chelona Boots"}
 		sets.precast.Cure = set_combine(sets.precast.Fastcast, {
 				head="", neck="Aceso's Choker", lear="", rear="",
                 body="Heka's Kalairis", hands="", lring="", rring="",

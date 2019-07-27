@@ -270,7 +270,7 @@ elseif player.name == "Aniyah" then
 		sets.precast.Fastcast = { 
 				head="Nahtirah Hat", neck="", lear="Loquac. Earring", rear="",
                 body="Anhur Robe", hands="Gendewitha Gages", lring="", rring="Prolix Ring",
-                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1 +1", feet="Chelona Boots"}
+                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1", feet="Chelona Boots"}
 		sets.precast.Fastcast.Song = set_combine(sets.precast.Fastcast, {main="Felibre's Dague",
 				head="Aoidos' Calot +2", neck="Aoidos' Matinee", lear="Loquac. Earring", rear="Aoidos' Earring",
                 body="Praeco Doublet", hands="Gendewitha Gages", lring="Minstrel's Ring", rring="Prolix Ring",
@@ -439,7 +439,7 @@ elseif player.name == "Carrisa" then
 		sets.precast.Fastcast = {
 				head="Nahtirah Hat", neck="Jeweled Collar", lear="Loquac. Earring", rear="Musical Earring",
                 body="Anhur Robe", hands="Gendewitha Gages", lring="", rring="Prolix Ring",
-                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1 +1", feet="Chelona Boots"}
+                back="Swith Cape", waist="Witful Belt", legs="Orvail Pants +1", feet="Chelona Boots"}
 		sets.precast.Fastcast.Song = set_combine(sets.precast.Fastcast, {main="Felibre's Dague",
 				head="Aoidos' Calot +2", neck="Aoidos' Matinee", lear="Loquac. Earring", rear="Aoidos' Earring",
                 body="Sha'ir Manteel", hands="Schellenband", lring="Minstrel's Ring", rring="Prolix Ring",

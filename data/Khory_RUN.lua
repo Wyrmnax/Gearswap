@@ -99,14 +99,14 @@ function init_gear_sets()
 				body= "Meg. Cuirie +1",
 				hands="Meg. Gloves +2",
 				legs="Carmine Cuisses +1",
-				feet="Meg. Jam. +1",
+				feet="Meg. Jam. +2",
 				neck = "Fotia Gorget",
 				waist = "Fotia Belt",
 				left_ear = "Moonshade earring",
 				right_ear="Sherida Earring",
 				left_ring="Niqmaddu Ring",
 				right_ring="Ilabrat Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
+				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}},
 				}
     sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS['Resolution'].Normal, 
         {ammo="Honed Tathlum", body="Dread Jupon", hands="Umuthi Gloves", back="Evasionist's Cape", legs="Manibozho Legs"})
@@ -116,14 +116,14 @@ function init_gear_sets()
 				body="Meg. Cuirie +1",
 				hands="Meg. Gloves +2",
 				legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
-				feet="Meg. Jam. +1",
+				feet="Meg. Jam. +2",
 				neck = "Fotia Gorget",
 				waist = "Fotia Belt",
 				left_ear = "Moonshade earring",
 				right_ear="Sherida Earring",
 				left_ring="Epona's Ring",
 				right_ring="Ilabrat Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
+				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}},
 				}
     sets.precast.WS['Dimidiation'].Acc = set_combine(sets.precast.WS['Dimidiation'].Normal, 
         {ammo="Honed Tathlum", head="Whirlpool Mask", hands="Buremte Gloves", back="Evasionist's Cape"})
@@ -189,7 +189,7 @@ function init_gear_sets()
 				right_ear="Sherida Earring",
 				left_ring="Defending Ring",
 				right_ring="Moonbeam Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
+				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}},
 				}
     sets.engaged.DD = {
 				ammo="Seeth. Bomblet +1",
@@ -204,7 +204,7 @@ function init_gear_sets()
 				right_ear="Sherida Earring",
 				left_ring="Niqmaddu Ring",
 				right_ring="Ilabrat Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},
+				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}},
 				}
     sets.engaged.Acc = set_combine(sets.engaged.DD, {sub="Tzacab Grip", ammo="Honed Tathlum", head="Whirlpool Mask",
             neck="Iqabi Necklace", hands="Buremte Gloves", waist="Anguinus Belt", legs="Manibozho Brais"})
@@ -221,7 +221,7 @@ function init_gear_sets()
 				right_ear="Sherida Earring",
 				left_ring="Defending Ring",
 				right_ring="Karieyh Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},}
+				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}},}
     sets.engaged.MDT = {            
 				ammo="Staunch Tathlum",
 				head="Futhark Bandeau +1",
@@ -235,7 +235,7 @@ function init_gear_sets()
 				right_ear="Sherida Earring",
 				left_ring="Defending Ring",
 				right_ring="Karieyh Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}},}
+				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}},}
     sets.engaged.repulse = {back="Repulse Mantle"}
 
 end
