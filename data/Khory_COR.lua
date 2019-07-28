@@ -125,8 +125,8 @@ function init_gear_sets()
     right_ear="Ishvara Earring",
     body= "Meg. Cuirie +2",
     hands="Meg. Gloves +2",
-	ring1="Karieyh ring",
-    right_ring="Ilabrat Ring",	
+    ring1="Ilabrat Ring",	
+	ring2="Karieyh ring",
     waist="Windbuffet Belt +1",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},
     legs="Samnuha Tights",
@@ -147,7 +147,7 @@ function init_gear_sets()
     right_ear="Ishvara Earring",
     body= "Meg. Cuirie +2",
     hands="Meg. Gloves +2",
-	ring1="Karieyh ring",
+	ring2="Karieyh ring",
     right_ring="Ifrit Ring",	
 	waist = "Fotia Belt",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},
@@ -165,8 +165,8 @@ function init_gear_sets()
 	waist = "Fotia Belt",
     left_ear="Moonshade earring",
     right_ear="Ishvara Earring",
-	ring1="Karieyh ring",
-    right_ring="Ilabrat Ring",
+    ring1="Ilabrat Ring",	
+	ring2="Karieyh ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
@@ -189,30 +189,34 @@ function init_gear_sets()
 	--ammo="Bronze Bullet",
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
     body="Samnuha Coat",
-    hands="Leyline Gloves",
-    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+17','Crit.hit rate+2','AGI+13','Mag. Acc.+5',}},
-    feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Crit. hit damage +1%','INT+15','"Mag.Atk.Bns."+15',}},
+    feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},
 	neck = "Comm. Charm +1",
 	waist = "Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-	ring1="Karieyh ring",
-    right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
+    ring1="Ilabrat Ring",	
+	ring2="Karieyh ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+	}
 
     sets.precast.WS['Wildfire'].Brew = {ammo=gear.MAbullet, 
+	ammo=gear.MAbullet, 
+	--ammo="Bronze Bullet",
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
     body="Samnuha Coat",
-    hands="Leyline Gloves",
-    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+17','Crit.hit rate+2','AGI+13','Mag. Acc.+5',}},
-    feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Crit. hit damage +1%','INT+15','"Mag.Atk.Bns."+15',}},
+    feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},
 	neck = "Comm. Charm +1",
 	waist = "Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-	ring1="Karieyh ring",
-    right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
+    ring1="Ilabrat Ring",	
+	ring2="Karieyh ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+	}
     
     sets.precast.WS['Leaden Salute'] = set_combine(sets.precast.WS['Wildfire'], {
 	left_ear="Moonshade earring", 
