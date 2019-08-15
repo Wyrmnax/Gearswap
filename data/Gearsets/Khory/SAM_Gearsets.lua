@@ -38,7 +38,7 @@ sets.idle.PDT = {
     ammo="Staunch Tathlum",
     head="Loess Barbuta",
     body="Hiza. Haramaki +1",
-    hands="Sakonji Kote +1",
+    hands="Sakonji Kote +2",
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Loricate Torque",
@@ -54,7 +54,7 @@ sets.idle.MDT = {
 	ammo="Staunch Tathlum",
     head="Loess Barbuta",
     body="Hiza. Haramaki +1",
-    hands="Sakonji Kote +1",
+    hands="Sakonji Kote +2",
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
     neck="Loricate Torque",
@@ -83,7 +83,7 @@ sets.TP = {
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Windbuffet Belt +1",
-    left_ear="Brutal Earring",
+    left_ear="Telos Earring",
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Flamma Ring",
@@ -98,7 +98,7 @@ sets.TP.Acc = {
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Ioskeha Belt",
-    left_ear="Brutal Earring",
+    left_ear="Telos Earring",
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Flamma Ring",
@@ -114,7 +114,7 @@ sets.TP.Buffed = {
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Ioskeha Belt",
-    left_ear="Brutal Earring",
+    left_ear="Telos Earring",
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Flamma Ring",
@@ -131,7 +131,7 @@ sets.TP.Bow = {
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Ioskeha Belt",
-    left_ear="Odnowa Earring +1",
+    left_ear="Telos Earring",
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Ilabrat Ring",
@@ -146,7 +146,7 @@ sets.TP.Bow.Acc = {
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Ioskeha Belt",
-    left_ear="Odnowa Earring +1",
+    left_ear="Telos Earring",
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Ilabrat Ring",
@@ -161,7 +161,7 @@ sets.TP.Bow.Buffed = {
     feet="Flam. Gambieras +2",
     neck="Sam. Nodowa +1",
     waist="Ioskeha Belt",
-    left_ear="Odnowa Earring +1",
+    left_ear="Telos Earring",
     right_ear="Cessance Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Ilabrat Ring",
@@ -174,11 +174,11 @@ sets.precast.JA["Yaegasumi"] = {}
 
 sets.precast.JA["Meditate"] = set_combine(sets.idle.PDT, {
 				head="Wakido Kabuto",
-				hands="Sakonji Kote +1",})
+				hands="Sakonji Kote +2",})
 sets.precast.JA["Hasso"] = {hands="Wakido Kote",legs="Unkai Haidate +2"}
 sets.precast.JA["Third Eye"] = {legs="Saotome Haidate"}
 sets.precast.JA["Seigan"] = {head="Unkai Kabuto +2"}
-sets.precast.JA["Blade Bash"] = {hands="Sakonji Kote +1"}
+sets.precast.JA["Blade Bash"] = {hands="Sakonji Kote +2"}
 sets.precast.JA["Sekkanoki"] = {hands="Unkai Kote +2"}
 sets.precast.JA["Sengikori"] = {feet="Unkai Sune-ate +2"}
 sets.precast.JA["Hagakore"] = {feet="Hes. Gaiters"}
@@ -189,7 +189,7 @@ sets.precast.JA["Warding Circle"] = {head="Wakido Kabuto"}
 sets.precast.WS = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body="Wakido Domaru +2",
+    body={ name="Sakonji Domaru +2", augments={'Enhances "Overwhelm" effect',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
@@ -234,7 +234,7 @@ sets.precast.WS['Raiden Thrust'] = {
 sets.precast.WS['Impulse Drive'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body="Wakido Domaru +2",
+    body={ name="Sakonji Domaru +2", augments={'Enhances "Overwhelm" effect',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
@@ -261,10 +261,25 @@ sets.precast.WS['Tachi: Jinpu'] = {
     right_ring="Karieyh Ring",
     back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 	}
+sets.precast.WS['Tachi: Fudo'] = { 	
+	ammo="Knobkierrie",
+    head="Flam. Zucchetto +2",
+    body={ name="Sakonji Domaru +2", augments={'Enhances "Overwhelm" effect',}},
+    hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
+    legs="Wakido Haidate +3",
+    feet="Flam. Gambieras +2",
+    neck="Sam. Nodowa +1",
+    waist="Prosilio Belt +1",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Niqmaddu Ring",
+    right_ring="Karieyh Ring",
+    back={ name="Smertrios's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+	}
 sets.precast.WS['Tachi: Shoha'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body="Wakido Domaru +2",
+    body={ name="Sakonji Domaru +2", augments={'Enhances "Overwhelm" effect',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
@@ -279,7 +294,7 @@ sets.precast.WS['Tachi: Shoha'] = {
 sets.precast.WS['Tachi: Gekko'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body="Wakido Domaru +2",
+    body={ name="Sakonji Domaru +2", augments={'Enhances "Overwhelm" effect',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
@@ -294,7 +309,7 @@ sets.precast.WS['Tachi: Gekko'] = {
 sets.precast.WS['Tachi: Rana'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body="Wakido Domaru +2",
+    body={ name="Sakonji Domaru +2", augments={'Enhances "Overwhelm" effect',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
@@ -309,7 +324,7 @@ sets.precast.WS['Tachi: Rana'] = {
 sets.precast.WS['Tachi: Kaiten'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body="Wakido Domaru +2",
+    body={ name="Sakonji Domaru +2", augments={'Enhances "Overwhelm" effect',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",
@@ -325,7 +340,7 @@ sets.precast.WS['Tachi: Kaiten'] = {
 sets.precast.WS['Requiescat'] = { 	
 	ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body="Wakido Domaru +2",
+    body={ name="Sakonji Domaru +2", augments={'Enhances "Overwhelm" effect',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs="Wakido Haidate +3",
     feet="Flam. Gambieras +2",

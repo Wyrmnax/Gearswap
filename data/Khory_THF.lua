@@ -211,18 +211,18 @@ function init_gear_sets()
         body="Pillager's Vest +1",legs="Pillager's Culottes +1"})
 
     sets.precast.WS['Aeolian Edge'] = {
-	ammo="Seeth. Bomblet +1",
+	ammo="Ghastly Tathlum +1",
     head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-    body={ name="Adhemar Jacket", augments={'DEX+10','AGI+10','Accuracy+15',}},
-    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
-    legs={ name="Herculean Trousers", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Mag. Acc.+13',}},
+    body={ name="Samnuha Coat", augments={'Mag. Acc.+13','"Mag.Atk.Bns."+14','"Fast Cast"+3','"Dual Wield"+4',}},
+    hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Crit. hit damage +1%','INT+15','"Mag.Atk.Bns."+15',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
-    neck="Fotia Gorget",
-	waist = "Fotia Belt",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
-    right_ear="Friomisi Earring",
-    left_ring="Vertigo Ring",
-	right_ring="Karieyh ring",
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Moldavite Earring",
+    left_ring="Dingir Ring",
+    right_ring="Karieyh Ring",
     back="Atheling Mantle",}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)

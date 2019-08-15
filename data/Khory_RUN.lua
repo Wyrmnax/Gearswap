@@ -94,36 +94,35 @@ function init_gear_sets()
 
 	-- Weaponskill sets
     sets.precast.WS['Resolution'] = {       
-				ammo="Seeth. Bomblet +1",
+				ammo="Knobkierrie",
 				head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
-				body= "Meg. Cuirie +1",
+				body={ name="Lustratio Harness", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
 				hands="Meg. Gloves +2",
-				legs="Carmine Cuisses +1",
+				legs={ name="Samnuha Tights", augments={'STR+8','DEX+9','"Dbl.Atk."+3','"Triple Atk."+2',}},
 				feet="Meg. Jam. +2",
-				neck = "Fotia Gorget",
-				waist = "Fotia Belt",
-				left_ear = "Moonshade earring",
-				right_ear="Sherida Earring",
+				neck="Fotia Gorget",
+				waist="Fotia Belt",
+				left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+				right_ear="Ishvara Earring",
 				left_ring="Niqmaddu Ring",
 				right_ring="Ilabrat Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}},
+				back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 				}
-    sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS['Resolution'].Normal, 
-        {ammo="Honed Tathlum", body="Dread Jupon", hands="Umuthi Gloves", back="Evasionist's Cape", legs="Manibozho Legs"})
+    sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS['Resolution'].Normal)
     sets.precast.WS['Dimidiation'] = {       
-				ammo="Falcon Eye",
-				head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
-				body="Meg. Cuirie +1",
+				ammo="Knobkierrie",
+				head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}},
+				body="Meg. Cuirie +2",
 				hands="Meg. Gloves +2",
 				legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
 				feet="Meg. Jam. +2",
-				neck = "Fotia Gorget",
-				waist = "Fotia Belt",
-				left_ear = "Moonshade earring",
-				right_ear="Sherida Earring",
-				left_ring="Epona's Ring",
+				neck="Fotia Gorget",
+				waist="Fotia Belt",
+				left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+				right_ear="Ishvara Earring",
+				left_ring="Niqmaddu Ring",
 				right_ring="Ilabrat Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}},
+				back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 				}
     sets.precast.WS['Dimidiation'].Acc = set_combine(sets.precast.WS['Dimidiation'].Normal, 
         {ammo="Honed Tathlum", head="Whirlpool Mask", hands="Buremte Gloves", back="Evasionist's Cape"})
@@ -150,7 +149,7 @@ function init_gear_sets()
 	--------------------------------------
 
     sets.idle = {ammo="Staunch Tathlum",
-				head="Futhark Bandeau +1",
+				head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},
 				body="Runeist Coat +1",
 				hands="Meg. Gloves +2",
 				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
@@ -161,7 +160,7 @@ function init_gear_sets()
 				right_ear="Sherida Earring",
 				left_ring="Defending Ring",
 				right_ring="Moonbeam Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10',}}
+				back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},
 				}
     sets.idle.Refresh = set_combine(sets.idle, {body="Runeist Coat +1", waist="Fucho-no-obi"})
            
@@ -189,7 +188,7 @@ function init_gear_sets()
 				right_ear="Sherida Earring",
 				left_ring="Defending Ring",
 				right_ring="Moonbeam Ring",
-				back={ name="Ogma's cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Phys. dmg. taken-10%',}},
+				back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},
 				}
     sets.engaged.DD = {
 				ammo="Seeth. Bomblet +1",

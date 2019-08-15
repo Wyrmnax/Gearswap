@@ -80,7 +80,7 @@ function init_gear_sets()
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
 
     
-    sets.precast.CorsairRoll = {head="Lanun Tricorne",hands="Navarch's Gants +2", neck="Regal Necklace"}
+    sets.precast.CorsairRoll = {head="Lanun Tricorne",hands="Navarch's Gants +2", neck="Regal Necklace", ring1="Barataria Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Navarch's Culottes +2"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Navarch's Bottes +2"})
@@ -142,18 +142,22 @@ function init_gear_sets()
 	
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-	neck = "Fotia Gorget",
-    left_ear="Moonshade earring",
-    right_ear="Ishvara Earring",
-    body= "Meg. Cuirie +2",
+    body="Meg. Cuirie +2",
     hands="Meg. Gloves +2",
-	ring2="Karieyh ring",
-    right_ring="Ifrit Ring",	
-	waist = "Fotia Belt",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},
-    legs="Samnuha Tights",
-    feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
+    legs={ name="Samnuha Tights", augments={'STR+8','DEX+9','"Dbl.Atk."+3','"Triple Atk."+2',}},
+    feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},
+    neck="Comm. Charm +1",
+    waist="Prosilio Belt +1",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Ilabrat Ring",
+    right_ring="Karieyh Ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
     }
+	
+	sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS['Wildfire'], {
+	left_ear="Moonshade earring", 
+	})
 
     sets.precast.WS['Last Stand'] = {ammo=gear.WSbullet,
     head={ name="Herculean Helm", augments={'Rng.Acc.+27','Damage taken-1%','STR+4','Rng.Atk.+11',}},
@@ -165,9 +169,10 @@ function init_gear_sets()
 	waist = "Fotia Belt",
     left_ear="Moonshade earring",
     right_ear="Ishvara Earring",
-    ring1="Ilabrat Ring",	
+    ring1="Dingir Ring",	
 	ring2="Karieyh ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+	}
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
     head={ name="Herculean Helm", augments={'Rng.Acc.+27','Damage taken-1%','STR+4','Rng.Atk.+11',}},
@@ -179,9 +184,10 @@ function init_gear_sets()
 	waist = "Fotia Belt",
     left_ear="Moonshade earring",
     right_ear="Ishvara Earring",
-    left_ring="Hajduk Ring",
+    left_ring="Dingir Ring",
     right_ring="Hajduk Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+	}
 
 
     sets.precast.WS['Wildfire'] = {
@@ -196,7 +202,7 @@ function init_gear_sets()
 	waist = "Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    ring1="Ilabrat Ring",	
+    ring1="Dingir Ring",	
 	ring2="Karieyh ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
 	}
@@ -213,7 +219,7 @@ function init_gear_sets()
 	waist = "Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    ring1="Ilabrat Ring",	
+    ring1="Dingir Ring",	
 	ring2="Karieyh ring",
     back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
 	}
@@ -237,45 +243,48 @@ function init_gear_sets()
 
     sets.midcast.CorsairShot = {ammo=gear.QDbullet, 
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-    body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
-    hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
-    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+17','Crit.hit rate+2','AGI+13','Mag. Acc.+5',}},
+	body="Samnuha Coat",
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Crit. hit damage +1%','INT+15','"Mag.Atk.Bns."+15',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
-    neck="Sanctity Necklace",
-    waist="Salire Belt",
+	neck="Sanctity Necklace",
+    waist = "Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    left_ring="Epona's Ring",
+    left_ring="Dingir Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+	}
 
     sets.midcast.CorsairShot.Acc = {ammo=gear.QDbullet, 
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-    body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
-    hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
-    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+17','Crit.hit rate+2','AGI+13','Mag. Acc.+5',}},
+    body="Samnuha Coat",
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Crit. hit damage +1%','INT+15','"Mag.Atk.Bns."+15',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
-    neck="Comm. Charm +1",
-    waist="Salire Belt",
+	neck="Sanctity Necklace",
+    waist = "Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    left_ring="Epona's Ring",
+    left_ring="Dingir Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+	}
 
     sets.midcast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet, 
 	head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
-    body={ name="Herculean Vest", augments={'Accuracy+27','"Triple Atk."+1','Attack+13',}},
-    hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
-    legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+17','Crit.hit rate+2','AGI+13','Mag. Acc.+5',}},
+    body="Samnuha Coat",
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Crit. hit damage +1%','INT+15','"Mag.Atk.Bns."+15',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
-    neck="Comm. Charm +1",
-    waist="Salire Belt",
+	neck="Sanctity Necklace",
+    waist = "Eschan Stone",
     left_ear="Moldavite Earring",
     right_ear="Friomisi Earring",
-    left_ring="Epona's Ring",
+    left_ring="Dingir Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+	}
 
     sets.midcast.CorsairShot['Dark Shot'] = sets.midcast.CorsairShot['Light Shot']
 
@@ -289,7 +298,7 @@ function init_gear_sets()
     feet="Meg. Jam. +2",
     neck="Comm. Charm +1",
     waist="Yemaya belt",
-    left_ear="Brutal Earring",
+    left_ear="Telos Earring",
     right_ear="Neritic earring",
     left_ring="Hajduk Ring",
     right_ring="Hajduk Ring",
@@ -303,7 +312,7 @@ function init_gear_sets()
     feet="Meg. Jam. +2",
     neck="Comm. Charm +1",
     waist="Yemaya belt",
-    left_ear="Brutal Earring",
+    left_ear="Telos Earring",
     right_ear="Neritic earring",
     left_ring="Hajduk Ring",
     right_ring="Hajduk Ring",
@@ -325,7 +334,7 @@ function init_gear_sets()
     feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
     neck="Loricate torque",
     waist="Flume Belt +1",
-    left_ear="Brutal Earring",
+    left_ear="Telos Earring",
     right_ear="Suppanomimi",
     left_ring="Defending Ring",
     right_ring="Karieyh Ring",
@@ -358,7 +367,7 @@ function init_gear_sets()
     neck="Subtlety Spec.",
     waist="Windbuffet Belt +1",
     left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    right_ear="Brutal Earring",
     left_ring="Epona's Ring",
     right_ring="Ilabrat Ring",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},}
@@ -382,8 +391,8 @@ function init_gear_sets()
     feet="Meg. Jam. +2",
     neck = "Subtlety spec.",
     waist="Windbuffet Belt +1",
-    left_ear="Brutal Earring",
-    right_ear="Suppanomimi",
+    left_ear="Telos Earring",
+    right_ear="Brutal Earring",
     left_ring="Epona's Ring",
     right_ring="Ilabrat Ring",
     back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},}
