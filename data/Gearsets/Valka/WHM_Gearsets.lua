@@ -35,7 +35,7 @@ if player.name == 'Valka' then
 		sets.idle.PDT = {
 				main="Robur Mace",
 				sub="Sors Shield",
-				head={ name="Vanya Hood", augments={'MP+50','"Cure" potency +7%','Enmity-6',}},
+				head="Befouled Crown",
 				body={ name="Vanya Robe", augments={'HP+50','MP+50','"Refresh"+2',}},
 				hands={ name="Kaykaus Cuffs", augments={'MP+60','"Cure" spellcasting time -5%','Enmity-5',}},
 				legs="Assid. Pants +1",

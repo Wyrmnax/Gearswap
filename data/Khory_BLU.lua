@@ -873,7 +873,7 @@ function get_sets()
 		ring1 = "Ilabrat Ring +1",
 		ring2 = "Ilabrat Ring",
 		back = "Cornflower cape",
-		waist = "Prosilio Belt +1",
+		waist = "Metalsinger Belt",
 		legs = "Samnuha Tights",
 		feet = "Amalric Nails"
 	}
@@ -1004,7 +1004,7 @@ function get_sets()
 		ring1 = "Ilabrat Ring +1",
 		ring2 = "Ilabrat Ring",
 		back = Rosmerta.WSD,
-		waist = "Prosilio Belt +1",
+		waist = "Metalsinger Belt",
 		legs = "Samnuha Tights",
 		feet = "Amalric Nails"
 	}

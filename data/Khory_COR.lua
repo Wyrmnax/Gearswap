@@ -147,7 +147,7 @@ function init_gear_sets()
     legs={ name="Samnuha Tights", augments={'STR+8','DEX+9','"Dbl.Atk."+3','"Triple Atk."+2',}},
     feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},
     neck="Comm. Charm +1",
-    waist="Prosilio Belt +1",
+    waist="Metalsinger Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
     right_ear="Ishvara Earring",
     left_ring="Ilabrat Ring",

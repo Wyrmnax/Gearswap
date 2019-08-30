@@ -118,23 +118,23 @@ sets.precast.WS.Acc = set_combine(sets.precast.WS,{})
 sets.precast.WS["Rudra's Storm"] = {
 				head="Uk'uxkaj Cap", neck="Shadow Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
                 body="Manibozho Jerkin", hands="Iuitl Gloves", lring="Rajas Ring", rring="Epona's Ring",
-                back="Atheling Mantle", waist="Prosilio Belt", legs="Manibozho Brais", feet="Manibozho Boots"}
+                back="Atheling Mantle", waist="Metalsinger Belt", legs="Manibozho Brais", feet="Manibozho Boots"}
 
 sets.precast.WS.Acc["Rudra's Storm"] = {
 				head="Uk'uxkaj Cap", neck="Shadow Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
                 body="Manibozho Jerkin", hands="Iuitl Gloves", lring="Rajas Ring", rring="Epona's Ring",
-                back="Atheling Mantle", waist="Prosilio Belt", legs="Manibozho Brais", feet="Manibozho Boots"}
+                back="Atheling Mantle", waist="Metalsinger Belt", legs="Manibozho Brais", feet="Manibozho Boots"}
 
 -- Exenterator
 sets.precast.WS["Exenterator"] = {
 				head="Uk'uxkaj Cap", neck="Houyi's Gorget", lear="Steelflash Earring", rear="Bladeborn Earring",
                 body="Manibozho Jerkin", hands="Iuitl Gloves", lring="Stormsoul Ring", rring="Epona's Ring",
-                back="Atheling Mantle", waist="Prosilio Belt", legs="Manibozho Brais", feet="Manibozho Boots"}
+                back="Atheling Mantle", waist="Metalsinger Belt", legs="Manibozho Brais", feet="Manibozho Boots"}
 
 sets.precast.WS.Acc["Exenterator"] = {
 				head="Whirlpool Mask", neck="Justiciar's Torque", lear="Steelflash Earring", rear="Bladeborn Earring",
                 body="Manibozho Jerkin", hands="Iuitl Gloves", lring="Stormsoul Ring", rring="Epona's Ring",
-                back="Vespid Mantle", waist="Prosilio Belt", legs="Manibozho Brais", feet="Manibozho Boots"}
+                back="Vespid Mantle", waist="Metalsinger Belt", legs="Manibozho Brais", feet="Manibozho Boots"}
 -- Evisceration
 sets.precast.WS["Evisceration"] = {
 				head="Uk'uxkaj Cap", neck="Asperity Necklace", lear="Steelflash Earring", rear="Bladeborn Earring",

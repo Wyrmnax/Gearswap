@@ -61,14 +61,24 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Precast sets to enhance JAs
-    sets.precast.JA['Vallation'] = {body="Runeist Coat +1", legs="Futhark trousers +1"}
+    sets.precast.JA['Vallation'] = {body="Runeist's Coat +2", legs="Futhark trousers +1"}
     sets.precast.JA['Valiance'] = sets.precast.JA['Vallation']
     sets.precast.JA['Pflug'] = {feet="Runeist bottes +1"}
     sets.precast.JA['Battuta'] = {head="Futhark Bandeau +1"}
     sets.precast.JA['Liement'] = {body="Futhark Coat +1"}
-    sets.precast.JA['Lunge'] = {head="Thaumas Hat", neck="Eddy Necklace", ear1="Novio Earring", ear2="Friomisi Earring",
-            body="Vanir Cotehardie", ring1="Acumen Ring", ring2="Omega Ring",
-            back="Evasionist's Cape", waist="Yamabuki-no-obi", legs="Iuitl Tights +1", feet="Qaaxo Leggings"}
+    sets.precast.JA['Lunge'] = {ammo="Seeth. Bomblet +1",
+    head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
+    body={ name="Samnuha Coat", augments={'Mag. Acc.+13','"Mag.Atk.Bns."+14','"Fast Cast"+3','"Dual Wield"+4',}},
+    hands={ name="Carmine Fin. Ga. +1", augments={'Rng.Atk.+20','"Mag.Atk.Bns."+12','"Store TP"+6',}},
+    legs="Eri. Leg Guards +1",
+    feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
+    neck="Sanctity Necklace",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Moldavite Earring",
+    left_ring="Defending Ring",
+    right_ring="Vertigo Ring",
+    back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},}
     sets.precast.JA['Swipe'] = sets.precast.JA['Lunge']
     sets.precast.JA['Gambit'] = {hands="Runeist Mitons"}
     sets.precast.JA['Rayke'] = {feet="Futhark Bottes"}
@@ -87,7 +97,7 @@ function init_gear_sets()
             body="Samnuha Coat", hands="Leyline Gloves", ring2 = "Lebeche Ring",
 			legs="Aya. Cosciales +1",
 			feet="Carmine Greaves +1"}
-    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash", legs="Futhark Trousers +1"})
+    sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {head="Erilaz Galea +1", hands="Regal Gauntlets", waist="Siegel Sash", legs="Futhark Trousers +1"})
     sets.precast.FC['Utsusemi: Ichi'] = set_combine(sets.precast.FC, {neck='Magoraga beads', back="Mujin Mantle"})
     sets.precast.FC['Utsusemi: Ni'] = set_combine(sets.precast.FC['Utsusemi: Ichi'], {})
 
@@ -150,8 +160,8 @@ function init_gear_sets()
 
     sets.idle = {ammo="Staunch Tathlum",
 				head={ name="Fu. Bandeau +1", augments={'Enhances "Battuta" effect',}},
-				body="Runeist Coat +1",
-				hands="Meg. Gloves +2",
+				body="Runeist's Coat +2",
+				hands="Regal Gauntlets",
 				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
 				feet="Erilaz Greaves +1",
 				neck="Futhark Torque +1",
@@ -162,7 +172,7 @@ function init_gear_sets()
 				right_ring="Moonbeam Ring",
 				back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},
 				}
-    sets.idle.Refresh = set_combine(sets.idle, {body="Runeist Coat +1", waist="Fucho-no-obi"})
+    sets.idle.Refresh = set_combine(sets.idle, {body="Runeist's Coat +2", waist="Fucho-no-obi"})
            
 	sets.defense.PDT = {}
 
@@ -178,7 +188,7 @@ function init_gear_sets()
     sets.engaged = {             
 				ammo="Staunch Tathlum",
 				head="Futhark Bandeau +1",
-				body="Runeist Coat +1",
+				body="Runeist's Coat +2",
 				hands="Meg. Gloves +2",
 				legs="Eri. Leg Guards +1",
 				feet="Erilaz Greaves +1",
