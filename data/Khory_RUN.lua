@@ -104,7 +104,7 @@ function init_gear_sets()
 
 	-- Weaponskill sets
     sets.precast.WS['Resolution'] = {       
-				ammo="Knobkierrie",
+			    ammo="Seeth. Bomblet +1",
 				head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
 				body={ name="Lustratio Harness", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
 				hands="Meg. Gloves +2",
@@ -113,11 +113,30 @@ function init_gear_sets()
 				neck="Fotia Gorget",
 				waist="Fotia Belt",
 				left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-				right_ear="Ishvara Earring",
+				right_ear="Sherida Earring",
+				left_ring="Niqmaddu Ring",
+				right_ring="Ilabrat Ring",
+				back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
+				
+				
+				}
+				
+	sets.precast.WS['Decimation'] = {       
+				ammo="Seeth. Bomblet +1",
+				head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
+				body={ name="Lustratio Harness", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
+				hands="Meg. Gloves +2",
+				legs={ name="Samnuha Tights", augments={'STR+8','DEX+9','"Dbl.Atk."+3','"Triple Atk."+2',}},
+				feet="Meg. Jam. +2",
+				neck="Fotia Gorget",
+				waist="Fotia Belt",
+				left_ear="Telos Earring",
+				right_ear="Sherida Earring",
 				left_ring="Niqmaddu Ring",
 				right_ring="Ilabrat Ring",
 				back={ name="Ogma's cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 				}
+				
     sets.precast.WS['Resolution'].Acc = set_combine(sets.precast.WS['Resolution'].Normal)
     sets.precast.WS['Dimidiation'] = {       
 				ammo="Knobkierrie",

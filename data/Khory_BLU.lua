@@ -1259,19 +1259,19 @@ function get_sets()
 	sets.precast.FC = {}
 
 	sets.precast.FC.Standard = {
-		ammo = "Sapience Orb",
-		head = "Amalric Coif",
-		neck = "Voltsurge Torque",
-		ear1 = "Loquac. Earring",
-		ear2 = "Etiolation Earring",
-		body = "Khakri Robe +1",
-		hands = "Leyline Gloves",
-		left_ring="Jhakri Ring",
-		ring2 = "Lebeche Ring",
-		back = "Perimede Cape",
-		waist = "Witful Belt",
-		legs = "Psycloth Lappas",
-		feet = "Carmine Greaves +1"
+		ammo="Ginsen",
+    head={ name="Amalric Coif", augments={'INT+10','Mag. Acc.+20','Enmity-5',}},
+    body={ name="Luhlaza Jubbah +1", augments={'Enhances "Enchainment" effect',}},
+    hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+    legs={ name="Psycloth Lappas", augments={'MP+75','Mag. Acc.+14','"Fast Cast"+7',}},
+    feet={ name="Carmine Greaves +1", augments={'HP+80','MP+80','Phys. dmg. taken -4',}},
+    neck="Voltsurge Torque",
+    waist="Witful Belt",
+    left_ear="Suppanomimi",
+    right_ear="Brutal Earring",
+    left_ring="Jhakri Ring",
+    right_ring="Lebeche Ring",
+    back="Cheviot Cape",
 	}
 
 	--Empy body stacks with FC, 80% cap, empy hands must be on at time of casting (mid) for effect--

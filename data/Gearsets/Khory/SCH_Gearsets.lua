@@ -103,7 +103,9 @@ if player.Name == 'Khory' then
 	}
 		sets.precast.Cure = set_combine(sets.precast.Fastcast, {
                 body="Heka's Kalasiris", 
-                back="Pahtli Cape"})  		
+                back="Pahtli Cape"})  	
+
+		sets.precast.Elemental = set_combine(sets.precast.Fastcast, {})  					
 				
 		-- Midcast
 		sets.midcast.Recast = set_combine(sets.idle.PDT, sets.precast.Fastcast, {waist="Witful Belt"})
@@ -127,7 +129,7 @@ if player.Name == 'Khory' then
     neck="Mizu. Kubikazari",
     waist="Eschan Stone",
     left_ear="Hermetic Earring",
-    right_ear="Strophadic Earring",
+    right_ear="Friomisi Earring",
     left_ring="Jhakri Ring",
     right_ring="Mujin Band",
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},

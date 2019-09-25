@@ -210,7 +210,7 @@ function get_sets()
       
     -- Magic Attack
     sets.avatar.mab = set_combine(sets.avatar.skill,{
-    main = "Espiritus",
+    main = "Grioavolr",
     sub="Elan Strap",
     ammo="Sancus Sachet",
     head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
@@ -229,7 +229,7 @@ function get_sets()
     sets.avatar.mb = set_combine(sets.avatar.mab,{hands="Glyphic Bracers +1"})
     -- Hybrid
     sets.avatar.hybrid = set_combine(sets.avatar.skill,{
-    main = "Was",    
+	main = "Grioavolr",    
     sub="Elan Strap",
     ammo="Sancus Sachet",
     head={ name="Apogee Crown", augments={'MP+60','Pet: "Mag.Atk.Bns."+30','Blood Pact Dmg.+7',}},
@@ -248,7 +248,7 @@ function get_sets()
       
     -- Magic Accuracy
     sets.avatar.macc = set_combine(sets.avatar.skill,{
-    main = "Espiritus",    
+    main = "Grioavolr",    
     sub="Elan Strap",
     ammo="Sancus Sachet",
     head="Tali'ah Turban +1",
