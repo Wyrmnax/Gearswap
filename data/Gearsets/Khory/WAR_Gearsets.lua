@@ -30,6 +30,24 @@ if player.name == 'Khory' then
 		end
 		
 -- Auto Sets
+	
+--Maximum Multi Attack set	
+--	    sets.Engaged = {
+--        ammo="Ginsen",
+--        head="Flam. Zucchetto +2",
+--        body="Valorous Mail", --da5 augment
+--        hands="Sulev. Gauntlets +2",
+--        legs=Pumm_Legs,
+--        feet=Pumm_Feet,
+--        neck="War. Beads +2",
+--        waist="Ioskeha Belt +1",
+--        left_ear="Brutal Earring",
+--        right_ear="Cessance Earring",
+--        left_ring="Flamma Ring",--"Regal Ring",                
+--        right_ring="Niqmaddu Ring",
+--        back=back_Cichol_Melee,                 -- da 10
+--    } 
+	
 -- Standard/idle
 sets.idle.PDT = { 
 				ammo="Staunch Tathlum",
