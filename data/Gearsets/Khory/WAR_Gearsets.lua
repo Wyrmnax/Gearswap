@@ -206,24 +206,25 @@ sets.precast.JA["Aggressive Aim"] = {body="Warrior's Lorica +2"}
 
 -- Weaponskills
 sets.precast.WS = {    
-	ammo="Knobkierrie",
+    ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body={ name="Argosy Hauberk", augments={'STR+10','Attack+15','"Store TP"+5',}},
-    hands={ name="Argosy Mufflers", augments={'STR+15','"Dbl.Atk."+2','Haste+2%',}},
+    body={ name="Argosy Hauberk +1", augments={'STR+12','DEX+12','Attack+20',}},
+    hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}},
     legs="Sulev. Cuisses +2",
     feet="Flam. Gambieras +2",
     neck="Fotia Gorget",
     waist="Fotia Belt",
-	left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    left_ear="Cessance Earring",
     right_ear="Brutal Earring",
     left_ring="Niqmaddu Ring",
     right_ring="Flamma Ring",
-    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},}
+    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+	}
 	
 sets.precast.WS.MS = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
     head="Flam. Zucchetto +2",
-    body={ name="Argosy Hauberk", augments={'STR+10','Attack+15','"Store TP"+5',}},
-    hands={ name="Argosy Mufflers", augments={'STR+15','"Dbl.Atk."+2','Haste+2%',}},
+    body={ name="Argosy Hauberk +1", augments={'STR+12','DEX+12','Attack+20',}},
+    hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}},
     legs="Sulev. Cuisses +2",
     feet="Flam. Gambieras +2",
     neck="Fotia Gorget",
@@ -237,7 +238,7 @@ sets.precast.WS.MS = set_combine(sets.precast.WS, {ammo="Seeth. Bomblet +1",
 sets.precast.WS.wsd = {
 	ammo="Knobkierrie",
     head={ name="Odyssean Helm", augments={'Weapon skill damage +2%','DEX+10','Accuracy+14','Attack+10',}},
-    body={ name="Argosy Hauberk", augments={'STR+10','Attack+15','"Store TP"+5',}},
+    body={ name="Argosy Hauberk +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs={ name="Valor. Hose", augments={'Attack+3','Weapon skill damage +2%','VIT+13','Accuracy+14',}},
     feet="Sulev. Leggings +2",
@@ -266,7 +267,7 @@ sets.precast.WS.wsd = {
 sets.precast.WS["Ukko's Fury"] = set_combine(sets.precast.WS, {    
     ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body={ name="Argosy Hauberk", augments={'STR+10','Attack+15','"Store TP"+5',}},
+    body={ name="Argosy Hauberk +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs={ name="Valor. Hose", augments={'Attack+3','Weapon skill damage +2%','VIT+13','Accuracy+14',}},
     feet="Sulev. Leggings +2",
@@ -282,7 +283,7 @@ sets.precast.WS["Ukko's Fury"] = set_combine(sets.precast.WS, {
 sets.precast.WS["Upheaval"] = set_combine(sets.precast.WS, {    
     ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body={ name="Argosy Hauberk", augments={'STR+10','Attack+15','"Store TP"+5',}},
+    body={ name="Argosy Hauberk +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs={ name="Valor. Hose", augments={'Attack+3','Weapon skill damage +2%','VIT+13','Accuracy+14',}},
     feet="Sulev. Leggings +2",
@@ -298,7 +299,7 @@ sets.precast.WS["Upheaval"] = set_combine(sets.precast.WS, {
 sets.precast.WS.MS["Upheaval"] = set_combine(sets.precast.WS, {    
     ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body={ name="Argosy Hauberk", augments={'STR+10','Attack+15','"Store TP"+5',}},
+    body={ name="Argosy Hauberk +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs={ name="Valor. Hose", augments={'Attack+3','Weapon skill damage +2%','VIT+13','Accuracy+14',}},
     feet="Sulev. Leggings +2",
@@ -314,7 +315,7 @@ sets.precast.WS.MS["Upheaval"] = set_combine(sets.precast.WS, {
 sets.precast.WS["Fell Cleave"] = set_combine(sets.precast.WS, {    
     ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body={ name="Argosy Hauberk", augments={'STR+10','Attack+15','"Store TP"+5',}},
+    body={ name="Argosy Hauberk +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs={ name="Valor. Hose", augments={'Attack+3','Weapon skill damage +2%','VIT+13','Accuracy+14',}},
     feet="Sulev. Leggings +2",
@@ -330,7 +331,7 @@ sets.precast.WS["Fell Cleave"] = set_combine(sets.precast.WS, {
 sets.precast.WS.MS["Fell Cleave"] = set_combine(sets.precast.WS, {    
     ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body={ name="Argosy Hauberk", augments={'STR+10','Attack+15','"Store TP"+5',}},
+    body={ name="Argosy Hauberk +1", augments={'STR+12','DEX+12','Attack+20',}},
     hands={ name="Valorous Mitts", augments={'Accuracy+7','STR+4','Weapon skill damage +9%','Accuracy+19 Attack+19','Mag. Acc.+15 "Mag.Atk.Bns."+15',}},
     legs={ name="Valor. Hose", augments={'Attack+3','Weapon skill damage +2%','VIT+13','Accuracy+14',}},
     feet="Sulev. Leggings +2",
@@ -346,8 +347,8 @@ sets.precast.WS.MS["Fell Cleave"] = set_combine(sets.precast.WS, {
 -- GreatSword
 sets.precast.WS["Resolution"] = set_combine(sets.precast.WS, {    ammo="Knobkierrie",
     head="Flam. Zucchetto +2",
-    body={ name="Argosy Hauberk", augments={'STR+10','Attack+15','"Store TP"+5',}},
-    hands={ name="Argosy Mufflers", augments={'STR+15','"Dbl.Atk."+2','Haste+2%',}},
+    body={ name="Argosy Hauberk +1", augments={'STR+12','DEX+12','Attack+20',}},
+    hands={ name="Argosy Mufflers +1", augments={'STR+20','"Dbl.Atk."+3','Haste+3%',}},
     legs={ name="Valor. Hose", augments={'Attack+3','Weapon skill damage +2%','VIT+13','Accuracy+14',}},
     feet="Flam. Gambieras +2",
     neck="Fotia Gorget",
