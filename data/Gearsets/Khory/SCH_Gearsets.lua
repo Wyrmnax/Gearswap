@@ -152,6 +152,24 @@ if player.Name == 'Khory' then
     right_ring="Mujin Band",
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
 	}
+	
+	sets.midcast.LowNuke = {
+	main={ name="Akademos", augments={'INT+15','"Mag.Atk.Bns."+15','Mag. Acc.+15',}},
+    sub="Enki Strap",
+    ammo="Ghastly Tathlum +1",
+    head="Volte Cap",
+    body="Merlinic Jubbah",
+    hands={ name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15',}},
+    legs={ name="Merlinic Shalwar", augments={'"Mag.Atk.Bns."+22','Magic burst dmg.+11%','MND+7',}},
+    feet="Arbatel Loafers +1",
+    neck="Mizu. Kubikazari",
+    waist="Eschan Stone",
+    left_ear="Friomisi Earring",
+    right_ear="Strophadic Earring",
+    left_ring="Jhakri Ring",
+    right_ring="Mujin Band",
+    back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10',}},
+	}
 		
 		--Healing Magic
 		sets.midcast.Cure = {rring="Lebeche Ring"}

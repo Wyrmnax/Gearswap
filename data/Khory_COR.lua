@@ -80,7 +80,7 @@ function init_gear_sets()
     sets.precast.JA['Random Deal'] = {body="Lanun Frac"}
 
     
-    sets.precast.CorsairRoll = {head="Lanun Tricorne",hands="Navarch's Gants +2", neck="Regal Necklace", ring1="Barataria Ring"}
+    sets.precast.CorsairRoll = {head="Lanun Tricorne",hands="Chasseur's Gants +1", neck="Regal Necklace", ring1="Barataria Ring"}
     
     sets.precast.CorsairRoll["Caster's Roll"] = set_combine(sets.precast.CorsairRoll, {legs="Navarch's Culottes +2"})
     sets.precast.CorsairRoll["Courser's Roll"] = set_combine(sets.precast.CorsairRoll, {feet="Navarch's Bottes +2"})
@@ -119,18 +119,18 @@ function init_gear_sets()
     -- Weaponskill sets
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-        head={ name="Herculean Helm", augments={'Rng.Acc.+27','Damage taken-1%','STR+4','Rng.Atk.+11',}},
+    head={ name="Herculean Helm", augments={'Weapon skill damage +4%','Accuracy+15','Attack+6',}},
 	neck = "Fotia Gorget",
     left_ear="Moonshade earring",
-    right_ear="Ishvara Earring",
+    right_ear="Telos Earring",
     body= "Meg. Cuirie +2",
     hands="Meg. Gloves +2",
     ring1="Ilabrat Ring",	
 	ring2="Karieyh ring",
-    waist="Windbuffet Belt +1",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},
+    waist="Fotia Belt",
+    back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     legs="Samnuha Tights",
-    feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},}
+    feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},}
 
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
@@ -141,18 +141,18 @@ function init_gear_sets()
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {legs="Nahtirah Trousers"})
 	
 	sets.precast.WS['Savage Blade'] = {ammo=gear.WSbullet,
-    head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
-    body="Meg. Cuirie +2",
+    head={ name="Herculean Helm", augments={'Weapon skill damage +4%','Accuracy+15','Attack+6',}},
+    body={ name="Herculean Vest", augments={'Accuracy+15','Weapon skill damage +5%',}},
     hands="Meg. Gloves +2",
-    legs={ name="Samnuha Tights", augments={'STR+8','DEX+9','"Dbl.Atk."+3','"Triple Atk."+2',}},
+    legs={ name="Herculean Trousers", augments={'Attack+6','Weapon skill damage +3%','STR+15','Accuracy+9',}},
     feet={ name="Lanun Bottes +2", augments={'Enhances "Wild Card" effect',}},
-    neck="Comm. Charm +1",
-    waist="Metalsinger Belt",
+    neck="Fotia Gorget",
+    waist="Fotia Belt",
     left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
-    right_ear="Ishvara Earring",
+    right_ear="Telos Earring",
     left_ring="Ilabrat Ring",
     right_ring="Karieyh Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+    back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
 	
 	sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS['Wildfire'], {
@@ -171,7 +171,7 @@ function init_gear_sets()
     right_ear="Telos Earring",
     ring1="Dingir Ring",	
 	ring2="Karieyh ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 	}
 
     sets.precast.WS['Last Stand'].Acc = {ammo=gear.WSbullet,
@@ -186,7 +186,7 @@ function init_gear_sets()
     right_ear="Ishvara Earring",
     left_ring="Dingir Ring",
     right_ring="Hajduk Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 	}
 
 
@@ -204,7 +204,7 @@ function init_gear_sets()
     right_ear="Friomisi Earring",
     ring1="Dingir Ring",	
 	ring2="Karieyh ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 	}
 
     sets.precast.WS['Wildfire'].Brew = {ammo=gear.MAbullet, 
@@ -221,7 +221,7 @@ function init_gear_sets()
     right_ear="Friomisi Earring",
     ring1="Dingir Ring",	
 	ring2="Karieyh ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 	}
     
     sets.precast.WS['Leaden Salute'] = set_combine(sets.precast.WS['Wildfire'], {
@@ -253,7 +253,7 @@ function init_gear_sets()
     right_ear="Friomisi Earring",
     left_ring="Dingir Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 	}
 
     sets.midcast.CorsairShot.Acc = {ammo=gear.QDbullet, 
@@ -268,7 +268,7 @@ function init_gear_sets()
     right_ear="Friomisi Earring",
     left_ring="Dingir Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 	}
 
     sets.midcast.CorsairShot['Light Shot'] = {ammo=gear.QDbullet, 
@@ -283,7 +283,7 @@ function init_gear_sets()
     right_ear="Friomisi Earring",
     left_ring="Dingir Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','Weapon skill damage +10%',}}
+    back={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},
 	}
 
     sets.midcast.CorsairShot['Dark Shot'] = sets.midcast.CorsairShot['Light Shot']
@@ -302,7 +302,7 @@ function init_gear_sets()
     right_ear="Neritic earring",
     left_ring="Hajduk Ring",
     right_ring="Hajduk Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
+    bback={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},}
 
     sets.midcast.RA.Acc = {ammo=gear.RAbullet,
     head={ name="Herculean Helm", augments={'Rng.Acc.+27','Damage taken-1%','STR+4','Rng.Atk.+11',}},
@@ -316,7 +316,7 @@ function init_gear_sets()
     right_ear="Neritic earring",
     left_ring="Hajduk Ring",
     right_ring="Hajduk Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
+    bback={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},}
 
     
     -- Sets to return to when not performing an action.
@@ -327,18 +327,18 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {
-    head= "Lak. Hat +1",
+    head= "Dampening Tam",
     body="Lanun Frac +2",
     hands="Meg. Gloves +2",
     legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-    feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
+    feet="Meg. Jam. +2",
     neck="Loricate torque",
     waist="Flume Belt +1",
     left_ear="Telos Earring",
     right_ear="Suppanomimi",
     left_ring="Defending Ring",
     right_ring="Karieyh Ring",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}}
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dual Wield"+10','Damage taken-5%',}}
 }
 
     sets.idle.Town = sets.precast.Idle;
@@ -356,7 +356,7 @@ function init_gear_sets()
     right_ear="Suppanomimi",
     left_ring="Epona's Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},}
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dual Wield"+10','Damage taken-5%',}},}
 
     sets.defense.MDT = {
     head={ name="Herculean Helm", augments={'"Triple Atk."+2','Pet: Attack+12 Pet: Rng.Atk.+12','Accuracy+15 Attack+15','Mag. Acc.+20 "Mag.Atk.Bns."+20',}},
@@ -370,7 +370,7 @@ function init_gear_sets()
     right_ear="Brutal Earring",
     left_ring="Epona's Ring",
     right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},}
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dual Wield"+10','Damage taken-5%',}},}
     
 
     sets.Kiting = {feet="Skadi's Jambeaux +1"}
@@ -393,9 +393,9 @@ function init_gear_sets()
     waist="Windbuffet Belt +1",
     left_ear="Telos Earring",
     right_ear="Brutal Earring",
-    left_ring="Epona's Ring",
-    right_ring="Ilabrat Ring",
-    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Crit.hit rate+10',}},}
+    left_ring="Ilabrat Ring",
+    right_ring="Epona's Ring",
+    back={ name="Camulus's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dual Wield"+10','Damage taken-5%',}},}
     
     sets.engaged.Acc = {ammo=gear.RAbullet,
        }
@@ -419,7 +419,7 @@ function init_gear_sets()
     right_ear="Suppanomimi",
     left_ring="Apate Ring",
     right_ring="Rajas Ring",
-    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','Weapon skill damage +10%',}},}
+    bback={ name="Camulus's Mantle", augments={'AGI+20','Mag. Acc+20 /Mag. Dmg.+20','AGI+10','Weapon skill damage +10%',}},}
 end
 
 -------------------------------------------------------------------------------------------------------------------

@@ -351,6 +351,8 @@ function midcast(spell,arg)
 			equip(sets.midcast.Macc, {head="Empty", body="Twilight Cloak"})
 		elseif spell.english:wcmatch('Frost|Drown|Rasp|Burn|Shock|Choke') then
 			equip(sets.midcast.Elemental)
+		elseif (string.find(spell.english, 'Fire')  == 1) then
+			equip(sets.midcast.LowNuke)			
 		else	
 			if Skill == 1 then
 				equip(sets.midcast.Elemental)
