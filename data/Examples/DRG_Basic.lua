@@ -10,7 +10,7 @@ function get_sets()
 	sets.TP = {	ammo="Ginsen",
 			  head="Sulevia's Mask +1",neck="Combatant's Torque",ear1="Telos Earring",ear2="Cessance Earring",
 			  body="Pelt. Plackart +1",hands="Emi. Gauntlets +1",ring1="Rajas Ring",ring2="Petrov Ring",
-			  back="Brigantia's Mantle",waist="Ioskeha Belt",legs="Valor. Hose",feet="Valorous Greaves"}
+			  back="Brigantia's Mantle",waist="Ioskeha Belt +1",legs="Valor. Hose",feet="Valorous Greaves"}
 	sets.WS = {	ammo="Amar Cluster",
 			  head="Sulevia's Mask +1",neck="Fotia Gorget",ear1="Telos Earring",ear2="Moonshade Earring",
 			  body="Sulevia's Plate. +1",hands="Valorous Mitts",ring1="Ifrit Ring +1",ring2="Rufescent Ring",
@@ -21,7 +21,7 @@ function get_sets()
 	sets.JA.Jump = { ammo="Ginsen",
 			  head="Sulevia's Mask +1",neck="Combatant's Torque",ear1="Telos Earring",ear2="Cessance Earring",
 			  body="Pelt. Plackart +1",hands="Emi. Gauntlets +1",ring1="Rajas Ring",ring2="Petrov Ring",
-			  back="Brigantia's Mantle",waist="Ioskeha Belt",legs="Valor. Hose",feet="Valorous Greaves"}
+			  back="Brigantia's Mantle",waist="Ioskeha Belt +1",legs="Valor. Hose",feet="Valorous Greaves"}
 	
 	sets.JA.Angon = {ammo="Angon",ear1="Dragoon's Earring",hands="Ptero. Fin. G. +1"} -- Angon, Relic Hands, and that dumb earring in Mamook if you feel like it
 	sets.JA.AncientCircle = {legs="Vishap Brais +1"} -- Artifact Legs
