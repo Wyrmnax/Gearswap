@@ -139,18 +139,18 @@ function init_gear_sets()
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {    
-	ammo="Seeth. Bomblet +1",
-    head={ name="Lustratio Cap", augments={'Attack+15','STR+5','"Dbl.Atk."+2',}},
-    body="Meg. Cuirie +2",
+	ammo="Jukukik Feather",
+    head={ name="Herculean Helm", augments={'Weapon skill damage +5%','STR+9','Accuracy+7','Attack+8',}},
+    body={ name="Herculean Vest", augments={'Accuracy+15','Weapon skill damage +5%',}},
     hands="Meg. Gloves +2",
-    legs={ name="Lustratio Subligar", augments={'Accuracy+15','DEX+5','Crit. hit rate+2%',}},
+    legs={ name="Herculean Trousers", augments={'Accuracy+20 Attack+20','Weapon skill damage +5%','STR+6','Attack+2',}},
     feet="Meg. Jam. +2",
     neck="Fotia Gorget",
-	waist = "Fotia Belt",
-    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +25',}},
-    right_ear="Mache Earring",
+    waist="Fotia Belt",
+    left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
     left_ring="Ilabrat Ring",
-	right_ring="Karieyh ring",
+    right_ring="Karieyh Ring",
     back="Atheling Mantle",}
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {})
 
@@ -215,7 +215,7 @@ function init_gear_sets()
     head={ name="Herculean Helm", augments={'INT+3','"Mag.Atk.Bns."+20','Magic Damage +23','Mag. Acc.+16 "Mag.Atk.Bns."+16',}},
     body={ name="Samnuha Coat", augments={'Mag. Acc.+13','"Mag.Atk.Bns."+14','"Fast Cast"+3','"Dual Wield"+4',}},
     hands={ name="Herculean Gloves", augments={'Mag. Acc.+17 "Mag.Atk.Bns."+17','"Fast Cast"+2','INT+5','"Mag.Atk.Bns."+15',}},
-    legs={ name="Herculean Trousers", augments={'Mag. Acc.+18 "Mag.Atk.Bns."+18','Crit. hit damage +1%','INT+15','"Mag.Atk.Bns."+15',}},
+    legs={ name="Herculean Trousers", augments={'Mag. Acc.+19 "Mag.Atk.Bns."+19','Weapon skill damage +3%','INT+4','Mag. Acc.+9','"Mag.Atk.Bns."+6',}},
     feet={ name="Herculean Boots", augments={'Mag. Acc.+20 "Mag.Atk.Bns."+20','Phys. dmg. taken -1%','MND+3','"Mag.Atk.Bns."+5',}},
     neck="Sanctity Necklace",
     waist="Eschan Stone",

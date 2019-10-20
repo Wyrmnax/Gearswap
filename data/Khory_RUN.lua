@@ -225,7 +225,7 @@ function init_gear_sets()
 				body= "Meg. Cuirie +2",
 				hands="Meg. Gloves +2",
 				legs={ name="Carmine Cuisses +1", augments={'Accuracy+20','Attack+12','"Dual Wield"+6',}},
-				feet={ name="Herculean Boots", augments={'Attack+23','"Triple Atk."+3','STR+3','Accuracy+8',}},
+				feet={ name="Herculean Boots", augments={'Accuracy+30','"Triple Atk."+3','DEX+1',}},
 				neck="Subtlety Spec.",
 				waist="Windbuffet Belt +1",
 				left_ear="Brutal Earring",
